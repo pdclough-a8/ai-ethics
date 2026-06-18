@@ -1,0 +1,21 @@
+/* Menu box overrides — softer background, white text for contrast */
+
+/* Semi-transparent dark navy so the page background bleeds through */
+#wrapper .box-menu-inner .menu-item__inner {
+    background: rgba(15, 35, 65, 0.80) !important;
+    border-radius: 6px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Fix text colour to white (compiled CSS overrides the default #fff with #191515) */
+#wrapper .box-menu-inner .menu-item__inner .menu-item__title,
+#wrapper .box-menu-inner .menu-item__inner .menu-item__title-inner,
+#wrapper .box-menu-inner .menu-item__inner .menu-item__body,
+#wrapper .box-menu-inner .menu-item__inner .menu-item__body p {
+    color: #ffffff !important;
+}
+
+/* Subtle hover state */
+#wrapper .box-menu-inner .menu-item__inner:hover {
+    background: rgba(15, 35, 65, 0.92) !important;
+}
