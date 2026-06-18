@@ -47,7 +47,7 @@
         "title": "Predictive AI",
         "body": "<p>The first wave of modern AI focused on prediction — using historical data to forecast outcomes. Think credit scoring, fraud detection, and early recommendation engines. Predictions are probabilistic, and errors carry real consequences for people.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "From data to decisions"
@@ -56,7 +56,7 @@
         "title": "Generative AI",
         "body": "<p>Generative AI can produce new content: text, images, code and audio. Tools like large language models have made this accessible to everyone, transforming how we communicate, create and work. New capabilities bring new ethical responsibilities.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Creating at scale"
@@ -65,7 +65,7 @@
         "title": "Agentic AI",
         "body": "<p>The latest shift is towards agentic AI — systems that can take autonomous actions, make decisions and interact with the world on behalf of users, often with minimal human oversight. The stakes of getting ethics right have never been higher.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Acting in the world"
@@ -181,81 +181,40 @@
       "_percentInviewVertical": 50
     },
     "_extensions": {},
-    "_component": "hotgraphic",
+    "_component": "accordion",
     "_layout": "full",
     "displayTitle": "Guiding principles",
     "body": "",
     "instruction": "",
-    "_graphic": {
-      "src": "course/en/assets/placeholder.jpg",
-      "alt": "",
-      "attribution": ""
-    },
     "_items": [
       {
         "title": "Fairness",
         "body": "<p>AI systems should treat people fairly, without discrimination based on protected characteristics such as race, gender or disability. This means actively identifying and addressing bias in data and algorithms.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 15,
-        "_left": 10,
         "_classes": ""
       },
       {
         "title": "Reliability and safety",
         "body": "<p>AI systems should perform as intended, consistently and safely, across the range of situations they may encounter. They should be robust against misuse, manipulation and unexpected failure.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 15,
-        "_left": 40,
         "_classes": ""
       },
       {
         "title": "Transparency",
         "body": "<p>AI systems should be understandable. Organisations should be able to explain how their AI works and how it makes decisions — to the people who build it, use it, and are affected by it.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 15,
-        "_left": 70,
         "_classes": ""
       },
       {
         "title": "Accountability",
         "body": "<p>People should be accountable for AI systems. Clear lines of responsibility should exist for the development, deployment and consequences of AI — with mechanisms for redress when things go wrong.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 60,
-        "_left": 10,
         "_classes": ""
       },
       {
         "title": "Privacy and security",
         "body": "<p>AI systems should respect individuals' privacy, handle personal data responsibly, and be protected against security threats including adversarial attacks and unauthorised access.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 60,
-        "_left": 40,
         "_classes": ""
       },
       {
         "title": "Inclusiveness",
         "body": "<p>AI systems should be designed to empower everyone. This means actively engaging diverse groups in their design, avoiding exclusion, and ensuring that benefits are distributed fairly.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 60,
-        "_left": 70,
         "_classes": ""
       }
     ],
@@ -536,7 +495,7 @@
         "title": "Unacceptable risk",
         "body": "<p>Some AI applications are prohibited outright under the EU AI Act. These include social scoring systems used by governments to evaluate citizens, AI that exploits psychological vulnerabilities, and most uses of real-time remote biometric identification in public spaces.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Prohibited AI"
@@ -545,7 +504,7 @@
         "title": "High risk",
         "body": "<p>High-risk AI systems include those used in critical infrastructure, education, employment, access to essential services, law enforcement, migration and the administration of justice. These must meet strict requirements around accuracy, transparency, oversight and documentation.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Heavily regulated"
@@ -554,7 +513,7 @@
         "title": "Limited and minimal risk",
         "body": "<p>Many AI systems fall into lower risk categories. Chatbots and AI-generated content carry transparency obligations — users must know they are interacting with AI. Most AI, such as spam filters and recommendation systems, is minimal risk and subject only to general requirements.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Lower risk, lighter touch"
@@ -742,59 +701,30 @@
       "_percentInviewVertical": 50
     },
     "_extensions": {},
-    "_component": "hotgraphic",
+    "_component": "accordion",
     "_layout": "full",
     "displayTitle": "Bias in data",
     "body": "",
     "instruction": "",
-    "_graphic": {
-      "src": "course/en/assets/placeholder.jpg",
-      "alt": "",
-      "attribution": ""
-    },
     "_items": [
       {
         "title": "Historical bias",
         "body": "<p>AI trained on historical data can encode the prejudices and inequalities of the past. If past hiring, lending or policing decisions were discriminatory, an AI trained on that data will learn to replicate those patterns — potentially at far greater scale.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 20,
-        "_left": 15,
         "_classes": ""
       },
       {
         "title": "Representation bias",
         "body": "<p>If certain groups are underrepresented in training data, the AI will perform less well for those groups. Facial recognition systems, for example, have been found to have significantly higher error rates for women and people with darker skin tones.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 20,
-        "_left": 65,
         "_classes": ""
       },
       {
         "title": "Measurement bias",
         "body": "<p>Bias can arise from how data is collected and labelled. If the people labelling training data bring their own assumptions, those assumptions become embedded in the model — particularly important for subjective tasks like content moderation or sentiment analysis.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 65,
-        "_left": 15,
         "_classes": ""
       },
       {
         "title": "Aggregation bias",
         "body": "<p>Treating a diverse population as homogeneous creates bias. An AI system designed around the 'average user' may systematically underserve people who differ from that average — including minority groups, older people, and people with disabilities.</p>",
-        "_graphic": {
-          "src": "",
-          "alt": ""
-        },
-        "_top": 65,
-        "_left": 65,
         "_classes": ""
       }
     ],
@@ -1035,7 +965,7 @@
         "title": "Why explainability matters",
         "body": "<p>When an AI system makes or influences a decision that affects a person — whether they receive a loan, a job interview, or a medical diagnosis — that person has a legitimate interest in understanding why. Explainability is not just a technical goal; it is an ethical and legal requirement.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "The right to explanation"
@@ -1044,7 +974,7 @@
         "title": "Types of explainability",
         "body": "<p><strong>Global explainability</strong> helps us understand how the model behaves overall — which features it weighs most heavily. <strong>Local explainability</strong> helps us understand why the model made a specific decision in a specific case. Both matter for responsible AI, serving different stakeholders.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Global and local"
@@ -1053,7 +983,7 @@
         "title": "Explainable AI (XAI) tools",
         "body": "<p>Tools such as LIME, SHAP and counterfactual explanations are designed to make AI reasoning interpretable to humans. They translate complex model outputs into language that can be understood, challenged and acted upon — by developers, decision-makers and those affected.</p>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Making AI interpretable"
@@ -1062,7 +992,7 @@
         "title": "Ask yourself",
         "body": "<ul><li>Could you explain to someone why your AI made the decision it did about them?</li><li>Are there groups for whom the AI's reasoning is less well understood?</li><li>What would you do if an AI decision appeared wrong or unfair?</li></ul>",
         "_graphic": {
-          "src": "course/en/assets/placeholder.jpg",
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
           "alt": ""
         },
         "strapline": "Questions to ask"
