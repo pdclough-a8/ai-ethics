@@ -1,9 +1,9 @@
 {
   "_id": "course",
   "_type": "course",
-  "title": "Analytics8 // Data Ethics",
-  "displayTitle": "Data Ethics",
-  "body": "<p>The world is more connected and data-enabled than ever. Organisations of all shapes and sizes use data to make decisions on everything from where to locate a particular service or new store to how to route council waste collections.&nbsp;</p><p>This use of data has led to considerations of data ethics — especially where data may be used to make decisions that could negatively affect people, organisations or society in general. In this course, you'll learn more about data ethics and how to put it into practice in your own organisation.</p><p>This content was written and curated by Paul Clough, Lead Data Science and AI Consultant at Analytics8 and Professor Emeritus at the University of Sheffield.&nbsp;</p><p><strong>Select 'Introduction' to begin.&nbsp;</strong></p>",
+  "title": "TPXImpact // AI Ethics and Responsible AI",
+  "displayTitle": "AI Ethics and Responsible AI",
+  "body": "<p>AI systems are transforming how we work, communicate and make decisions. As these technologies become more powerful and pervasive, the question of how to develop and deploy them ethically and responsibly has never been more important.</p><p>In this course, you'll explore the foundations of AI ethics, follow the AI lifecycle to see where ethical considerations apply in practice, and examine real-world case studies where things went wrong — and why.</p><p>This content was developed by TPXImpact.</p><p><strong>Select 'Introduction' to begin.</strong></p>",
   "description": "",
   "_menu": {
     "_boxMenuCustom": {

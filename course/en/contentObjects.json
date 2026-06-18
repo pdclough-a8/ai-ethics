@@ -1,113 +1,337 @@
 [
   {
     "_id": "a1e100000000000000000001",
-    "title": "Introduction",
     "_type": "page",
-    "_parentId": "course",
+    "title": "Introduction",
+    "displayTitle": "Introduction",
+    "body": "<p>Duration: 3 minutes.</p>",
     "_classes": "background-image1",
-    "_isAvailable": true,
+    "_parentId": "course",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
     "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
     "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
-      "_percentInviewVertical": 50
+      "_percentInviewVertical": 50,
+      "_animationName": "",
+      "_animationDelay": "delay-1s",
+      "_animationRepetition": "repeat-1",
+      "_animationSpeed": "slow"
+    },
+    "_menu": null,
+    "_bookmarking": {
+      "_isEnabled": true,
+      "_level": "inherit"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": false
     },
     "_extensions": {}
   },
   {
     "_id": "a1e100000000000000000002",
-    "title": "AI Ethics: The Foundations",
     "_type": "page",
-    "_parentId": "course",
+    "title": "AI Ethics: The Foundations",
+    "displayTitle": "AI Ethics: The Foundations",
+    "body": "<p>Duration: 6 minutes.</p>",
     "_classes": "background-image1",
-    "_isAvailable": true,
+    "_parentId": "course",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
     "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
     "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
-      "_percentInviewVertical": 50
+      "_percentInviewVertical": 50,
+      "_animationName": "",
+      "_animationDelay": "delay-1s",
+      "_animationRepetition": "repeat-1",
+      "_animationSpeed": "slow"
+    },
+    "_menu": null,
+    "_bookmarking": {
+      "_isEnabled": true,
+      "_level": "inherit"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": false
     },
     "_extensions": {}
   },
   {
     "_id": "a1e100000000000000000003",
-    "title": "Business Understanding",
     "_type": "page",
-    "_parentId": "course",
+    "title": "Business Understanding",
+    "displayTitle": "Business Understanding",
+    "body": "<p>Duration: 6 minutes.</p>",
     "_classes": "background-image1",
-    "_isAvailable": true,
+    "_parentId": "course",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
     "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
     "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
-      "_percentInviewVertical": 50
+      "_percentInviewVertical": 50,
+      "_animationName": "",
+      "_animationDelay": "delay-1s",
+      "_animationRepetition": "repeat-1",
+      "_animationSpeed": "slow"
+    },
+    "_menu": null,
+    "_bookmarking": {
+      "_isEnabled": true,
+      "_level": "inherit"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": false
     },
     "_extensions": {}
   },
   {
     "_id": "a1e100000000000000000004",
-    "title": "Data Acquisition & Understanding",
     "_type": "page",
-    "_parentId": "course",
+    "title": "Data Acquisition & Understanding",
+    "displayTitle": "Data Acquisition & Understanding",
+    "body": "<p>Duration: 6 minutes.</p>",
     "_classes": "background-image1",
-    "_isAvailable": true,
+    "_parentId": "course",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
     "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
     "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
-      "_percentInviewVertical": 50
+      "_percentInviewVertical": 50,
+      "_animationName": "",
+      "_animationDelay": "delay-1s",
+      "_animationRepetition": "repeat-1",
+      "_animationSpeed": "slow"
+    },
+    "_menu": null,
+    "_bookmarking": {
+      "_isEnabled": true,
+      "_level": "inherit"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": false
     },
     "_extensions": {}
   },
   {
     "_id": "a1e100000000000000000005",
-    "title": "Modeling",
     "_type": "page",
-    "_parentId": "course",
+    "title": "Modeling",
+    "displayTitle": "Modeling",
+    "body": "<p>Duration: 6 minutes.</p>",
     "_classes": "background-image1",
-    "_isAvailable": true,
+    "_parentId": "course",
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
     "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
     "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
-      "_percentInviewVertical": 50
+      "_percentInviewVertical": 50,
+      "_animationName": "",
+      "_animationDelay": "delay-1s",
+      "_animationRepetition": "repeat-1",
+      "_animationSpeed": "slow"
+    },
+    "_menu": null,
+    "_bookmarking": {
+      "_isEnabled": true,
+      "_level": "inherit"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": false
     },
     "_extensions": {}
   },
   {
     "_id": "a1e100000000000000000006",
-    "title": "Deployment & Beyond",
     "_type": "page",
+    "title": "Deployment & Beyond",
+    "displayTitle": "Deployment & Beyond",
+    "body": "<p>Duration: 6 minutes.</p>",
+    "_classes": "background-image1",
     "_parentId": "course",
-    "_classes": "",
-    "_isAvailable": true,
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
     "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
     "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
-      "_percentInviewVertical": 50
+      "_percentInviewVertical": 50,
+      "_animationName": "",
+      "_animationDelay": "delay-1s",
+      "_animationRepetition": "repeat-1",
+      "_animationSpeed": "slow"
+    },
+    "_menu": null,
+    "_bookmarking": {
+      "_isEnabled": true,
+      "_level": "inherit"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": false
     },
     "_extensions": {}
   },
   {
     "_id": "a1e100000000000000000007",
-    "title": "Conclusion",
     "_type": "page",
+    "title": "Conclusion",
+    "displayTitle": "Conclusion",
+    "body": "<p>Duration: 3 minutes.</p>",
+    "_classes": "background-image1",
     "_parentId": "course",
-    "_classes": "",
-    "_isAvailable": true,
+    "subtitle": "",
+    "pageBody": "",
+    "instruction": "",
+    "_htmlClasses": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
     "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
     "_isVisible": true,
+    "_requireCompletionOf": -1,
+    "_ariaLevel": 0,
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
-      "_percentInviewVertical": 50
+      "_percentInviewVertical": 50,
+      "_animationName": "",
+      "_animationDelay": "delay-1s",
+      "_animationRepetition": "repeat-1",
+      "_animationSpeed": "slow"
+    },
+    "_menu": null,
+    "_bookmarking": {
+      "_isEnabled": true,
+      "_level": "inherit"
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true,
+      "_isCompletionIndicatorEnabled": false,
+      "_excludeAssessments": false
     },
     "_extensions": {}
   }
