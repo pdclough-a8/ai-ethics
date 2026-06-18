@@ -1,0 +1,122 @@
+{
+  "_id": "651445735a621228f9311207",
+  "_courseId": "651445735a621228f93111fd",
+  "_completionCriteria": {
+    "_requireContentCompleted": true,
+    "_requireAssessmentCompleted": false,
+    "_submitOnEveryAssessmentAttempt": false,
+    "_shouldSubmitScore": true
+  },
+  "_defaultLanguage": "en",
+  "_defaultDirection": "ltr",
+  "_accessibility": {
+    "_isEnabled": true,
+    "_isTextProcessorEnabled": true,
+    "_isSkipNavigationEnabled": true,
+    "_ariaLevels": {
+      "_menu": 1,
+      "_menuGroup": 2,
+      "_menuItem": 2,
+      "_page": 1,
+      "_article": 2,
+      "_block": 3,
+      "_component": 4,
+      "_componentItem": 5,
+      "_notify": 1
+    }
+  },
+  "_fixes": {
+    "_imgLazyLoad": true
+  },
+  "screenSize": {
+    "small": 0,
+    "medium": 719,
+    "large": 959,
+    "xlarge": 1279
+  },
+  "_questionWeight": 1,
+  "_drawer": {
+    "_showEasing": "easeOutQuart",
+    "_hideEasing": "easeInQuart",
+    "_duration": 400
+  },
+  "_generateSourcemap": false,
+  "_forceRouteLocking": true,
+  "_disableAnimationFor": [],
+  "__v": 0,
+  "_logging": {
+    "_isEnabled": true,
+    "_level": "info",
+    "_console": true,
+    "_warnFirstOnly": true
+  },
+  "_scrollingContainer": {
+    "_isEnabled": false,
+    "_limitToSelector": ""
+  },
+  "build": {
+    "strictMode": true,
+    "targets": "",
+    "includes": [
+      "53f3448081e18d917addc6df-651445735a621228f93111fd",
+      "adapt-contrib-pageFooterNavigation",
+      "adapt-contrib-pageLevelProgress",
+      "adapt-contrib-bookmarking",
+      "adapt-contrib-spoor",
+      "adapt-contrib-tutor",
+      "adapt-contrib-fontawesomeIcons",
+      "adapt-contrib-text",
+      "adapt-contrib-narrative",
+      "adapt-contrib-accordion",
+      "adapt-contrib-graphic",
+      "adapt-contrib-mcq",
+      "adapt-contrib-reveal",
+      "adapt-contrib-hotgraphic",
+      "adapt-contrib-flipcard",
+      "adapt-contrib-blank"
+    ]
+  },
+  "_fontawesomeIcons": {
+    "_version": "v5.8.1"
+  },
+  "_spoor": {
+    "_isEnabled": true,
+    "_tracking": {
+      "_shouldStoreResponses": true,
+      "_shouldStoreAttempts": false,
+      "_shouldRecordInteractions": true,
+      "_shouldCompress": false
+    },
+    "_reporting": {
+      "_onTrackingCriteriaMet": "completed",
+      "_onAssessmentFailure": "incomplete",
+      "_resetStatusOnLanguageChange": false
+    },
+    "_advancedSettings": {
+      "_scormVersion": "1.2",
+      "_showDebugWindow": false,
+      "_commitOnStatusChange": true,
+      "_commitOnAnyChange": false,
+      "_timedCommitFrequency": 10,
+      "_maxCommitRetries": 5,
+      "_commitRetryDelay": 2000,
+      "_suppressErrors": false,
+      "_commitOnVisibilityChangeHidden": true,
+      "_manifestIdentifier": "adapt_manifest",
+      "_exitStateIfIncomplete": "auto",
+      "_exitStateIfComplete": "auto",
+      "_setCompletedWhenFailed": true,
+      "_maxCharLimitOverride": 0,
+      "_connectionTest": {
+        "_isEnabled": true,
+        "_testOnSetValue": true,
+        "_silentRetryLimit": 2,
+        "_silentRetryDelay": 1000
+      },
+      "_uniqueInteractionIds": false
+    },
+    "_showCookieLmsResetButton": false,
+    "_shouldPersistCookieLMSData": true
+  },
+  "_themeNavigationLogoPosition": "Center"
+}

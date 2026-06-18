@@ -1,0 +1,114 @@
+[
+  {
+    "_id": "a1e100000000000000000001",
+    "title": "Introduction",
+    "_type": "page",
+    "_parentId": "course",
+    "_classes": "background-image1",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e100000000000000000002",
+    "title": "AI Ethics: The Foundations",
+    "_type": "page",
+    "_parentId": "course",
+    "_classes": "background-image1",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e100000000000000000003",
+    "title": "Business Understanding",
+    "_type": "page",
+    "_parentId": "course",
+    "_classes": "background-image1",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e100000000000000000004",
+    "title": "Data Acquisition & Understanding",
+    "_type": "page",
+    "_parentId": "course",
+    "_classes": "background-image1",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e100000000000000000005",
+    "title": "Modeling",
+    "_type": "page",
+    "_parentId": "course",
+    "_classes": "background-image1",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e100000000000000000006",
+    "title": "Deployment & Beyond",
+    "_type": "page",
+    "_parentId": "course",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e100000000000000000007",
+    "title": "Conclusion",
+    "_type": "page",
+    "_parentId": "course",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  }
+]

@@ -1,0 +1,610 @@
+[
+  {
+    "_id": "a1e200000000000000000001",
+    "title": "Article title",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000001",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000002",
+    "title": "The evolution of AI",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000001",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000003",
+    "title": "What is Responsible AI?",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000001",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000004",
+    "title": "Coming up...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000001",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000005",
+    "title": "Article title",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000002",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000006",
+    "title": "What is AI ethics?",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000002",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000007",
+    "title": "Guiding principles",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000002",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000008",
+    "title": "Addressing ethical issues",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000002",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000009",
+    "title": "Case study: Amazon hiring algorithm",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000002",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000010",
+    "title": "Coming up...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000002",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000011",
+    "title": "Article title",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000003",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000012",
+    "title": "The frameworks suggest...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000003",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000013",
+    "title": "AI Impact Assessment",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000003",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000014",
+    "title": "Risk categorisation",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000003",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000015",
+    "title": "Case study: The A-level algorithm",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000003",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000016",
+    "title": "Coming up...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000003",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000017",
+    "title": "Article title",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000004",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000018",
+    "title": "The frameworks suggest...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000004",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000019",
+    "title": "Bias in data",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000004",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000020",
+    "title": "Data provenance and consent",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000004",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000021",
+    "title": "Case study: COMPAS",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000004",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000022",
+    "title": "Coming up...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000004",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000023",
+    "title": "Article title",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000005",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000024",
+    "title": "The frameworks suggest...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000005",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000025",
+    "title": "Explainability and transparency",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000005",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000026",
+    "title": "Model evaluation and documentation",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000005",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000027",
+    "title": "Case study: Facial recognition bias",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000005",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000028",
+    "title": "Coming up...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000005",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000029",
+    "title": "Article title",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000006",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000030",
+    "title": "The frameworks suggest...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000006",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000031",
+    "title": "Monitoring and ongoing governance",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000006",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000032",
+    "title": "AI governance structures",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000006",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000033",
+    "title": "Case study: Twitter image cropping algorithm",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000006",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000034",
+    "title": "Coming up...",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000006",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000035",
+    "title": "Article title",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000007",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000036",
+    "title": "You've learned a lot!",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000007",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000037",
+    "title": "Top tips",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000007",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  },
+  {
+    "_id": "a1e200000000000000000038",
+    "title": "Thanks for learning with us",
+    "_type": "article",
+    "_parentId": "a1e100000000000000000007",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {}
+  }
+]

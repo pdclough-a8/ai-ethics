@@ -1,0 +1,1635 @@
+[
+  {
+    "_id": "a1e400000000000000000001",
+    "title": "Introduction to AI Ethics and Responsible AI",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000001",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Introduction to AI Ethics and Responsible AI",
+    "body": "<p>Artificial intelligence is transforming the way we live and work. From recommending what to watch next to influencing hiring decisions, AI systems are making — or informing — decisions that affect people's lives every day.</p><p>But with that power comes responsibility. How AI is designed, trained and deployed has real consequences for real people. This course explores what it means to use AI ethically and responsibly — and what that looks like in practice.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000002",
+    "title": "The evolution of AI",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000002",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "narrative",
+    "_layout": "full",
+    "displayTitle": "The evolution of AI",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Predictive AI",
+        "body": "<p>The first wave of modern AI focused on prediction — using historical data to forecast outcomes. Think credit scoring, fraud detection, and early recommendation engines. Predictions are probabilistic, and errors carry real consequences for people.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "From data to decisions"
+      },
+      {
+        "title": "Generative AI",
+        "body": "<p>Generative AI can produce new content: text, images, code and audio. Tools like large language models have made this accessible to everyone, transforming how we communicate, create and work. New capabilities bring new ethical responsibilities.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Creating at scale"
+      },
+      {
+        "title": "Agentic AI",
+        "body": "<p>The latest shift is towards agentic AI — systems that can take autonomous actions, make decisions and interact with the world on behalf of users, often with minimal human oversight. The stakes of getting ethics right have never been higher.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Acting in the world"
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000003",
+    "title": "What is Responsible AI?",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000003",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "What is Responsible AI?",
+    "body": "<p>The International Organization for Standardization (ISO) defines <strong>Responsible AI (RAI)</strong> as the practice of developing and using AI systems in a way that benefits society while minimising the risk of negative consequences.</p><p>It's about creating AI technologies that not only advance our capabilities, but also address ethical concerns — particularly with regard to bias, transparency and privacy. The goal is to build trustworthy AI systems that are, all at once, reliable, fair and aligned with human values.</p><p><em>Source: <a class=\"customlink\" href=\"https://www.iso.org/artificial-intelligence/responsible-ai-ethics\" target=\"_blank\" rel=\"noopener noreferrer\">ISO — Responsible AI and Ethics</a></em></p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000004",
+    "title": "Coming up...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000004",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Coming up...",
+    "body": "<p>We'll begin by exploring the <strong>foundations of AI ethics</strong> — the key ethical concerns that AI raises, and the principles that guide responsible approaches. We'll then follow the <strong>AI lifecycle</strong>, examining what responsible AI looks like at each stage.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000005",
+    "title": "AI systems are more than technology",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000005",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "AI systems are more than technology",
+    "body": "<p>AI systems are <strong>socio-technical systems</strong> — their creation, implementation and function are the result of a complex interplay between people, technology and the broader social context, rather than just the technology itself.</p><p>This means AI tools are not neutral. Their design reflects human values, and their real-world impact depends on the organisational, societal and human-machine interactions that surround their use. Understanding this is the starting point for AI ethics.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000006",
+    "title": "What is AI ethics?",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000006",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "What is AI ethics?",
+    "body": "<p>AI ethics is a branch of applied ethics that examines the moral questions raised by the development and use of artificial intelligence. These include: <strong>Who benefits from AI — and who might be harmed?</strong> How should we balance innovation with the protection of individual rights? What obligations do organisations have when AI systems affect people's lives?</p><p>A useful starting principle: <em>just because you can build something doesn't mean you should.</em> Every AI project involves choices — about what to build, what data to use, and how to weigh competing interests. AI ethics provides the tools to make those choices well.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000007",
+    "title": "Guiding principles",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000007",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "hotgraphic",
+    "_layout": "full",
+    "displayTitle": "Guiding principles",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "course/en/assets/placeholder.jpg",
+      "alt": "",
+      "attribution": ""
+    },
+    "_items": [
+      {
+        "title": "Fairness",
+        "body": "<p>AI systems should treat people fairly, without discrimination based on protected characteristics such as race, gender or disability. This means actively identifying and addressing bias in data and algorithms.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 15,
+        "_left": 10,
+        "_classes": ""
+      },
+      {
+        "title": "Reliability and safety",
+        "body": "<p>AI systems should perform as intended, consistently and safely, across the range of situations they may encounter. They should be robust against misuse, manipulation and unexpected failure.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 15,
+        "_left": 40,
+        "_classes": ""
+      },
+      {
+        "title": "Transparency",
+        "body": "<p>AI systems should be understandable. Organisations should be able to explain how their AI works and how it makes decisions — to the people who build it, use it, and are affected by it.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 15,
+        "_left": 70,
+        "_classes": ""
+      },
+      {
+        "title": "Accountability",
+        "body": "<p>People should be accountable for AI systems. Clear lines of responsibility should exist for the development, deployment and consequences of AI — with mechanisms for redress when things go wrong.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 60,
+        "_left": 10,
+        "_classes": ""
+      },
+      {
+        "title": "Privacy and security",
+        "body": "<p>AI systems should respect individuals' privacy, handle personal data responsibly, and be protected against security threats including adversarial attacks and unauthorised access.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 60,
+        "_left": 40,
+        "_classes": ""
+      },
+      {
+        "title": "Inclusiveness",
+        "body": "<p>AI systems should be designed to empower everyone. This means actively engaging diverse groups in their design, avoiding exclusion, and ensuring that benefits are distributed fairly.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 60,
+        "_left": 70,
+        "_classes": ""
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000008",
+    "title": "Addressing ethical issues",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000008",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "accordion",
+    "_layout": "full",
+    "displayTitle": "Addressing ethical issues",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Ethical approaches",
+        "body": "<p>Ethical approaches focus on embedding values and principles into the way AI is designed and governed. This includes developing organisational AI principles, establishing ethics committees, and using tools like consequence scanning and the Ethical OS toolkit to anticipate potential harms before they occur.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Technical approaches",
+        "body": "<p>Technical approaches use tools and methods to identify and mitigate problems within AI systems. These include algorithmic auditing, bias detection tools, explainability frameworks (XAI), and security testing — translating ethical principles into measurable, actionable safeguards.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Legal approaches",
+        "body": "<p>Legal approaches ensure compliance with relevant laws and regulations. In the UK and EU, this includes data protection legislation such as UK GDPR, and the <strong>EU AI Act</strong> — which takes a risk-based approach to categorising AI systems according to the potential harm they could cause. The IAPP provides a <a class=\"customlink\" href=\"https://iapp.org/resources/article/global-ai-legislation-tracker/\" target=\"_blank\" rel=\"noopener noreferrer\">Global AI Law and Policy Tracker</a>.</p>",
+        "_classes": ""
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000009",
+    "title": "Case study: Amazon's hiring algorithm",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000009",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Case study: Amazon's hiring algorithm",
+    "body": "<p>In 2014, Amazon began developing an AI tool to automate the screening of job applicants. Trained on CVs submitted over a ten-year period, the system was designed to score candidates and surface the best talent.</p><p>The problem? The training data reflected a decade of Amazon's historically male-dominated hiring. The algorithm learned to penalise CVs that included the word 'women's' — such as 'women's chess club' — and downgraded graduates of all-women's colleges.</p><p>Despite attempts to fix the bias, Amazon could not guarantee the tool was operating fairly. In 2018, the project was quietly scrapped.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000010",
+    "title": "Case study: Amazon's hiring algorithm",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000010",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "mcq",
+    "_layout": "full",
+    "displayTitle": "Case study: Amazon's hiring algorithm",
+    "body": "<p>What was the root cause of the bias in Amazon's hiring algorithm?</p>",
+    "instruction": "Select one option, then select Submit.",
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_selectionCount": 1,
+    "_items": [
+      {
+        "text": "The algorithm was trained on historical hiring data that reflected existing gender bias in the workforce.",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "The algorithm was deliberately programmed to favour male candidates.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "The algorithm had not been tested by Amazon before it was deployed.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "The training dataset was too small to produce accurate predictions.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_feedback": {
+      "correct": "<p><strong>Correct.</strong> The bias originated in the training data. Because Amazon's historical hiring had favoured men, the algorithm learned to replicate that pattern — a clear example of how historical bias in data leads to bias in AI outputs, even without any deliberate intention.</p>",
+      "_incorrect": {
+        "final": "<p>Not quite. The bias was not deliberate — it originated in the training data. Because Amazon's historical hiring had favoured men, the algorithm learned to replicate that pattern. This is one of the most common ways bias enters AI systems.</p>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Submit"
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": "Reset"
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Show correct answer",
+        "ariaLabel": "Show correct answer"
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "Hide correct answer",
+        "ariaLabel": "Hide correct answer"
+      }
+    },
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000011",
+    "title": "Coming up...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000011",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Coming up...",
+    "body": "<p>Now that we've established the ethical foundations, we'll follow the AI lifecycle — starting with <strong>Business Understanding</strong>, the critical first stage where the ethical groundwork for any AI project is laid.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000012",
+    "title": "Business Understanding",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000012",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Business Understanding",
+    "body": "<p>The first stage of the AI lifecycle asks a fundamental question: <strong>should we build this AI system at all?</strong></p><p>This is where ethical thinking has the greatest impact. Decisions made here — about what problem to solve, what data to use, how to measure success — shape everything that follows. Rushing this stage without ethical consideration means building the wrong thing, however technically accomplished the result.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000013",
+    "title": "The frameworks suggest...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000013",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "The frameworks suggest...",
+    "body": "<p>The <strong>EU AI Act</strong> requires organisations to consider potential risks before deploying AI systems, with higher-risk applications subject to stricter requirements. It classifies AI systems into four risk levels: unacceptable risk (prohibited), high risk (heavily regulated), limited risk (transparency obligations), and minimal risk.</p><p><strong>ISO 42001</strong>, the international standard for AI management systems, recommends that organisations establish clear accountability from the outset — including defining the intended purpose and potential harms of any AI project before development begins.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000014",
+    "title": "AI Impact Assessment",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000014",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "accordion",
+    "_layout": "full",
+    "displayTitle": "AI Impact Assessment",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Clarifying the problem",
+        "body": "<p>Before any AI project begins, it is essential to justify why AI is the right solution. What problem are you solving? Could it be addressed another way, with less risk? An AI Impact Assessment documents the intended use, potential benefits and possible harms — ensuring these questions are answered before resources are committed.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Defining success ethically",
+        "body": "<p>Success metrics should go beyond technical performance. A model that is 95% accurate overall may still perform poorly for specific groups. Ethical success criteria ask: is the system fair across different populations? Are there groups who might be disproportionately harmed by errors? Defining this upfront creates accountability.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Stakeholder considerations",
+        "body": "<p>Who will be affected by this AI system? Engaging a diverse range of stakeholders — including those who will be subject to AI-driven decisions — helps surface ethical concerns that a homogeneous project team might miss. This includes employees, customers, marginalised communities and wider society.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Ask yourself",
+        "body": "<ul><li>What problem are we solving, and is AI the right tool?</li><li>Have we identified who could be harmed by this system?</li><li>Have we defined success in a way that includes fairness, not just accuracy?</li><li>Have we engaged the people who will be affected by this system?</li></ul>",
+        "_classes": ""
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000015",
+    "title": "Risk categorisation under the EU AI Act",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000015",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "narrative",
+    "_layout": "full",
+    "displayTitle": "Risk categorisation under the EU AI Act",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Unacceptable risk",
+        "body": "<p>Some AI applications are prohibited outright under the EU AI Act. These include social scoring systems used by governments to evaluate citizens, AI that exploits psychological vulnerabilities, and most uses of real-time remote biometric identification in public spaces.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Prohibited AI"
+      },
+      {
+        "title": "High risk",
+        "body": "<p>High-risk AI systems include those used in critical infrastructure, education, employment, access to essential services, law enforcement, migration and the administration of justice. These must meet strict requirements around accuracy, transparency, oversight and documentation.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Heavily regulated"
+      },
+      {
+        "title": "Limited and minimal risk",
+        "body": "<p>Many AI systems fall into lower risk categories. Chatbots and AI-generated content carry transparency obligations — users must know they are interacting with AI. Most AI, such as spam filters and recommendation systems, is minimal risk and subject only to general requirements.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Lower risk, lighter touch"
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000016",
+    "title": "Case study: The A-level algorithm",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000016",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Case study: The A-level algorithm",
+    "body": "<p>In 2020, with A-level exams cancelled due to COVID-19, the UK government used a statistical algorithm to award grades to students. The algorithm was designed to be 'fair' at a population level — but it was systematically unfair to individual students.</p><p>The system used schools' historical performance as a key factor. Students at schools with lower historical attainment had their predicted grades downgraded, regardless of individual ability. Students at private schools — historically higher-performing — were largely unaffected.</p><p>Grades were reversed within days following widespread protest. The episode became a defining case study in algorithmic impact assessment and accountability.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000017",
+    "title": "Case study: The A-level algorithm",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000017",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "mcq",
+    "_layout": "full",
+    "displayTitle": "Case study: The A-level algorithm",
+    "body": "<p>What should have been identified at the Business Understanding stage to help prevent this outcome?</p>",
+    "instruction": "Select one option, then select Submit.",
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_selectionCount": 1,
+    "_items": [
+      {
+        "text": "That statistical methods cannot be used to award academic grades.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "The potential for the algorithm to produce unfair outcomes for individual students based on their school's historical performance.",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "That the algorithm was too technically complex for educational use.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "That the exam cancellations themselves were the wrong decision.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_feedback": {
+      "correct": "<p><strong>Correct.</strong> An AI Impact Assessment at the Business Understanding stage should have modelled outcomes across different groups of students. The disproportionate impact on students at lower-performing schools was knowable in advance — it should have been built into the system's ethical success criteria from the start.</p>",
+      "_incorrect": {
+        "final": "<p>Not quite. An AI Impact Assessment should have modelled potential outcomes across different groups. The disproportionate impact on students at lower-performing schools was predictable — it should have been part of the ethical success criteria for the system from the outset.</p>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Submit"
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": "Reset"
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Show correct answer",
+        "ariaLabel": "Show correct answer"
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "Hide correct answer",
+        "ariaLabel": "Hide correct answer"
+      }
+    },
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000018",
+    "title": "Coming up...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000018",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Coming up...",
+    "body": "<p>Once you've decided to build an AI system, the next stage is <strong>Data Acquisition and Understanding</strong>. The data used to train your AI is one of the most powerful determinants of whether it behaves fairly — or replicates and amplifies existing inequalities.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000019",
+    "title": "Data Acquisition and Understanding",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000019",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Data Acquisition and Understanding",
+    "body": "<p>All AI systems are built on data. The quality, diversity and provenance of that data shapes what the AI learns — and what biases, gaps or assumptions get embedded.</p><p>This stage of the AI lifecycle is where the principles of data ethics apply most directly. But there are additional considerations specific to AI: training data is often sourced at scale, from multiple origins, and can encode historical inequalities that the AI then perpetuates and amplifies.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000020",
+    "title": "The frameworks suggest...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000020",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "The frameworks suggest...",
+    "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to use training, validation and testing data that is relevant, sufficiently representative, free of errors and complete — and to take steps to identify and address data biases that could lead to discriminatory outcomes.</p><p><strong>UK GDPR</strong> applies to any personal data used to train AI models, including requirements around lawful basis, data minimisation and purpose limitation. Using personal data to train an AI for a purpose beyond that for which it was originally collected is likely to be unlawful.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000021",
+    "title": "Bias in data",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000021",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "hotgraphic",
+    "_layout": "full",
+    "displayTitle": "Bias in data",
+    "body": "",
+    "instruction": "",
+    "_graphic": {
+      "src": "course/en/assets/placeholder.jpg",
+      "alt": "",
+      "attribution": ""
+    },
+    "_items": [
+      {
+        "title": "Historical bias",
+        "body": "<p>AI trained on historical data can encode the prejudices and inequalities of the past. If past hiring, lending or policing decisions were discriminatory, an AI trained on that data will learn to replicate those patterns — potentially at far greater scale.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 20,
+        "_left": 15,
+        "_classes": ""
+      },
+      {
+        "title": "Representation bias",
+        "body": "<p>If certain groups are underrepresented in training data, the AI will perform less well for those groups. Facial recognition systems, for example, have been found to have significantly higher error rates for women and people with darker skin tones.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 20,
+        "_left": 65,
+        "_classes": ""
+      },
+      {
+        "title": "Measurement bias",
+        "body": "<p>Bias can arise from how data is collected and labelled. If the people labelling training data bring their own assumptions, those assumptions become embedded in the model — particularly important for subjective tasks like content moderation or sentiment analysis.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 65,
+        "_left": 15,
+        "_classes": ""
+      },
+      {
+        "title": "Aggregation bias",
+        "body": "<p>Treating a diverse population as homogeneous creates bias. An AI system designed around the 'average user' may systematically underserve people who differ from that average — including minority groups, older people, and people with disabilities.</p>",
+        "_graphic": {
+          "src": "",
+          "alt": ""
+        },
+        "_top": 65,
+        "_left": 65,
+        "_classes": ""
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000022",
+    "title": "Data provenance and consent",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000022",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "accordion",
+    "_layout": "full",
+    "displayTitle": "Data provenance and consent",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Where does your data come from?",
+        "body": "<p>The provenance of training data matters both ethically and legally. Data scraped from the internet, purchased from third parties, or drawn from legacy systems may have been collected without the knowledge or consent of the individuals it relates to. Understanding where your data came from — and on what basis — is a foundational responsibility.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Consent for AI training",
+        "body": "<p>Even where data was collected lawfully, using it to train an AI may not have been covered by the original consent. Organisations need to consider whether individuals were informed their data might be used in this way — and whether they had a meaningful choice.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Synthetic and anonymised data",
+        "body": "<p>Where consent or representativeness is a challenge, <strong>synthetic data</strong> — artificially generated data that mirrors real data's statistical properties — can help. However, synthetic data is not a silver bullet: it can still encode the biases present in the real data it was derived from.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Ask yourself",
+        "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected with consent that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li></ul>",
+        "_classes": ""
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000023",
+    "title": "Case study: COMPAS",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000023",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Case study: COMPAS",
+    "body": "<p>COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) is an algorithmic tool used in parts of the US criminal justice system to predict the likelihood of a defendant reoffending. Judges use its scores to inform sentencing and bail decisions.</p><p>An investigation by ProPublica in 2016 found that the algorithm was nearly twice as likely to falsely flag Black defendants as higher risk compared to white defendants — and nearly twice as likely to incorrectly label white defendants as lower risk.</p><p>The developers disputed the findings, citing different mathematical definitions of fairness. But the case exposed a fundamental tension: it is mathematically impossible to simultaneously satisfy all common definitions of fairness in a predictive model.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000024",
+    "title": "Case study: COMPAS",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000024",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "mcq",
+    "_layout": "full",
+    "displayTitle": "Case study: COMPAS",
+    "body": "<p>The COMPAS case reveals a fundamental challenge in building fair AI systems. What is it?</p>",
+    "instruction": "Select one option, then select Submit.",
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_selectionCount": 1,
+    "_items": [
+      {
+        "text": "Algorithmic predictions are always more accurate than human judgements in criminal justice.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Criminal justice data is too sensitive to be used in any AI system.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Different mathematical definitions of fairness can contradict each other — satisfying one can make it impossible to satisfy another.",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "The algorithm would have been fair if trained on a larger dataset.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_feedback": {
+      "correct": "<p><strong>Correct.</strong> COMPAS illustrates that there is no single, agreed definition of fairness in algorithmic systems — and meeting one definition often means violating another. Building fair AI is not just a technical challenge; it requires explicit ethical choices about which definition of fairness to prioritise, and for whom.</p>",
+      "_incorrect": {
+        "final": "<p>Not quite. COMPAS illustrates that there is no single, agreed definition of fairness in algorithmic systems. Meeting one definition often means violating another. Fairness in AI requires explicit ethical choices — not just better data or more sophisticated algorithms.</p>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Submit"
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": "Reset"
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Show correct answer",
+        "ariaLabel": "Show correct answer"
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "Hide correct answer",
+        "ariaLabel": "Hide correct answer"
+      }
+    },
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000025",
+    "title": "Coming up...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000025",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Coming up...",
+    "body": "<p>With data acquired and understood, the next stage is <strong>Modeling</strong> — training, testing and evaluating the AI system. This is where algorithmic bias can emerge even from seemingly clean data, and where explainability, documentation and security testing become critical.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000026",
+    "title": "Modeling",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000026",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Modeling",
+    "body": "<p>The modeling stage is where data becomes intelligence — and where the ethical properties of the AI system begin to take shape. Choices made here, such as which features to include, how to weight different outcomes, and what to optimise for, all carry ethical consequences.</p><p>This is also the stage where bias can emerge or be amplified, and where the tools of responsible AI — explainability, documentation and security testing — are most directly applied.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000027",
+    "title": "The frameworks suggest...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000027",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "The frameworks suggest...",
+    "body": "<p>The <strong>EU AI Act</strong> requires high-risk AI systems to achieve appropriate levels of accuracy, robustness and cybersecurity — and to be sufficiently transparent that deployers can understand and oversee their operation.</p><p><strong>ISO 42001</strong> recommends that AI systems be evaluated against defined performance criteria, with documentation of known limitations and risks — including records that allow the system's behaviour to be explained and audited, before and after deployment.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000028",
+    "title": "Explainability and transparency",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000028",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "narrative",
+    "_layout": "full",
+    "displayTitle": "Explainability and transparency",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Why explainability matters",
+        "body": "<p>When an AI system makes or influences a decision that affects a person — whether they receive a loan, a job interview, or a medical diagnosis — that person has a legitimate interest in understanding why. Explainability is not just a technical goal; it is an ethical and legal requirement.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "The right to explanation"
+      },
+      {
+        "title": "Types of explainability",
+        "body": "<p><strong>Global explainability</strong> helps us understand how the model behaves overall — which features it weighs most heavily. <strong>Local explainability</strong> helps us understand why the model made a specific decision in a specific case. Both matter for responsible AI, serving different stakeholders.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Global and local"
+      },
+      {
+        "title": "Explainable AI (XAI) tools",
+        "body": "<p>Tools such as LIME, SHAP and counterfactual explanations are designed to make AI reasoning interpretable to humans. They translate complex model outputs into language that can be understood, challenged and acted upon — by developers, decision-makers and those affected.</p>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Making AI interpretable"
+      },
+      {
+        "title": "Ask yourself",
+        "body": "<ul><li>Could you explain to someone why your AI made the decision it did about them?</li><li>Are there groups for whom the AI's reasoning is less well understood?</li><li>What would you do if an AI decision appeared wrong or unfair?</li></ul>",
+        "_graphic": {
+          "src": "course/en/assets/placeholder.jpg",
+          "alt": ""
+        },
+        "strapline": "Questions to ask"
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000029",
+    "title": "Model evaluation and documentation",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000029",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "accordion",
+    "_layout": "full",
+    "displayTitle": "Model evaluation and documentation",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Testing for bias",
+        "body": "<p>Before deployment, AI models should be tested not only for overall accuracy but for <strong>differential performance across groups</strong>. A model that is 90% accurate overall may be significantly less accurate for minority groups — a pattern that must be detected and addressed before the model goes live.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Model cards",
+        "body": "<p><strong>Model cards</strong> are structured documents describing an AI model's intended use, performance across demographic groups, known limitations and ethical considerations. Originally proposed by Google researchers, they are now a widely adopted best practice for transparent AI documentation.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "AI security testing",
+        "body": "<p>AI systems face specific security risks: adversarial attacks (inputs designed to fool the model), data poisoning (corrupting training data) and model inversion (extracting personal data from a trained model). Security testing is an important and often overlooked component of responsible development.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Implementation tips",
+        "body": "<ul><li>Test performance separately for different demographic groups — not just overall accuracy.</li><li>Produce a model card documenting limitations and ethical considerations before deployment.</li><li>Include security testing as a standard part of your development process, not an afterthought.</li><li>Set a threshold for acceptable differential performance — and don't deploy until it's met.</li></ul>",
+        "_classes": ""
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000030",
+    "title": "Case study: Facial recognition and bias",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000030",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Case study: Facial recognition and bias",
+    "body": "<p>A 2018 study by MIT researcher Joy Buolamwini and Timnit Gebru examined commercial facial recognition systems from IBM, Microsoft and Face++. All three systems performed significantly worse on darker-skinned faces — and worst of all on darker-skinned women, with error rates up to 34 percentage points higher than for lighter-skinned men.</p><p>The systems had been trained predominantly on images of lighter-skinned individuals, reflecting the demographics of the datasets used. The bias was not a programming error — it was a direct consequence of unrepresentative training data and a failure to test for differential performance before deployment.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000031",
+    "title": "Case study: Facial recognition and bias",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000031",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "mcq",
+    "_layout": "full",
+    "displayTitle": "Case study: Facial recognition and bias",
+    "body": "<p>What step in the modeling stage could most directly have identified this bias before deployment?</p>",
+    "instruction": "Select one option, then select Submit.",
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_selectionCount": 1,
+    "_items": [
+      {
+        "text": "Using a more advanced modeling algorithm with higher overall accuracy.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Collecting significantly more training images overall.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Testing the model's performance separately across demographic groups, rather than overall accuracy alone.",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Using synthetic training data instead of real images.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_feedback": {
+      "correct": "<p><strong>Correct.</strong> The bias was detectable through disaggregated testing — breaking down performance metrics by demographic group. Testing for overall accuracy alone would have missed the problem. Responsible AI requires differential testing across the groups a model will be applied to, before deployment.</p>",
+      "_incorrect": {
+        "final": "<p>Not quite. The bias was detectable through disaggregated testing — breaking down performance by demographic group. Overall accuracy alone would have missed it. This is why responsible AI requires differential testing across all groups a model will be applied to.</p>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Submit"
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": "Reset"
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Show correct answer",
+        "ariaLabel": "Show correct answer"
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "Hide correct answer",
+        "ariaLabel": "Hide correct answer"
+      }
+    },
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000032",
+    "title": "Coming up...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000032",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Coming up...",
+    "body": "<p>Once an AI system is built and tested, the work of responsible AI enters a new phase. In <strong>Deployment and Beyond</strong>, we'll look at monitoring AI systems in the real world, governing their use, and ensuring accountability over time.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000033",
+    "title": "Deployment and Beyond",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000033",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Deployment and Beyond",
+    "body": "<p>Deploying an AI system is not the end of the responsible AI journey — it is the beginning of an ongoing process of oversight, monitoring and governance. AI systems can behave differently in the real world than in testing. Data drifts, contexts change, and biases that were not apparent during development can emerge at scale.</p><p>This stage also covers what happens when the AI lifecycle ends — how systems are decommissioned, decisions documented, and accountability maintained over time.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000034",
+    "title": "The frameworks suggest...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000034",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "The frameworks suggest...",
+    "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to implement post-market monitoring plans, collecting and reviewing performance data in real-world conditions and taking corrective action where problems are identified.</p><p>The <strong>ICO's AI and Data Protection Risk Toolkit</strong> provides practical guidance for organisations on auditing AI systems and ensuring compliance with data protection law throughout deployment — including tools for assessing automated decision-making and its impact on individuals.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000035",
+    "title": "Monitoring and ongoing governance",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000035",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "accordion",
+    "_layout": "full",
+    "displayTitle": "Monitoring and ongoing governance",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Monitoring for bias drift",
+        "body": "<p>AI systems can develop new biases over time as the data they process changes. A model trained on pre-pandemic data may behave differently in a post-pandemic world. Ongoing monitoring — testing for changes in performance across different groups — is an essential part of responsible deployment.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Human oversight",
+        "body": "<p>Responsible AI does not mean replacing human judgement — it means augmenting it thoughtfully. High-stakes AI decisions should include a mechanism for human review, particularly where errors could cause serious harm: in healthcare, criminal justice, credit decisions and employment.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Feedback mechanisms",
+        "body": "<p>Users and those affected by AI decisions should have a way to flag concerns, challenge decisions and seek redress. Effective feedback mechanisms are both an ethical obligation and a practical tool for identifying problems before they scale.</p>",
+        "_classes": ""
+      },
+      {
+        "title": "Decommissioning",
+        "body": "<p>When an AI system is retired, responsible practice requires documentation — such as an updated model card — recording the system's use, known limitations and any incidents. Submitting to an AI register ensures a public record of how AI has been used and decommissioned.</p>",
+        "_classes": ""
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000036",
+    "title": "AI governance structures",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000036",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "AI governance structures",
+    "body": "<p>Responsible AI requires deliberate governance structures — the accountability, oversight and decision-making processes needed to embed ethical AI practice across an organisation.</p><p>Key components include: clear AI policies and principles; an AI ethics committee or working group; a risk assessment and management process; an inventory of AI systems in use; monitoring and auditing tools; and training and enablement for staff.</p><p><strong>ISO 42001</strong> provides a structured framework for implementing these components. The <a class=\"customlink\" href=\"https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ai-and-data-protection-risk-toolkit/\" target=\"_blank\" rel=\"noopener noreferrer\">ICO's AI and Data Protection Risk Toolkit</a> provides practical audit tools aligned with UK data protection law.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000037",
+    "title": "Case study: Twitter's image cropping algorithm",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000037",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Case study: Twitter's image cropping algorithm",
+    "body": "<p>From 2018 to 2021, Twitter used an AI algorithm to automatically crop images shown in timelines. The algorithm was trained to focus on the most visually 'salient' part of an image.</p><p>In 2020, users began reporting that the algorithm consistently cropped to lighter-skinned faces when images included people of different ethnicities. Subsequent research confirmed both a racial and gender bias in the cropping behaviour.</p><p>Twitter had not proactively tested the algorithm for demographic bias before or during deployment. The company acknowledged the problem and discontinued the feature in 2021 — but only after the bias had operated, at scale, for three years.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000038",
+    "title": "Case study: Twitter's image cropping algorithm",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000038",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "mcq",
+    "_layout": "full",
+    "displayTitle": "Case study: Twitter's image cropping algorithm",
+    "body": "<p>Twitter's image cropping bias went undetected for three years. What responsible AI practice would most likely have identified it sooner?</p>",
+    "instruction": "Select one option, then select Submit.",
+    "_shouldDisplayAttempts": false,
+    "_isRandom": false,
+    "_selectionCount": 1,
+    "_items": [
+      {
+        "text": "Deploying the system more gradually, to fewer users at first.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Using a more technically sophisticated AI model.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      },
+      {
+        "text": "Post-deployment monitoring for differential outcomes across demographic groups, alongside a feedback mechanism for users to report concerns.",
+        "_shouldBeSelected": true,
+        "feedback": ""
+      },
+      {
+        "text": "Replacing the AI cropping with manual human review.",
+        "_shouldBeSelected": false,
+        "feedback": ""
+      }
+    ],
+    "_feedback": {
+      "correct": "<p><strong>Correct.</strong> The bias was eventually detected by users noticing patterns. A formal monitoring programme testing for differential outcomes across demographic groups, combined with a structured feedback mechanism, would have surfaced the problem far sooner than three years after deployment.</p>",
+      "_incorrect": {
+        "final": "<p>Not quite. The bias was detected by users noticing patterns. A formal monitoring programme testing for differential outcomes across groups — combined with a feedback mechanism that took user reports seriously — would have identified it far sooner than three years after deployment.</p>"
+      }
+    },
+    "_buttons": {
+      "_submit": {
+        "buttonText": "Submit",
+        "ariaLabel": "Submit"
+      },
+      "_reset": {
+        "buttonText": "Reset",
+        "ariaLabel": "Reset"
+      },
+      "_showCorrectAnswer": {
+        "buttonText": "Show correct answer",
+        "ariaLabel": "Show correct answer"
+      },
+      "_hideCorrectAnswer": {
+        "buttonText": "Hide correct answer",
+        "ariaLabel": "Hide correct answer"
+      }
+    },
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000039",
+    "title": "Coming up...",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000039",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Coming up...",
+    "body": "<p>You've now followed the full AI lifecycle through an ethical lens. In the <strong>Conclusion</strong>, we'll bring together the guiding principles, reflect on your individual role in responsible AI, and share practical top tips to take into your work.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000040",
+    "title": "You've completed the course",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000040",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "You've completed the course",
+    "body": "<p>Over these modules, you've explored what AI ethics is and why it matters, followed the AI lifecycle from business understanding to deployment, and seen through real case studies what can go wrong when ethical considerations are overlooked.</p><p>Responsible AI is not a destination — it's an ongoing practice. The principles and frameworks you've encountered here are tools to help you navigate the ethical dimensions of AI as the technology and its applications continue to evolve.</p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000041",
+    "title": "You've learned a lot!",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000041",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "You've learned a lot!",
+    "body": "<p>Here's a summary of what we covered:</p><ul><li><strong>Introduction:</strong> AI is a socio-technical system. Responsible AI means developing and using AI in a way that benefits society while minimising harm.</li><li><strong>AI Ethics — The Foundations:</strong> Six guiding principles — Fairness, Reliability and Safety, Transparency, Accountability, Privacy and Security, and Inclusiveness — frame responsible AI.</li><li><strong>Business Understanding:</strong> The decision to build an AI system must be ethically justified. An AI Impact Assessment surfaces potential harms before development begins.</li><li><strong>Data Acquisition and Understanding:</strong> Bias in training data leads to bias in AI. Data provenance, consent and representation all matter.</li><li><strong>Modeling:</strong> Explainability, disaggregated testing, model documentation and security testing are the tools of responsible model development.</li><li><strong>Deployment and Beyond:</strong> Responsible AI requires ongoing monitoring, human oversight, governance structures and clear decommissioning practices.</li></ul>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000042",
+    "title": "Top tips",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000042",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "flipcard",
+    "_layout": "full",
+    "displayTitle": "Top tips",
+    "body": "",
+    "instruction": "",
+    "_items": [
+      {
+        "_front": {
+          "title": "Question the need for AI",
+          "body": "<p>Before building any AI system, ask: is AI the right tool for this job? What problem are we solving, and are there simpler or less risky ways to solve it?</p>",
+          "_classes": ""
+        },
+        "_back": {
+          "title": "Going deeper",
+          "body": "<p>Complete an AI Impact Assessment. Document the intended use, potential benefits and possible harms before committing resources to development.</p>",
+          "_classes": ""
+        }
+      },
+      {
+        "_front": {
+          "title": "Check your data",
+          "body": "<p>Understand where your training data comes from. Check for bias and gaps in representation. Ensure data use is lawful and that consent covers AI training.</p>",
+          "_classes": ""
+        },
+        "_back": {
+          "title": "Going deeper",
+          "body": "<p>Test your dataset for underrepresented groups. Ask whether people whose data is used were aware it might be used to train AI — and whether they had a meaningful choice.</p>",
+          "_classes": ""
+        }
+      },
+      {
+        "_front": {
+          "title": "Test for everyone",
+          "body": "<p>Don't test for overall accuracy alone. Test your model's performance across different demographic groups, and address significant differences before deployment.</p>",
+          "_classes": ""
+        },
+        "_back": {
+          "title": "Going deeper",
+          "body": "<p>Produce a model card documenting performance across groups, known limitations and ethical considerations. Don't deploy until differential performance is within acceptable thresholds.</p>",
+          "_classes": ""
+        }
+      },
+      {
+        "_front": {
+          "title": "Explain your decisions",
+          "body": "<p>Make sure you can explain why your AI made a specific decision. Use explainability tools where needed, and give people a meaningful way to challenge decisions that affect them.</p>",
+          "_classes": ""
+        },
+        "_back": {
+          "title": "Going deeper",
+          "body": "<p>Consider XAI tools such as LIME or SHAP. Ensure anyone affected by an AI decision has a clear route to seek an explanation and redress.</p>",
+          "_classes": ""
+        }
+      },
+      {
+        "_front": {
+          "title": "Keep watching",
+          "body": "<p>Deployment is not the end. Monitor AI systems for bias drift, maintain human oversight for high-stakes decisions, and have governance structures in place to act on problems.</p>",
+          "_classes": ""
+        },
+        "_back": {
+          "title": "Going deeper",
+          "body": "<p>Set up regular monitoring testing for differential outcomes across demographic groups. Build feedback mechanisms for users. Keep model cards updated and submit to an AI register.</p>",
+          "_classes": ""
+        }
+      },
+      {
+        "_front": {
+          "title": "Know your responsibilities",
+          "body": "<p>Responsible AI is everyone's responsibility — not just developers or data scientists. If you use, commission or are affected by AI systems, you have a role to play.</p>",
+          "_classes": ""
+        },
+        "_back": {
+          "title": "Going deeper",
+          "body": "<p>Understand what AI systems are used in your organisation. Ask questions about how they work, what biases they may carry, and who is accountable if something goes wrong.</p>",
+          "_classes": ""
+        }
+      }
+    ],
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  },
+  {
+    "_id": "a1e400000000000000000043",
+    "title": "Thanks for learning with us",
+    "_type": "component",
+    "_parentId": "a1e300000000000000000043",
+    "_classes": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_isVisible": true,
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_extensions": {},
+    "_component": "text",
+    "_layout": "full",
+    "displayTitle": "Thanks for learning with us",
+    "body": "<p>Thank you for completing <strong>AI Ethics and Responsible AI</strong>.</p><p>This course is designed as a practical foundation — a starting point for thinking about AI ethics in your work. We encourage you to explore further, ask the questions raised here in your own projects, and be an advocate for responsible AI in your organisation.</p><p>Further reading: <a class=\"customlink\" href=\"https://incidentdatabase.ai\" target=\"_blank\" rel=\"noopener noreferrer\">AI Incident Database</a> &nbsp;|&nbsp; <a class=\"customlink\" href=\"https://www.aiaaic.org/aiaaic-repository\" target=\"_blank\" rel=\"noopener noreferrer\">AIAAIC Repository</a> &nbsp;|&nbsp; <a class=\"customlink\" href=\"https://www.oecd.org/going-digital/ai/principles/\" target=\"_blank\" rel=\"noopener noreferrer\">OECD AI Principles</a></p>",
+    "instruction": "",
+    "_isResetOnRevisit": "false",
+    "_ariaLevel": 0
+  }
+]

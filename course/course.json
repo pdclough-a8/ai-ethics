@@ -1,0 +1,233 @@
+{
+  "_id": "course",
+  "_type": "course",
+  "title": "TPXImpact // AI Ethics and Responsible AI",
+  "displayTitle": "AI Ethics and Responsible AI",
+  "body": "<p>The world is more connected and data-enabled than ever. Organisations of all shapes and sizes use data to make decisions on everything from where to locate a particular service or new store to how to route council waste collections.&nbsp;</p><p>This use of data has led to considerations of data ethics — especially where data may be used to make decisions that could negatively affect people, organisations or society in general. In this course, you'll learn more about data ethics and how to put it into practice in your own organisation.</p><p>This content was written and curated by Paul Clough, Lead Data Science and AI Consultant at Analytics8 and Professor Emeritus at the University of Sheffield.&nbsp;</p><p><strong>Select 'Introduction' to begin.&nbsp;</strong></p>",
+  "description": "",
+  "_menu": {
+    "_boxMenuCustom": {
+      "_menuInstructionText": "Click or tap on the blocks below to find out more"
+    }
+  },
+  "_latestTrackingId": 59,
+  "_language": "en",
+  "_multilanguage": [],
+  "_start": {
+    "_isEnabled": false,
+    "_startIds": [],
+    "_force": false,
+    "_isMenuDisabled": false
+  },
+  "_globals": {
+    "_accessibility": {
+      "_accessibilityToggleTextOn": "Turn accessibility on?",
+      "_accessibilityToggleTextOff": "Turn accessibility off?",
+      "skipNavigationText": "Skip navigation",
+      "_accessibilityInstructions": {
+        "touch": "Usage instructions. Use swipe left for next. Use swipe right for previous. Use a double tab to select. Use a two finger slide up to go to the top of the page.",
+        "notouch": "Usage instructions. Use tab for next. Use shift tab for previous. Use enter to select. Use escape to go to the top of the page.",
+        "ipad": "Usage instructions for touchscreens. Use swipe left for next. Use swipe right for previous. Use a double tab to select. Use a two finger slide up to go to the top of the page. Usage instructions for keyboard access. Use left for next. Use right for previous. Use up and down together to select."
+      },
+      "_ariaLabels": {
+        "navigation": "Course navigation bar",
+        "skipNavigation": "Skip navigation",
+        "home": "Home",
+        "menuLoaded": "Menu loaded",
+        "menu": "Menu",
+        "menuItem": "Menu item",
+        "menuViewButton": "Select here to enter",
+        "page": "Page",
+        "pageLoaded": "Page loaded",
+        "previous": "Back",
+        "navigationBack": "Navigate back",
+        "navigationDrawer": "Open course resources and search",
+        "closeResources": "Close resources",
+        "drawerBack": "Back to drawer",
+        "drawer": "Side drawer",
+        "closeDrawer": "Close drawer",
+        "closePopup": "Close popup",
+        "next": "Next",
+        "done": "Done",
+        "complete": "Complete",
+        "incomplete": "Incomplete",
+        "correct": "Correct",
+        "incorrect": "Incorrect",
+        "locked": "Locked",
+        "accessibilityToggleButton": "By selecting this button you can set whether accessibility is turned on or off",
+        "feedbackPopUp": "Popup opened",
+        "visited": "Visited",
+        "menuBack": "Back to menu",
+        "menuIndicatorHeading": "Menu item heading ",
+        "exit": "Exit",
+        "answeredIncorrectly": "You answered incorrectly",
+        "answeredCorrectly": "You answered correctly",
+        "selectedAnswer": "selected",
+        "unselectedAnswer": "not selected",
+        "close": "Close"
+      }
+    },
+    "_extensions": {
+      "_drawer": {
+        "_navTooltip": {
+          "_isEnabled": true,
+          "text": "{{ariaLabel}}"
+        },
+        "_navOrder": 100
+      },
+      "_tutor": {
+        "hideFeedback": "Hide feedback"
+      },
+      "_pageLevelProgress": {
+        "pageLevelProgress": "List of page sections and completion status. Select incomplete sections to jump directly to the content.",
+        "pageLevelProgressIndicatorBar": "Page progress. {{percentageComplete}}%. Open page sections.",
+        "pageLevelProgressMenuBar": "Page completion {{percentageComplete}}%",
+        "optionalContent": "Optional content",
+        "_navOrder": "90",
+        "_navTooltip": {
+          "_isEnabled": true,
+          "text": "Page progress"
+        },
+        "_showLabel": true,
+        "navLabel": "Page progress",
+        "_drawerPosition": "auto"
+      },
+      "_navigation": {
+        "_skipButton": {
+          "_navOrder": -100
+        },
+        "_backButton": {
+          "_navOrder": 0
+        },
+        "_backNavTooltip": {
+          "_isEnabled": true,
+          "text": "{{ariaLabel}}"
+        },
+        "_spacers": [
+          {
+            "_navOrder": 0
+          }
+        ]
+      }
+    },
+    "_components": {
+      "_accordion": {
+        "ariaRegion": "List of expandable sections. Select each button to expand the content."
+      },
+      "_graphic": {
+        "ariaRegion": "",
+        "scrollAriaLabel": "Use the scrollbar to pan the image left and right. {{#if _graphic.alt}}{{_graphic.alt}}{{/if}}"
+      },
+      "_text": {
+        "ariaRegion": ""
+      },
+      "_mcq": {
+        "ariaRegion": "Multiple choice question",
+        "ariaCorrectAnswer": "The correct answer is {{{correctAnswer}}}",
+        "ariaCorrectAnswers": "The correct answers are {{{correctAnswer}}}",
+        "ariaUserAnswer": "The answer you chose was {{{userAnswer}}}",
+        "ariaUserAnswers": "The answers you chose were {{{userAnswer}}}"
+      },
+      "_reveal": {
+        "ariaLabel": "Reveal toggle button."
+      },
+      "_hotgraphic": {
+        "ariaRegion": "Image with selectable areas. Select each button to show more information.",
+        "item": "Item {{{itemNumber}}} of {{{totalItems}}}",
+        "previous": "{{#if title}}Back to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
+        "next": "{{#if title}}Forward to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}",
+        "popupPagination": "{{itemNumber}} / {{totalItems}}"
+      },
+      "_narrative": {
+        "ariaRegion": "Slide show. Select the next button to progress.",
+        "previous": "{{#if title}}Back to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.previous}}{{/if}}",
+        "next": "{{#if title}}Forward to {{{title}}} (item {{itemNumber}} of {{totalItems}}){{else}}{{_globals._accessibility._ariaLabels.next}}{{/if}}"
+      },
+      "_flipcard": {
+        "ariaRegion": "This component is a flipcard comprised of flippable cards containing display image. Select the front face image to flip to the back face of these card to display associated text."
+      }
+    },
+    "_menu": {
+      "_boxMenuCustom": {
+        "ariaRegion": "Menu",
+        "durationLabel": "Duration:",
+        "menuItem": "Menu item.",
+        "menuEnd": "You have reached the end of the menu."
+      }
+    }
+  },
+  "_tooltips": {
+    "_isEnabled": true
+  },
+  "_buttons": {
+    "_submit": {
+      "buttonText": "Submit",
+      "ariaLabel": "Submit"
+    },
+    "_reset": {
+      "buttonText": "Reset",
+      "ariaLabel": "Reset"
+    },
+    "_showCorrectAnswer": {
+      "buttonText": "Show correct answer",
+      "ariaLabel": "Show correct answer"
+    },
+    "_hideCorrectAnswer": {
+      "buttonText": "Hide correct answer",
+      "ariaLabel": "Hide correct answer"
+    },
+    "_showFeedback": {
+      "buttonText": "Show feedback",
+      "ariaLabel": "Show feedback"
+    },
+    "remainingAttemptsText": "remaining attempts",
+    "remainingAttemptText": "final attempt",
+    "disabledAriaLabel": "This button is disabled at the moment"
+  },
+  "_classes": "",
+  "_lockType": null,
+  "_tenantId": "53f3448081e18d917addc6df",
+  "_bookmarking": {
+    "_isEnabled": true,
+    "_level": "component",
+    "_showPrompt": true,
+    "title": "Bookmarking",
+    "body": "Would you like to continue where you left off?",
+    "_buttons": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "_tutor": {
+    "_type": "notify",
+    "_classes": "",
+    "_hasNotifyBottomButton": false,
+    "_button": {
+      "text": "{{_globals._extensions._tutor.hideFeedback}}",
+      "ariaLabel": "{{_globals._extensions._tutor.hideFeedback}}"
+    }
+  },
+  "_spoor": {
+    "_messages": null
+  },
+  "_pageFooterNavigation": {
+    "_isEnabled": true,
+    "_displayIcons": false,
+    "nextButtonText": "Next",
+    "prevButtonText": "Previous",
+    "homeButtonText": "Home",
+    "upButtonText": "Up",
+    "_displayOptions": "scrollToBottom",
+    "_hideHomeButton": false,
+    "_hideUpButton": false,
+    "_hidePrevButton": false,
+    "_hideNextButton": false
+  },
+  "_pageLevelProgress": {
+    "_isEnabled": true,
+    "_showPageCompletion": true,
+    "_isCompletionIndicatorEnabled": false,
+    "_isShownInNavigationBar": true,
+    "_showAtCourseLevel": false
+  }
+}
