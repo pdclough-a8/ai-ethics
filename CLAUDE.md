@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A **SCORM 1.2 compliant e-learning course** about AI ethics, built with the [Adapt Learning](https://www.adaptlearning.org/) framework (v5.31.20). The course follows the AI project lifecycle across 7 pages: Introduction, AI Ethics: The Foundations, Business Understanding, Data Acquisition & Understanding, Modeling, Deployment & Beyond, and Conclusion.
 
-This is a **pre-built static distribution** — all JavaScript and CSS are already compiled and minified. There is no build step or package manager. Changes are made directly to JSON content files and deployed as-is.
+This is a **pre-built static distribution** - all JavaScript and CSS are already compiled and minified. There is no build step or package manager. Changes are made directly to JSON content files and deployed as-is.
 
 ## Deployment
 
@@ -32,29 +32,29 @@ The hierarchy is: **Course → Pages → Articles → Blocks → Components**
 
 Each JSON item has a unique `_id` string. Items reference their parent via `_parentId`. Navigation and completion tracking follow this tree.
 
-`_latestTrackingId` in `course.json` must be incremented when adding new trackable components — it is the high-water mark for SCORM interaction IDs.
+`_latestTrackingId` in `course.json` must be incremented when adding new trackable components - it is the high-water mark for SCORM interaction IDs.
 
 ## Component Types in Use
 
 Components in `components.json` have a `_component` field identifying their type:
 
-- `text` — narrative content (most common)
-- `mcq` — multiple choice questions
-- `accordion` — expandable sections
-- `narrative` — image+text carousel
-- `hotgraphic` — clickable image regions
-- `flipcard` — flip card interactions
+- `text` - narrative content (most common)
+- `mcq` - multiple choice questions
+- `accordion` - expandable sections
+- `narrative` - image+text carousel
+- `hotgraphic` - clickable image regions
+- `flipcard` - flip card interactions
 
 ## Framework Configuration
 
 [course/config.json](course/config.json) controls SCORM tracking and completion behaviour:
 
-- `_requireContentCompleted: true`, `_requireAssessmentCompleted: false` — completion triggers when all content is visited (not when assessments pass)
-- `_shouldSubmitScore: true` — scores are still reported to the LMS even though assessment completion is not required
-- `_forceRouteLocking: true` — pages must be visited sequentially; learners cannot skip ahead
+- `_requireContentCompleted: true`, `_requireAssessmentCompleted: false` - completion triggers when all content is visited (not when assessments pass)
+- `_shouldSubmitScore: true` - scores are still reported to the LMS even though assessment completion is not required
+- `_forceRouteLocking: true` - pages must be visited sequentially; learners cannot skip ahead
 - The `_spoor` section configures SCORM 1.2 LMS interaction (commit frequency, retry logic, exit state)
 
-[adapt/js/build.min.js](adapt/js/build.min.js) contains the compiled plugin manifest — do not edit this manually.
+[adapt/js/build.min.js](adapt/js/build.min.js) contains the compiled plugin manifest - do not edit this manually.
 
 ## Making Content Changes
 

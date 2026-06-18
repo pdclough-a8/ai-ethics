@@ -5704,7 +5704,7 @@
 
   function findRetryLane(wipLanes) {
     // This is a fork of `findUpdateLane` designed specifically for Suspense
-    // "retries" — a special update that attempts to flip a Suspense boundary
+    // "retries" - a special update that attempts to flip a Suspense boundary
     // from its placeholder state to its primary/resolved state.
     var lane = pickArbitraryLane(RetryLanes & ~wipLanes);
 
@@ -13647,7 +13647,7 @@
               break;
             }
 
-            error('Encountered two children with the same key, `%s`. ' + 'Keys should be unique so that components maintain their identity ' + 'across updates. Non-unique keys may cause children to be ' + 'duplicated and/or omitted — the behavior is unsupported and ' + 'could change in a future version.', key);
+            error('Encountered two children with the same key, `%s`. ' + 'Keys should be unique so that components maintain their identity ' + 'across updates. Non-unique keys may cause children to be ' + 'duplicated and/or omitted - the behavior is unsupported and ' + 'could change in a future version.', key);
 
             break;
         }
@@ -21842,7 +21842,7 @@
 
   function requestRetryLane(fiber) {
     // This is a fork of `requestUpdateLane` designed specifically for Suspense
-    // "retries" — a special update that attempts to flip a Suspense boundary
+    // "retries" - a special update that attempts to flip a Suspense boundary
     // from its placeholder state to its primary/resolved state.
     // Special cases
     var mode = fiber.mode;
