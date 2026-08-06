@@ -1,0 +1,102 @@
+{
+  "title": "AI Ethics: The Foundations",
+  "duration": "6 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "AI systems are more than technology",
+      "body": "<p>AI systems are <strong>socio-technical systems</strong> - their creation, implementation and function are the result of a complex interplay between people, technology and the broader social context, rather than just the technology itself.</p><p>This means AI tools are not neutral. Their design reflects human values, and their real-world impact depends on the organisational, societal and human-machine interactions that surround their use. Understanding this is the starting point for AI ethics.</p>"
+    },
+    {
+      "type": "text",
+      "title": "What is AI ethics?",
+      "body": "<p>AI ethics is a branch of applied ethics that examines the moral questions raised by the development and use of artificial intelligence. These include: <strong>Who benefits from AI - and who might be harmed?</strong> How should we balance innovation with the protection of individual rights? What obligations do organisations have when AI systems affect people's lives?</p><p>A useful starting principle: <em>just because you can build something doesn't mean you should.</em> Every AI project involves choices - about what to build, what data to use, and how to weigh competing interests. AI ethics provides the tools to make those choices well.</p>"
+    },
+    {
+      "type": "accordion",
+      "title": "Guiding principles",
+      "items": [
+        {
+          "title": "Fairness",
+          "body": "<p>AI systems should treat people fairly, without discrimination based on protected characteristics such as race, gender or disability. This means actively identifying and addressing bias in data and algorithms.</p>"
+        },
+        {
+          "title": "Reliability and safety",
+          "body": "<p>AI systems should perform as intended, consistently and safely, across the range of situations they may encounter. They should be robust against misuse, manipulation and unexpected failure.</p>"
+        },
+        {
+          "title": "Transparency",
+          "body": "<p>AI systems should be understandable. Organisations should be able to explain how their AI works and how it makes decisions - to the people who build it, use it, and are affected by it.</p>"
+        },
+        {
+          "title": "Accountability",
+          "body": "<p>People should be accountable for AI systems. Clear lines of responsibility should exist for the development, deployment and consequences of AI - with mechanisms for redress when things go wrong.</p>"
+        },
+        {
+          "title": "Privacy and security",
+          "body": "<p>AI systems should respect individuals' privacy, handle personal data responsibly, and be protected against security threats including adversarial attacks and unauthorised access.</p>"
+        },
+        {
+          "title": "Inclusiveness",
+          "body": "<p>AI systems should be designed to empower everyone. This means actively engaging diverse groups in their design, avoiding exclusion, and ensuring that benefits are distributed fairly.</p>"
+        }
+      ]
+    },
+    {
+      "type": "accordion",
+      "title": "Addressing ethical issues",
+      "items": [
+        {
+          "title": "Ethical approaches",
+          "body": "<p>Ethical approaches focus on embedding values and principles into the way AI is designed and governed. This includes developing organisational AI principles, establishing ethics committees, and using tools like consequence scanning and the Ethical OS toolkit to anticipate potential harms before they occur.</p>"
+        },
+        {
+          "title": "Technical approaches",
+          "body": "<p>Technical approaches use tools and methods to identify and mitigate problems within AI systems. These include algorithmic auditing, bias detection tools, explainability frameworks (XAI), and security testing - translating ethical principles into measurable, actionable safeguards.</p>"
+        },
+        {
+          "title": "Legal approaches",
+          "body": "<p>Legal approaches ensure compliance with relevant laws and regulations. In the UK and EU, this includes data protection legislation such as UK GDPR, and the <strong>EU AI Act</strong> - which takes a risk-based approach to categorising AI systems according to the potential harm they could cause. The IAPP provides a <a class=\"customlink\" href=\"https://iapp.org/resources/article/global-ai-legislation-tracker/\" target=\"_blank\" rel=\"noopener noreferrer\">Global AI Law and Policy Tracker</a>.</p>"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Case study: Amazon's hiring algorithm",
+      "body": "<p>In 2014, Amazon began developing an AI tool to automate the screening of job applicants. Trained on CVs submitted over a ten-year period, the system was designed to score candidates and surface the best talent.</p><p>The problem? The training data reflected a decade of Amazon's historically male-dominated hiring. The algorithm learned to penalise CVs that included the word 'women's' - such as 'women's chess club' - and downgraded graduates of all-women's colleges.</p><p>Despite attempts to fix the bias, Amazon could not guarantee the tool was operating fairly. In 2018, the project was quietly scrapped.</p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000010",
+      "title": "Case study: Amazon's hiring algorithm",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "The algorithm was trained on historical hiring data that reflected existing gender bias in the workforce.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "The algorithm was deliberately programmed to favour male candidates.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "The algorithm had not been tested by Amazon before it was deployed.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "The training dataset was too small to produce accurate predictions.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> The bias originated in the training data. Because Amazon's historical hiring had favoured men, the algorithm learned to replicate that pattern - a clear example of how historical bias in data leads to bias in AI outputs, even without any deliberate intention.</p>",
+      "feedbackIncorrect": "<p>Not quite. The bias was not deliberate - it originated in the training data. Because Amazon's historical hiring had favoured men, the algorithm learned to replicate that pattern. This is one of the most common ways bias enters AI systems.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Coming up...",
+      "body": "<p>Now that we've established the ethical foundations, we'll follow the AI lifecycle - starting with <strong>Business Understanding</strong>, the critical first stage where the ethical groundwork for any AI project is laid.</p>"
+    }
+  ]
+}

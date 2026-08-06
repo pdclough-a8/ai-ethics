@@ -1,0 +1,132 @@
+---
+// Recreates Adapt's "narrative" component type - an image+text carousel.
+// Simplified interaction vs. the original (one slide visible at a time,
+// prev/next buttons, no drag/swipe) but the same underlying idea: step
+// through a set of items one at a time rather than showing them all at once.
+import { withBase } from '../scripts/paths';
+
+interface NarrativeItem {
+  title: string;
+  body: string;
+  graphicSrc?: string;
+  graphicAlt?: string;
+}
+
+interface Props {
+  id: string;
+  title?: string;
+  body?: string; // intro copy shown above the carousel
+  items: NarrativeItem[];
+}
+
+const { id, title, body, items } = Astro.props;
+---
+
+<section class="a8-narrative" data-narrative-id={id}>
+  {title && <h2>{title}</h2>}
+  {body && <div class="a8-prose" set:html={body} />}
+
+  <div class="a8-narrative__viewport">
+    {items.map((item, i) => (
+      <article class="a8-narrative__slide" data-index={i} hidden={i !== 0}>
+        {item.graphicSrc && <img src={withBase(item.graphicSrc)} alt={item.graphicAlt ?? ''} />}
+        <div class="a8-narrative__slide-text">
+          <h3>{item.title}</h3>
+          <div set:html={item.body} />
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <div class="a8-narrative__controls">
+    <button type="button" data-narrative-prev aria-label="Previous item">&larr; Back</button>
+    <span data-narrative-counter>1 of {items.length}</span>
+    <button type="button" data-narrative-next aria-label="Next item">Next &rarr;</button>
+  </div>
+</section>
+
+<style>
+  .a8-narrative {
+    margin: var(--a8-space-lg) 0;
+  }
+  .a8-narrative__viewport {
+    background: var(--a8-surface);
+    border: 1px solid #ddd;
+    border-radius: var(--a8-radius);
+    padding: var(--a8-space-md);
+  }
+  .a8-narrative__slide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--a8-space-md);
+    align-items: flex-start;
+  }
+  /* `display: flex` above has equal specificity to the browser's own
+     [hidden] { display: none } rule, but wins because author styles
+     always beat user-agent styles regardless of order — so the hidden
+     attribute was being silently ignored and every slide showed at once.
+     This reasserts it at higher specificity so hidden actually hides. */
+  .a8-narrative__slide[hidden] {
+    display: none;
+  }
+  .a8-narrative__slide img {
+    max-width: 120px;
+    flex-shrink: 0;
+  }
+  .a8-narrative__slide-text {
+    flex: 1;
+    min-width: 200px;
+  }
+  .a8-narrative__slide-text h3 {
+    margin-top: 0;
+  }
+  .a8-narrative__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--a8-space-md);
+    margin-top: var(--a8-space-sm);
+  }
+  .a8-narrative__controls button {
+    background: none;
+    border: 1px solid var(--a8-ink);
+    border-radius: var(--a8-radius);
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--a8-ink);
+  }
+  .a8-narrative__controls button:hover {
+    background: var(--a8-accent);
+    border-color: var(--a8-accent);
+    color: var(--a8-accent-text);
+  }
+  .a8-narrative__controls span {
+    color: var(--a8-text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.a8-narrative').forEach((el) => {
+    const slides = Array.from(el.querySelectorAll<HTMLElement>('.a8-narrative__slide'));
+    const counter = el.querySelector<HTMLElement>('[data-narrative-counter]');
+    let current = 0;
+
+    function render() {
+      slides.forEach((slide, i) => {
+        slide.hidden = i !== current;
+      });
+      if (counter) counter.textContent = `${current + 1} of ${slides.length}`;
+    }
+
+    el.querySelector('[data-narrative-prev]')?.addEventListener('click', () => {
+      current = (current - 1 + slides.length) % slides.length;
+      render();
+    });
+    el.querySelector('[data-narrative-next]')?.addEventListener('click', () => {
+      current = (current + 1) % slides.length;
+      render();
+    });
+  });
+</script>

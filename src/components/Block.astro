@@ -1,0 +1,29 @@
+---
+// Dispatches a single content-JSON entry to the right component, by its
+// `type` field (mirrors Adapt's `_component` values). Keeps each page file
+// trivial - just a list of blocks in order - rather than repeating the
+// same import/render boilerplate on every page.
+import Text from './Text.astro';
+import Graphic from './Graphic.astro';
+import Accordion from './Accordion.astro';
+import Mcq from './Mcq.astro';
+import Narrative from './Narrative.astro';
+import Hotgraphic from './Hotgraphic.astro';
+import Flipcard from './Flipcard.astro';
+import Reveal from './Reveal.astro';
+
+interface Props {
+  block: Record<string, any> & { type: string };
+}
+
+const { block } = Astro.props;
+---
+
+{block.type === 'text' && <Text {...block} />}
+{block.type === 'graphic' && <Graphic {...block} />}
+{block.type === 'accordion' && <Accordion {...block} />}
+{block.type === 'mcq' && <Mcq {...block} />}
+{block.type === 'narrative' && <Narrative {...block} />}
+{block.type === 'hotgraphic' && <Hotgraphic {...block} />}
+{block.type === 'flipcard' && <Flipcard {...block} />}
+{block.type === 'reveal' && <Reveal {...block} />}

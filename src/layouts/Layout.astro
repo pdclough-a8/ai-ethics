@@ -1,0 +1,293 @@
+---
+import '../styles/theme.css';
+import { withBase } from '../scripts/paths';
+
+interface Props {
+  title: string;
+  duration?: string;
+  // 'landing' skips the default <h1>/duration wrapper so the course home
+  // page can supply its own full-bleed hero markup via the slot instead.
+  variant?: 'default' | 'landing';
+}
+
+const { title, duration, variant = 'default' } = Astro.props;
+
+// Mirrors contentObjects.json's page list - hand-maintained for now.
+// (In the Adapt version this tree is generated across 5 JSON files;
+// here it's just this one array.)
+const pages = [
+  { title: 'Introduction', href: '/introduction/' },
+  { title: 'AI Ethics: The Foundations', href: '/foundations/' },
+  { title: 'Business Understanding', href: '/business-understanding/' },
+  { title: 'Data Acquisition & Understanding', href: '/data-acquisition/' },
+  { title: 'Modeling', href: '/modeling/' },
+  { title: 'Deployment & Beyond', href: '/deployment-beyond/' },
+  { title: 'Conclusion', href: '/conclusion/' },
+];
+
+// Several pages' own copy says "Select Next to continue" - a leftover
+// expectation from the original Adapt course, which had built-in
+// page-level Next/Back buttons. Matched by title (every content page
+// passes its title as a Layout prop already) rather than by URL, so this
+// doesn't need Astro.url/base-path handling. Naturally excludes the
+// landing page, whose title ("AI Ethics and Responsible AI") isn't in this list.
+const currentIndex = pages.findIndex((p) => p.title === title);
+const prevPage = currentIndex > 0 ? pages[currentIndex - 1] : null;
+const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[currentIndex + 1] : null;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} - Analytics8 // AI Ethics</title>
+  </head>
+  <body>
+    <header class="a8-header">
+      <div class="a8-container a8-header__inner">
+        <a href={withBase('/')} class="a8-logo" aria-label="Analytics8 home">
+          <img src={withBase('/assets/logo-analytics8.png')} alt="Analytics8" />
+        </a>
+        <nav class="a8-nav" aria-label="Course navigation">
+          <ul>
+            <li><a href={withBase('/')}>Home</a></li>
+            {pages.map((p) => (
+              <li><a href={withBase(p.href)} data-page-link>{p.title}</a></li>
+            ))}
+          </ul>
+        </nav>
+        <div class="a8-progress" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="a8-progress__track">
+            <div class="a8-progress__fill" data-progress-fill></div>
+          </div>
+          <p class="a8-progress__label" data-progress-label>0/{pages.length}</p>
+        </div>
+      </div>
+    </header>
+
+    {variant === 'landing' ? (
+      <main class="a8-main a8-main--landing">
+        <slot />
+      </main>
+    ) : (
+      <main class="a8-container a8-main">
+        <h1>{title}</h1>
+        {duration && <p class="a8-duration">Duration: {duration}</p>}
+        <slot />
+      </main>
+    )}
+
+    {currentIndex !== -1 && (
+      <nav class="a8-container a8-page-nav" aria-label="Page navigation">
+        {prevPage ? (
+          <a href={withBase(prevPage.href)} class="a8-page-nav__link a8-page-nav__link--prev">← {prevPage.title}</a>
+        ) : <span />}
+        {nextPage ? (
+          <a href={withBase(nextPage.href)} class="a8-page-nav__link a8-page-nav__link--next">{nextPage.title} →</a>
+        ) : (
+          <a href={withBase('/')} class="a8-page-nav__link a8-page-nav__link--next">Back to Home →</a>
+        )}
+      </nav>
+    )}
+
+    <footer class="a8-footer">
+      <div class="a8-container a8-footer__inner">
+        <p>Analytics8 // AI Ethics</p>
+        <button type="button" class="a8-reset" data-reset-progress>Reset progress</button>
+      </div>
+    </footer>
+
+    <style>
+      .a8-header {
+        background: var(--a8-surface);
+        border-bottom: 2px solid var(--a8-rule);
+      }
+      .a8-header__inner {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--a8-space-lg);
+        padding-top: var(--a8-space-md);
+        padding-bottom: var(--a8-space-md);
+      }
+      .a8-header__inner .a8-nav {
+        margin-right: auto;
+      }
+      .a8-logo {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+      }
+      .a8-logo img {
+        display: block;
+        height: 48px;
+        width: auto;
+      }
+      .a8-nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--a8-space-md);
+        margin: 0;
+        padding: 0;
+      }
+      .a8-nav a {
+        color: var(--a8-text-muted);
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+      .a8-nav a:hover,
+      .a8-nav a:focus {
+        color: var(--a8-accent);
+      }
+      .a8-nav a[data-visited]::after {
+        content: ' \2713'; /* checkmark */
+        color: var(--a8-accent);
+        font-weight: 700;
+      }
+      .a8-nav a[aria-current='page'] {
+        color: var(--a8-ink);
+        font-weight: 700;
+      }
+      .a8-progress {
+        display: flex;
+        align-items: center;
+        gap: var(--a8-space-sm);
+        width: 90px;
+        flex-shrink: 0;
+      }
+      .a8-progress__track {
+        flex: 1;
+        height: 6px;
+        background: #ddd;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+      .a8-progress__fill {
+        height: 100%;
+        width: 0%;
+        background: var(--a8-accent);
+        transition: width 0.3s ease;
+      }
+      .a8-progress__label {
+        margin: 0;
+        font-size: 0.8rem;
+        color: var(--a8-text-muted);
+        white-space: nowrap;
+      }
+      .a8-main {
+        padding-top: var(--a8-space-lg);
+        padding-bottom: var(--a8-space-lg);
+        min-height: 60vh;
+      }
+      .a8-main--landing {
+        padding: 0;
+      }
+      .a8-page-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--a8-space-md);
+        padding-bottom: var(--a8-space-lg);
+      }
+      .a8-page-nav__link {
+        color: var(--a8-ink);
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid var(--a8-ink);
+        border-radius: var(--a8-radius);
+        padding: 0.5rem 1rem;
+      }
+      .a8-page-nav__link:hover,
+      .a8-page-nav__link:focus {
+        background: var(--a8-accent);
+        border-color: var(--a8-accent);
+        color: var(--a8-accent-text);
+      }
+      .a8-duration {
+        color: var(--a8-text-muted);
+        font-size: 0.9rem;
+        margin-top: -0.5rem;
+      }
+      .a8-footer {
+        background: var(--a8-ink);
+        color: var(--a8-bg);
+        padding: var(--a8-space-md) 0;
+        font-size: 0.85rem;
+      }
+      .a8-footer__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--a8-space-md);
+        flex-wrap: wrap;
+      }
+      .a8-footer p {
+        margin: 0;
+      }
+      .a8-reset {
+        background: none;
+        border: 1px solid var(--a8-bg);
+        color: var(--a8-bg);
+        border-radius: var(--a8-radius);
+        padding: 0.25rem 0.75rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      .a8-reset:hover,
+      .a8-reset:focus {
+        opacity: 1;
+      }
+    </style>
+
+    <script>
+      // UI wiring only - the actual persistence lives in
+      // src/scripts/tracking.ts, shared with Mcq.astro. That's the one file
+      // to change if SCORM reporting is ever added; this script just reads
+      // its results back out and updates the nav/progress-bar DOM.
+      import { recordPageVisit, normalisePath, resetProgress } from '../scripts/tracking';
+
+      document.querySelector('[data-reset-progress]')?.addEventListener('click', () => {
+        if (window.confirm('Reset all page-visited and quiz progress for this course?')) {
+          resetProgress();
+          window.location.reload();
+        }
+      });
+
+      function updateUI(visited: string[]) {
+        const visitedSet = new Set(visited);
+        const links = document.querySelectorAll<HTMLAnchorElement>('[data-page-link]');
+        const currentPath = normalisePath(window.location.pathname);
+
+        links.forEach((link) => {
+          const linkPath = normalisePath(new URL(link.href).pathname);
+          if (linkPath === currentPath) {
+            link.setAttribute('aria-current', 'page');
+          }
+          if (visitedSet.has(linkPath)) {
+            link.setAttribute('data-visited', 'true');
+          }
+        });
+
+        const total = links.length;
+        // Only count visited pages that are actually part of this course's
+        // nav (guards against stale entries if pages are ever renamed).
+        const knownVisited = Array.from(links).filter((link) =>
+          visitedSet.has(normalisePath(new URL(link.href).pathname))
+        ).length;
+        const percent = total > 0 ? Math.round((knownVisited / total) * 100) : 0;
+
+        const fill = document.querySelector<HTMLElement>('[data-progress-fill]');
+        const label = document.querySelector<HTMLElement>('[data-progress-label]');
+        const bar = document.querySelector<HTMLElement>('.a8-progress');
+        if (fill) fill.style.width = `${percent}%`;
+        if (label) label.textContent = `${knownVisited}/${total}`;
+        if (bar) bar.setAttribute('aria-valuenow', String(percent));
+      }
+
+      updateUI(recordPageVisit(window.location.pathname));
+    </script>
+  </body>
+</html>

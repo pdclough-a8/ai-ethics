@@ -1,0 +1,34 @@
+---
+// Recreates Adapt's "graphic" component type - a full-width image with
+// optional caption/attribution.
+import { withBase } from '../scripts/paths';
+
+interface Props {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
+const { src, alt, caption } = Astro.props;
+---
+
+<figure class="a8-graphic">
+  <img src={withBase(src)} alt={alt} loading="lazy" />
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+  .a8-graphic {
+    margin: var(--a8-space-lg) 0;
+  }
+  .a8-graphic img {
+    display: block;
+    width: 100%;
+    border-radius: var(--a8-radius);
+  }
+  .a8-graphic figcaption {
+    color: var(--a8-text-muted);
+    font-size: 0.85rem;
+    margin-top: var(--a8-space-sm);
+  }
+</style>

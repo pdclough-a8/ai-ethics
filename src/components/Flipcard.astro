@@ -1,0 +1,107 @@
+---
+// Recreates Adapt's "flipcard" component type - a grid of cards that flip
+// on click to reveal more text on the back. Built as native <button>
+// elements (keyboard/screen-reader accessible via aria-pressed) with a
+// CSS 3D flip, rather than Adapt's JS animation.
+import { withBase } from '../scripts/paths';
+
+interface FlipItem {
+  frontImageSrc: string;
+  frontImageAlt?: string;
+  backTitle?: string;
+  backBody: string;
+}
+
+interface Props {
+  title?: string;
+  body?: string;
+  items: FlipItem[];
+}
+
+const { title, body, items } = Astro.props;
+---
+
+<section class="a8-flipcard">
+  {title && <h2>{title}</h2>}
+  {body && <div class="a8-prose" set:html={body} />}
+
+  <div class="a8-flipcard__grid">
+    {items.map((item) => (
+      <button type="button" class="a8-flipcard__card" data-flipcard-card aria-pressed="false">
+        <span class="a8-flipcard__face a8-flipcard__face--front">
+          <img src={withBase(item.frontImageSrc)} alt={item.frontImageAlt ?? ''} />
+        </span>
+        <span class="a8-flipcard__face a8-flipcard__face--back">
+          {item.backTitle && <strong>{item.backTitle}</strong>}
+          <span set:html={item.backBody} />
+        </span>
+      </button>
+    ))}
+  </div>
+</section>
+
+<style>
+  .a8-flipcard {
+    margin: var(--a8-space-lg) 0;
+  }
+  .a8-flipcard__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--a8-space-md);
+  }
+  .a8-flipcard__card {
+    position: relative;
+    perspective: 1000px;
+    min-height: 220px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: var(--a8-font-body);
+    text-align: left;
+  }
+  .a8-flipcard__face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    transition: transform 0.4s;
+    border-radius: var(--a8-radius);
+    padding: var(--a8-space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .a8-flipcard__face--front {
+    background: var(--a8-surface);
+    border: 1px solid #ddd;
+  }
+  .a8-flipcard__face--front img {
+    max-width: 100%;
+    max-height: 120px;
+  }
+  .a8-flipcard__face--back {
+    background: var(--a8-ink);
+    color: #fff;
+    transform: rotateY(180deg);
+    align-items: flex-start;
+    font-size: 0.9rem;
+    overflow-y: auto;
+  }
+  .a8-flipcard__card[aria-pressed='true'] .a8-flipcard__face--front {
+    transform: rotateY(180deg);
+  }
+  .a8-flipcard__card[aria-pressed='true'] .a8-flipcard__face--back {
+    transform: rotateY(0deg);
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-flipcard-card]').forEach((card) => {
+    card.addEventListener('click', () => {
+      const pressed = card.getAttribute('aria-pressed') === 'true';
+      card.setAttribute('aria-pressed', pressed ? 'false' : 'true');
+    });
+  });
+</script>

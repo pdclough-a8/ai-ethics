@@ -1,0 +1,102 @@
+{
+  "title": "Business Understanding",
+  "duration": "6 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Business Understanding",
+      "body": "<p>The first stage of the AI lifecycle asks a fundamental question: <strong>should we build this AI system at all?</strong></p><p>This is where ethical thinking has the greatest impact. Decisions made here - about what problem to solve, what data to use, how to measure success - shape everything that follows. Rushing this stage without ethical consideration means building the wrong thing, however technically accomplished the result.</p>"
+    },
+    {
+      "type": "text",
+      "title": "The frameworks suggest...",
+      "body": "<p>The <strong>EU AI Act</strong> requires organisations to consider potential risks before deploying AI systems, with higher-risk applications subject to stricter requirements. It classifies AI systems into four risk levels: unacceptable risk (prohibited), high risk (heavily regulated), limited risk (transparency obligations), and minimal risk.</p><p><strong>ISO 42001</strong>, the international standard for AI management systems, recommends that organisations establish clear accountability from the outset - including defining the intended purpose and potential harms of any AI project before development begins.</p>"
+    },
+    {
+      "type": "accordion",
+      "title": "AI Impact Assessment",
+      "items": [
+        {
+          "title": "Clarifying the problem",
+          "body": "<p>Before any AI project begins, it is essential to justify why AI is the right solution. What problem are you solving? Could it be addressed another way, with less risk? An AI Impact Assessment documents the intended use, potential benefits and possible harms - ensuring these questions are answered before resources are committed.</p>"
+        },
+        {
+          "title": "Defining success ethically",
+          "body": "<p>Success metrics should go beyond technical performance. A model that is 95% accurate overall may still perform poorly for specific groups. Ethical success criteria ask: is the system fair across different populations? Are there groups who might be disproportionately harmed by errors? Defining this upfront creates accountability.</p>"
+        },
+        {
+          "title": "Stakeholder considerations",
+          "body": "<p>Who will be affected by this AI system? Engaging a diverse range of stakeholders - including those who will be subject to AI-driven decisions - helps surface ethical concerns that a homogeneous project team might miss. This includes employees, customers, marginalised communities and wider society.</p>"
+        },
+        {
+          "title": "Ask yourself",
+          "body": "<ul><li>What problem are we solving, and is AI the right tool?</li><li>Have we identified who could be harmed by this system?</li><li>Have we defined success in a way that includes fairness, not just accuracy?</li><li>Have we engaged the people who will be affected by this system?</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "narrative",
+      "id": "a1e400000000000000000015",
+      "title": "Risk categorisation under the EU AI Act",
+      "body": "",
+      "items": [
+        {
+          "title": "Unacceptable risk",
+          "body": "<p>Some AI applications are prohibited outright under the EU AI Act. These include social scoring systems used by governments to evaluate citizens, AI that exploits psychological vulnerabilities, and most uses of real-time remote biometric identification in public spaces.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
+          "graphicAlt": ""
+        },
+        {
+          "title": "High risk",
+          "body": "<p>High-risk AI systems include those used in critical infrastructure, education, employment, access to essential services, law enforcement, migration and the administration of justice. These must meet strict requirements around accuracy, transparency, oversight and documentation.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
+          "graphicAlt": ""
+        },
+        {
+          "title": "Limited and minimal risk",
+          "body": "<p>Many AI systems fall into lower risk categories. Chatbots and AI-generated content carry transparency obligations - users must know they are interacting with AI. Most AI, such as spam filters and recommendation systems, is minimal risk and subject only to general requirements.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
+          "graphicAlt": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Case study: The A-level algorithm",
+      "body": "<p>In 2020, with A-level exams cancelled due to COVID-19, the UK government used a statistical algorithm to award grades to students. The algorithm was designed to be 'fair' at a population level - but it was systematically unfair to individual students.</p><p>The system used schools' historical performance as a key factor. Students at schools with lower historical attainment had their predicted grades downgraded, regardless of individual ability. Students at private schools - historically higher-performing - were largely unaffected.</p><p>Grades were reversed within days following widespread protest. The episode became a defining case study in algorithmic impact assessment and accountability.</p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000017",
+      "title": "Case study: The A-level algorithm",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "That statistical methods cannot be used to award academic grades.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "The potential for the algorithm to produce unfair outcomes for individual students based on their school's historical performance.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "That the algorithm was too technically complex for educational use.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "That the exam cancellations themselves were the wrong decision.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> An AI Impact Assessment at the Business Understanding stage should have modelled outcomes across different groups of students. The disproportionate impact on students at lower-performing schools was knowable in advance - it should have been built into the system's ethical success criteria from the start.</p>",
+      "feedbackIncorrect": "<p>Not quite. An AI Impact Assessment should have modelled potential outcomes across different groups. The disproportionate impact on students at lower-performing schools was predictable - it should have been part of the ethical success criteria for the system from the outset.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Coming up...",
+      "body": "<p>Once you've decided to build an AI system, the next stage is <strong>Data Acquisition and Understanding</strong>. The data used to train your AI is one of the most powerful determinants of whether it behaves fairly - or replicates and amplifies existing inequalities.</p>"
+    }
+  ]
+}

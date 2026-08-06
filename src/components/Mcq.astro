@@ -1,0 +1,214 @@
+---
+// Recreates Adapt's "mcq" component type: a multi-select (checkbox) or
+// single-select (radio) knowledge-check question with single-attempt
+// submission and correct/partly-correct/incorrect feedback.
+//
+// Matches the current course's actual behaviour (checked against
+// course/config.json + components.json): ungraded self-check only - no
+// pass/fail, no completion gating. Answered state persists via
+// localStorage so revisiting a page shows the same result rather than
+// resetting the question.
+interface McqItem {
+  text: string;
+  shouldBeSelected: boolean;
+}
+
+interface Props {
+  id: string; // stable, unique - used as the localStorage key
+  title: string;
+  instruction?: string;
+  isRadio?: boolean; // single-select vs multi-select; defaults to multi-select
+  items: McqItem[];
+  feedbackCorrect: string; // raw HTML, as stored in components.json
+  feedbackIncorrect: string;
+  feedbackPartlyCorrect?: string; // defaults to feedbackIncorrect if omitted
+}
+
+const {
+  id,
+  title,
+  instruction,
+  isRadio = false,
+  items,
+  feedbackCorrect,
+  feedbackIncorrect,
+  feedbackPartlyCorrect,
+} = Astro.props;
+---
+
+<div class="a8-mcq" data-mcq-id={id} data-mcq-radio={isRadio ? 'true' : 'false'}>
+  <h3>{title}</h3>
+  {instruction && <p class="a8-mcq__instruction">{instruction}</p>}
+
+  <form class="a8-mcq__form" data-mcq-form>
+    <ul class="a8-mcq__options">
+      {items.map((item, i) => (
+        <li>
+          <label>
+            <input
+              type={isRadio ? 'radio' : 'checkbox'}
+              name={`mcq-${id}`}
+              data-correct={item.shouldBeSelected ? 'true' : 'false'}
+              value={i}
+            />
+            <span>{item.text}</span>
+          </label>
+        </li>
+      ))}
+    </ul>
+    <button type="submit" class="a8-mcq__submit" data-mcq-submit>Submit</button>
+  </form>
+
+  <div class="a8-mcq__feedback" data-mcq-feedback hidden>
+    <p class="a8-mcq__result" data-mcq-result></p>
+    <div data-mcq-feedback-body></div>
+  </div>
+
+  <template data-feedback="correct" set:html={feedbackCorrect} />
+  <template data-feedback="incorrect" set:html={feedbackIncorrect} />
+  <template data-feedback="partlyCorrect" set:html={feedbackPartlyCorrect ?? feedbackIncorrect} />
+</div>
+
+<style>
+  .a8-mcq {
+    background: var(--a8-surface);
+    border: 1px solid #ddd;
+    border-radius: var(--a8-radius);
+    padding: var(--a8-space-md);
+    margin: var(--a8-space-lg) 0;
+  }
+  .a8-mcq h3 {
+    margin-top: 0;
+  }
+  .a8-mcq__instruction {
+    color: var(--a8-text-muted);
+    font-size: 0.9rem;
+  }
+  .a8-mcq__options {
+    list-style: none;
+    padding: 0;
+    margin: var(--a8-space-md) 0;
+  }
+  .a8-mcq__options li {
+    margin-bottom: var(--a8-space-sm);
+  }
+  .a8-mcq__options label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--a8-space-sm);
+    cursor: pointer;
+  }
+  .a8-mcq__options input {
+    margin-top: 0.2rem;
+  }
+  .a8-mcq__submit {
+    background: var(--a8-accent);
+    color: var(--a8-accent-text);
+    border: none;
+    border-radius: var(--a8-radius);
+    padding: 0.5rem 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .a8-mcq__submit:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+  }
+  .a8-mcq__feedback {
+    margin-top: var(--a8-space-md);
+    padding-top: var(--a8-space-md);
+    border-top: 1px solid #ddd;
+  }
+  .a8-mcq__result {
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .a8-mcq[data-result='correct'] .a8-mcq__result {
+    color: #1a7d3b;
+  }
+  .a8-mcq[data-result='partlyCorrect'] .a8-mcq__result {
+    color: var(--a8-accent);
+  }
+  .a8-mcq[data-result='incorrect'] .a8-mcq__result {
+    color: #c0392b;
+  }
+</style>
+
+<script>
+  // Handles every .a8-mcq on the page. Single attempt, matching the
+  // current course (_attempts: 1) - once answered, inputs stay disabled
+  // and the same result shows on future visits. Persistence goes through
+  // src/scripts/tracking.ts (shared with Layout.astro) rather than calling
+  // localStorage directly here - see that file for why.
+  import { recordInteraction, getInteraction, type McqResult } from '../scripts/tracking';
+
+  function evaluate(selected: Set<number>, correct: Set<number>): McqResult {
+    if (selected.size === 0) return 'incorrect';
+    for (const i of selected) {
+      if (!correct.has(i)) return 'incorrect';
+    }
+    return selected.size === correct.size ? 'correct' : 'partlyCorrect';
+  }
+
+  function resultLabel(result: McqResult): string {
+    if (result === 'correct') return 'Correct!';
+    if (result === 'partlyCorrect') return 'Partly correct';
+    return 'Not quite';
+  }
+
+  function showFeedback(mcqEl: HTMLElement, result: McqResult) {
+    mcqEl.setAttribute('data-result', result);
+    const feedbackPanel = mcqEl.querySelector<HTMLElement>('[data-mcq-feedback]');
+    const resultEl = mcqEl.querySelector<HTMLElement>('[data-mcq-result]');
+    const bodyEl = mcqEl.querySelector<HTMLElement>('[data-mcq-feedback-body]');
+    const template = mcqEl.querySelector<HTMLTemplateElement>(`template[data-feedback="${result}"]`);
+
+    if (resultEl) resultEl.textContent = resultLabel(result);
+    if (bodyEl && template) {
+      bodyEl.innerHTML = '';
+      bodyEl.appendChild(template.content.cloneNode(true));
+    }
+    if (feedbackPanel) feedbackPanel.hidden = false;
+  }
+
+  function disableInputs(mcqEl: HTMLElement) {
+    mcqEl
+      .querySelectorAll<HTMLInputElement>('input')
+      .forEach((input) => (input.disabled = true));
+    const submitBtn = mcqEl.querySelector<HTMLButtonElement>('[data-mcq-submit]');
+    if (submitBtn) submitBtn.disabled = true;
+  }
+
+  document.querySelectorAll<HTMLElement>('.a8-mcq').forEach((mcqEl) => {
+    const mcqId = mcqEl.dataset.mcqId ?? '';
+    const form = mcqEl.querySelector<HTMLFormElement>('[data-mcq-form]');
+    const inputs = Array.from(mcqEl.querySelectorAll<HTMLInputElement>('input'));
+    const correctIndexes = new Set(
+      inputs
+        .filter((input) => input.dataset.correct === 'true')
+        .map((input) => Number(input.value))
+    );
+
+    // Restore a previous answer, if this question's already been submitted.
+    const saved = getInteraction(mcqId);
+    if (saved) {
+      inputs.forEach((input) => {
+        input.checked = saved.selected.includes(Number(input.value));
+      });
+      disableInputs(mcqEl);
+      showFeedback(mcqEl, saved.result);
+    }
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const selected = inputs
+        .filter((input) => input.checked)
+        .map((input) => Number(input.value));
+      const result = evaluate(new Set(selected), correctIndexes);
+
+      recordInteraction(mcqId, { selected, result });
+      disableInputs(mcqEl);
+      showFeedback(mcqEl, result);
+    });
+  });
+</script>

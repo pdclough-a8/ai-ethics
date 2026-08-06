@@ -1,0 +1,64 @@
+{
+  "title": "Conclusion",
+  "duration": "3 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "You've completed the course",
+      "body": "<p>Over these modules, you've explored what AI ethics is and why it matters, followed the AI lifecycle from business understanding to deployment, and seen through real case studies what can go wrong when ethical considerations are overlooked.</p><p>Responsible AI is not a destination - it's an ongoing practice. The principles and frameworks you've encountered here are tools to help you navigate the ethical dimensions of AI as the technology and its applications continue to evolve.</p>"
+    },
+    {
+      "type": "text",
+      "title": "You've learned a lot!",
+      "body": "<p>Here's a summary of what we covered:</p><ul><li><strong>Introduction:</strong> AI is a socio-technical system. Responsible AI means developing and using AI in a way that benefits society while minimising harm.</li><li><strong>AI Ethics - The Foundations:</strong> Six guiding principles - Fairness, Reliability and Safety, Transparency, Accountability, Privacy and Security, and Inclusiveness - frame responsible AI.</li><li><strong>Business Understanding:</strong> The decision to build an AI system must be ethically justified. An AI Impact Assessment surfaces potential harms before development begins.</li><li><strong>Data Acquisition and Understanding:</strong> Bias in training data leads to bias in AI. Data provenance, consent and representation all matter.</li><li><strong>Modeling:</strong> Explainability, disaggregated testing, model documentation and security testing are the tools of responsible model development.</li><li><strong>Deployment and Beyond:</strong> Responsible AI requires ongoing monitoring, human oversight, governance structures and clear decommissioning practices.</li></ul>"
+    },
+    {
+      "type": "flipcard",
+      "title": "Top tips",
+      "body": "",
+      "items": [
+        {
+          "frontImageSrc": "",
+          "frontImageAlt": "",
+          "backTitle": "",
+          "backBody": ""
+        },
+        {
+          "frontImageSrc": "",
+          "frontImageAlt": "",
+          "backTitle": "",
+          "backBody": ""
+        },
+        {
+          "frontImageSrc": "",
+          "frontImageAlt": "",
+          "backTitle": "",
+          "backBody": ""
+        },
+        {
+          "frontImageSrc": "",
+          "frontImageAlt": "",
+          "backTitle": "",
+          "backBody": ""
+        },
+        {
+          "frontImageSrc": "",
+          "frontImageAlt": "",
+          "backTitle": "",
+          "backBody": ""
+        },
+        {
+          "frontImageSrc": "",
+          "frontImageAlt": "",
+          "backTitle": "",
+          "backBody": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Thanks for learning with us",
+      "body": "<p>Thank you for completing <strong>AI Ethics and Responsible AI</strong>.</p><p>This course is designed as a practical foundation - a starting point for thinking about AI ethics in your work. We encourage you to explore further, ask the questions raised here in your own projects, and be an advocate for responsible AI in your organisation.</p><p>Further reading: <a class=\"customlink\" href=\"https://incidentdatabase.ai\" target=\"_blank\" rel=\"noopener noreferrer\">AI Incident Database</a> &nbsp;|&nbsp; <a class=\"customlink\" href=\"https://www.aiaaic.org/aiaaic-repository\" target=\"_blank\" rel=\"noopener noreferrer\">AIAAIC Repository</a> &nbsp;|&nbsp; <a class=\"customlink\" href=\"https://www.oecd.org/going-digital/ai/principles/\" target=\"_blank\" rel=\"noopener noreferrer\">OECD AI Principles</a></p>"
+    }
+  ]
+}

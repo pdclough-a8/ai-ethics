@@ -1,0 +1,81 @@
+{
+  "title": "Deployment & Beyond",
+  "duration": "6 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Deployment and Beyond",
+      "body": "<p>Deploying an AI system is not the end of the responsible AI journey - it is the beginning of an ongoing process of oversight, monitoring and governance. AI systems can behave differently in the real world than in testing. Data drifts, contexts change, and biases that were not apparent during development can emerge at scale.</p><p>This stage also covers what happens when the AI lifecycle ends - how systems are decommissioned, decisions documented, and accountability maintained over time.</p>"
+    },
+    {
+      "type": "text",
+      "title": "The frameworks suggest...",
+      "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to implement post-market monitoring plans, collecting and reviewing performance data in real-world conditions and taking corrective action where problems are identified.</p><p>The <strong>ICO's AI and Data Protection Risk Toolkit</strong> provides practical guidance for organisations on auditing AI systems and ensuring compliance with data protection law throughout deployment - including tools for assessing automated decision-making and its impact on individuals.</p>"
+    },
+    {
+      "type": "accordion",
+      "title": "Monitoring and ongoing governance",
+      "items": [
+        {
+          "title": "Monitoring for bias drift",
+          "body": "<p>AI systems can develop new biases over time as the data they process changes. A model trained on pre-pandemic data may behave differently in a post-pandemic world. Ongoing monitoring - testing for changes in performance across different groups - is an essential part of responsible deployment.</p>"
+        },
+        {
+          "title": "Human oversight",
+          "body": "<p>Responsible AI does not mean replacing human judgement - it means augmenting it thoughtfully. High-stakes AI decisions should include a mechanism for human review, particularly where errors could cause serious harm: in healthcare, criminal justice, credit decisions and employment.</p>"
+        },
+        {
+          "title": "Feedback mechanisms",
+          "body": "<p>Users and those affected by AI decisions should have a way to flag concerns, challenge decisions and seek redress. Effective feedback mechanisms are both an ethical obligation and a practical tool for identifying problems before they scale.</p>"
+        },
+        {
+          "title": "Decommissioning",
+          "body": "<p>When an AI system is retired, responsible practice requires documentation - such as an updated model card - recording the system's use, known limitations and any incidents. Submitting to an AI register ensures a public record of how AI has been used and decommissioned.</p>"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "AI governance structures",
+      "body": "<p>Responsible AI requires deliberate governance structures - the accountability, oversight and decision-making processes needed to embed ethical AI practice across an organisation.</p><p>Key components include: clear AI policies and principles; an AI ethics committee or working group; a risk assessment and management process; an inventory of AI systems in use; monitoring and auditing tools; and training and enablement for staff.</p><p><strong>ISO 42001</strong> provides a structured framework for implementing these components. The <a class=\"customlink\" href=\"https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/ai-and-data-protection-risk-toolkit/\" target=\"_blank\" rel=\"noopener noreferrer\">ICO's AI and Data Protection Risk Toolkit</a> provides practical audit tools aligned with UK data protection law.</p>"
+    },
+    {
+      "type": "text",
+      "title": "Case study: Twitter's image cropping algorithm",
+      "body": "<p>From 2018 to 2021, Twitter used an AI algorithm to automatically crop images shown in timelines. The algorithm was trained to focus on the most visually 'salient' part of an image.</p><p>In 2020, users began reporting that the algorithm consistently cropped to lighter-skinned faces when images included people of different ethnicities. Subsequent research confirmed both a racial and gender bias in the cropping behaviour.</p><p>Twitter had not proactively tested the algorithm for demographic bias before or during deployment. The company acknowledged the problem and discontinued the feature in 2021 - but only after the bias had operated, at scale, for three years.</p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000038",
+      "title": "Case study: Twitter's image cropping algorithm",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "Deploying the system more gradually, to fewer users at first.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Using a more technically sophisticated AI model.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Post-deployment monitoring for differential outcomes across demographic groups, alongside a feedback mechanism for users to report concerns.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "Replacing the AI cropping with manual human review.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> The bias was eventually detected by users noticing patterns. A formal monitoring programme testing for differential outcomes across demographic groups, combined with a structured feedback mechanism, would have surfaced the problem far sooner than three years after deployment.</p>",
+      "feedbackIncorrect": "<p>Not quite. The bias was detected by users noticing patterns. A formal monitoring programme testing for differential outcomes across groups - combined with a feedback mechanism that took user reports seriously - would have identified it far sooner than three years after deployment.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Coming up...",
+      "body": "<p>You've now followed the full AI lifecycle through an ethical lens. In the <strong>Conclusion</strong>, we'll bring together the guiding principles, reflect on your individual role in responsible AI, and share practical top tips to take into your work.</p>"
+    }
+  ]
+}

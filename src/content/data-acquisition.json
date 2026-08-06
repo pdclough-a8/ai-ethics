@@ -1,0 +1,98 @@
+{
+  "title": "Data Acquisition & Understanding",
+  "duration": "6 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Data Acquisition and Understanding",
+      "body": "<p>All AI systems are built on data. The quality, diversity and provenance of that data shapes what the AI learns - and what biases, gaps or assumptions get embedded.</p><p>This stage of the AI lifecycle is where the principles of data ethics apply most directly. But there are additional considerations specific to AI: training data is often sourced at scale, from multiple origins, and can encode historical inequalities that the AI then perpetuates and amplifies.</p>"
+    },
+    {
+      "type": "text",
+      "title": "The frameworks suggest...",
+      "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to use training, validation and testing data that is relevant, sufficiently representative, free of errors and complete - and to take steps to identify and address data biases that could lead to discriminatory outcomes.</p><p><strong>UK GDPR</strong> applies to any personal data used to train AI models, including requirements around lawful basis, data minimisation and purpose limitation. Using personal data to train an AI for a purpose beyond that for which it was originally collected is likely to be unlawful.</p>"
+    },
+    {
+      "type": "accordion",
+      "title": "Bias in data",
+      "items": [
+        {
+          "title": "Historical bias",
+          "body": "<p>AI trained on historical data can encode the prejudices and inequalities of the past. If past hiring, lending or policing decisions were discriminatory, an AI trained on that data will learn to replicate those patterns - potentially at far greater scale.</p>"
+        },
+        {
+          "title": "Representation bias",
+          "body": "<p>If certain groups are underrepresented in training data, the AI will perform less well for those groups. Facial recognition systems, for example, have been found to have significantly higher error rates for women and people with darker skin tones.</p>"
+        },
+        {
+          "title": "Measurement bias",
+          "body": "<p>Bias can arise from how data is collected and labelled. If the people labelling training data bring their own assumptions, those assumptions become embedded in the model - particularly important for subjective tasks like content moderation or sentiment analysis.</p>"
+        },
+        {
+          "title": "Aggregation bias",
+          "body": "<p>Treating a diverse population as homogeneous creates bias. An AI system designed around the 'average user' may systematically underserve people who differ from that average - including minority groups, older people, and people with disabilities.</p>"
+        }
+      ]
+    },
+    {
+      "type": "accordion",
+      "title": "Data provenance and consent",
+      "items": [
+        {
+          "title": "Where does your data come from?",
+          "body": "<p>The provenance of training data matters both ethically and legally. Data scraped from the internet, purchased from third parties, or drawn from legacy systems may have been collected without the knowledge or consent of the individuals it relates to. Understanding where your data came from - and on what basis - is a foundational responsibility.</p>"
+        },
+        {
+          "title": "Consent for AI training",
+          "body": "<p>Even where data was collected lawfully, using it to train an AI may not have been covered by the original consent. Organisations need to consider whether individuals were informed their data might be used in this way - and whether they had a meaningful choice.</p>"
+        },
+        {
+          "title": "Synthetic and anonymised data",
+          "body": "<p>Where consent or representativeness is a challenge, <strong>synthetic data</strong> - artificially generated data that mirrors real data's statistical properties - can help. However, synthetic data is not a silver bullet: it can still encode the biases present in the real data it was derived from.</p>"
+        },
+        {
+          "title": "Ask yourself",
+          "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected with consent that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Case study: COMPAS",
+      "body": "<p>COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) is an algorithmic tool used in parts of the US criminal justice system to predict the likelihood of a defendant reoffending. Judges use its scores to inform sentencing and bail decisions.</p><p>An investigation by ProPublica in 2016 found that the algorithm was nearly twice as likely to falsely flag Black defendants as higher risk compared to white defendants - and nearly twice as likely to incorrectly label white defendants as lower risk.</p><p>The developers disputed the findings, citing different mathematical definitions of fairness. But the case exposed a fundamental tension: it is mathematically impossible to simultaneously satisfy all common definitions of fairness in a predictive model.</p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000024",
+      "title": "Case study: COMPAS",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "Algorithmic predictions are always more accurate than human judgements in criminal justice.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Criminal justice data is too sensitive to be used in any AI system.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Different mathematical definitions of fairness can contradict each other - satisfying one can make it impossible to satisfy another.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "The algorithm would have been fair if trained on a larger dataset.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> COMPAS illustrates that there is no single, agreed definition of fairness in algorithmic systems - and meeting one definition often means violating another. Building fair AI is not just a technical challenge; it requires explicit ethical choices about which definition of fairness to prioritise, and for whom.</p>",
+      "feedbackIncorrect": "<p>Not quite. COMPAS illustrates that there is no single, agreed definition of fairness in algorithmic systems. Meeting one definition often means violating another. Fairness in AI requires explicit ethical choices - not just better data or more sophisticated algorithms.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Coming up...",
+      "body": "<p>With data acquired and understood, the next stage is <strong>Modeling</strong> - training, testing and evaluating the AI system. This is where algorithmic bias can emerge even from seemingly clean data, and where explainability, documentation and security testing become critical.</p>"
+    }
+  ]
+}

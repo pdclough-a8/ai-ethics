@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { withBase } from '../scripts/paths';
+
+// Real copy, from course/en/course.json's title/body/_menu fields (the
+// course "home" page Adapt renders separately from the 7 topic pages).
+const introBody = `<p>AI systems are transforming how we work, communicate and make decisions. As these technologies become more powerful and pervasive, the question of how to develop and deploy them ethically and responsibly has never been more important.</p><p>In this course, you'll explore the foundations of AI ethics, follow the AI lifecycle to see where ethical considerations apply in practice, and examine real-world case studies where things went wrong - and why.</p><p>This content was written and curated by Paul Clough, Lead Data Science and AI Consultant at Analytics8 and Professor Emeritus at the University of Sheffield.</p><p><strong>Select 'Introduction' to begin.</strong></p>`;
+
+const menuInstructionText = 'Click or tap on the blocks below to find out more';
+
+const pages = [
+  { title: 'Introduction', href: '/introduction/' },
+  { title: 'AI Ethics: The Foundations', href: '/foundations/' },
+  { title: 'Business Understanding', href: '/business-understanding/' },
+  { title: 'Data Acquisition & Understanding', href: '/data-acquisition/' },
+  { title: 'Modeling', href: '/modeling/' },
+  { title: 'Deployment & Beyond', href: '/deployment-beyond/' },
+  { title: 'Conclusion', href: '/conclusion/' },
+];
+---
+
+<Layout title="AI Ethics and Responsible AI" variant="landing">
+  <section class="a8-hero">
+    <div class="a8-container a8-hero__inner">
+      <div class="a8-hero__text">
+        <h1>AI Ethics and Responsible AI</h1>
+        <div class="a8-prose" set:html={introBody} />
+      </div>
+      <div class="a8-hero__image">
+        <img src={withBase('/assets/landing-hero.jpg')} alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="a8-menu a8-container">
+    <p class="a8-menu__instruction">{menuInstructionText}</p>
+    <div class="a8-menu__grid">
+      {pages.map((p) => (
+        <a href={withBase(p.href)} class="a8-menu__tile">{p.title}</a>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Solid dark backdrop behind the text - no image sits behind the copy,
+     so contrast stays reliable regardless of what the illustration looks
+     like. The illustration itself sits in its own column to the side. */
+  .a8-hero {
+    background: var(--a8-ink);
+    color: #fff;
+  }
+  .a8-hero__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--a8-space-lg);
+    padding-top: var(--a8-space-lg);
+    padding-bottom: var(--a8-space-lg);
+  }
+  .a8-hero__text {
+    flex: 1 1 20rem;
+    min-width: 0;
+  }
+  .a8-hero__image {
+    flex: 1 1 16rem;
+    max-width: 22rem;
+  }
+  .a8-hero__image img {
+    display: block;
+    width: 100%;
+    border-radius: var(--a8-radius);
+  }
+  @media (max-width: 640px) {
+    .a8-hero__image {
+      display: none;
+    }
+  }
+  .a8-hero h1 {
+    color: #fff;
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: var(--a8-space-sm);
+    margin-bottom: var(--a8-space-md);
+  }
+  .a8-hero .a8-prose :global(p) {
+    margin: 0 0 var(--a8-space-md);
+  }
+  .a8-menu {
+    padding-top: var(--a8-space-lg);
+    padding-bottom: var(--a8-space-lg);
+  }
+  .a8-menu__instruction {
+    color: var(--a8-text-muted);
+    font-size: 0.9rem;
+  }
+  .a8-menu__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--a8-space-md);
+  }
+  /* Dark navy + white, not the shared orange accent - this course's
+     original had a deliberate custom.css override for its box-menu tiles
+     (rgb(15,35,65) at 80% opacity, white text), so carried over here
+     rather than defaulting to the same tile styling as Data Ethics. */
+  .a8-menu__tile {
+    background: #0f2341;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: var(--a8-font-heading);
+    text-decoration: none;
+    border-radius: var(--a8-radius);
+    padding: var(--a8-space-md);
+    min-height: 6rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  .a8-menu__tile:hover,
+  .a8-menu__tile:focus {
+    background: #142d54;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+</style>

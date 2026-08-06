@@ -1,0 +1,119 @@
+---
+// Recreates Adapt's "hotgraphic" component type - an image with clickable
+// hotspots. Simplified vs. the original (numbered pin buttons + a single
+// content panel below the image, rather than in-place tooltips) but keeps
+// the core interaction: click a point on the image, read more about it.
+import { withBase } from '../scripts/paths';
+
+interface HotgraphicItem {
+  title: string;
+  body: string;
+  left: number; // percentage
+  top: number; // percentage
+}
+
+interface Props {
+  id: string;
+  title?: string;
+  body?: string;
+  graphicSrc: string;
+  graphicAlt?: string;
+  items: HotgraphicItem[];
+}
+
+const { id, title, body, graphicSrc, graphicAlt, items } = Astro.props;
+---
+
+<section class="a8-hotgraphic" data-hotgraphic-id={id}>
+  {title && <h2>{title}</h2>}
+  {body && <div class="a8-prose" set:html={body} />}
+
+  <div class="a8-hotgraphic__image-wrap">
+    <img src={withBase(graphicSrc)} alt={graphicAlt ?? ''} />
+    {items.map((item, i) => (
+      <button
+        type="button"
+        class="a8-hotgraphic__pin"
+        style={`left: ${item.left}%; top: ${item.top}%;`}
+        data-hotgraphic-pin={i}
+        aria-label={`${item.title} - select to find out more`}
+      >
+        {i + 1}
+      </button>
+    ))}
+  </div>
+
+  <div class="a8-hotgraphic__panel" data-hotgraphic-panel hidden>
+    <div data-hotgraphic-panel-body></div>
+  </div>
+
+  {items.map((item, i) => (
+    <template data-hotgraphic-template={i}>
+      <h3>{item.title}</h3>
+      <div set:html={item.body} />
+    </template>
+  ))}
+</section>
+
+<style>
+  .a8-hotgraphic {
+    margin: var(--a8-space-lg) 0;
+  }
+  .a8-hotgraphic__image-wrap {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .a8-hotgraphic__image-wrap img {
+    display: block;
+    max-width: 100%;
+    border-radius: var(--a8-radius);
+  }
+  .a8-hotgraphic__pin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--a8-accent);
+    color: var(--a8-accent-text);
+    border: 2px solid #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  .a8-hotgraphic__pin.is-active {
+    background: var(--a8-ink);
+  }
+  .a8-hotgraphic__panel {
+    background: var(--a8-surface);
+    border: 1px solid #ddd;
+    border-left: 3px solid var(--a8-accent);
+    border-radius: var(--a8-radius);
+    padding: var(--a8-space-md);
+    margin-top: var(--a8-space-md);
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.a8-hotgraphic').forEach((el) => {
+    const panel = el.querySelector<HTMLElement>('[data-hotgraphic-panel]');
+    const panelBody = el.querySelector<HTMLElement>('[data-hotgraphic-panel-body]');
+
+    el.querySelectorAll<HTMLButtonElement>('[data-hotgraphic-pin]').forEach((pin) => {
+      pin.addEventListener('click', () => {
+        const index = pin.dataset.hotgraphicPin;
+        const template = el.querySelector<HTMLTemplateElement>(
+          `template[data-hotgraphic-template="${index}"]`
+        );
+        if (template && panelBody && panel) {
+          panelBody.innerHTML = '';
+          panelBody.appendChild(template.content.cloneNode(true));
+          panel.hidden = false;
+          el.querySelectorAll('[data-hotgraphic-pin]').forEach((p) => p.classList.remove('is-active'));
+          pin.classList.add('is-active');
+        }
+      });
+    });
+  });
+</script>

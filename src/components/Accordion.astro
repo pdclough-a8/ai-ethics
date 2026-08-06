@@ -1,0 +1,63 @@
+---
+// Recreates Adapt's "accordion" component type using plain <details>/<summary>
+// elements - native expand/collapse behaviour, no framework JS required,
+// accessible by default (keyboard + screen reader support come free).
+interface AccordionItem {
+  title: string;
+  body: string; // raw HTML, as stored in the Adapt components.json _items
+}
+
+interface Props {
+  title?: string;
+  items: AccordionItem[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<section class="a8-accordion">
+  {title && <h2>{title}</h2>}
+  {items.map((item) => (
+    <details class="a8-accordion__item">
+      <summary>{item.title}</summary>
+      <div class="a8-accordion__body" set:html={item.body} />
+    </details>
+  ))}
+</section>
+
+<style>
+  .a8-accordion {
+    margin: var(--a8-space-lg) 0;
+  }
+  .a8-accordion__item {
+    background: var(--a8-surface);
+    border: 1px solid #ddd;
+    border-radius: var(--a8-radius);
+    margin-bottom: var(--a8-space-sm);
+    padding: var(--a8-space-sm) var(--a8-space-md);
+  }
+  .a8-accordion__item summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--a8-ink);
+    padding: var(--a8-space-sm) 0;
+    list-style: none;
+  }
+  .a8-accordion__item summary::-webkit-details-marker {
+    display: none;
+  }
+  .a8-accordion__item summary::before {
+    content: '+ ';
+    color: var(--a8-accent);
+    font-weight: 700;
+  }
+  .a8-accordion__item[open] summary::before {
+    content: '\2212 '; /* minus sign */
+  }
+  .a8-accordion__body {
+    padding-top: var(--a8-space-sm);
+  }
+  .a8-accordion__body :global(a.customlink) {
+    color: var(--a8-accent);
+  }
+</style>

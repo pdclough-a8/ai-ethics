@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# dev artifacts
+dev-server.log
+*.log
+
+# OS
+.DS_Store

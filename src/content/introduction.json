@@ -1,0 +1,47 @@
+{
+  "title": "Introduction",
+  "duration": "3 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Introduction to AI Ethics and Responsible AI",
+      "body": "<p>Artificial intelligence is transforming the way we live and work. From recommending what to watch next to influencing hiring decisions, AI systems are making - or informing - decisions that affect people's lives every day.</p><p>But with that power comes responsibility. How AI is designed, trained and deployed has real consequences for real people. This course explores what it means to use AI ethically and responsibly - and what that looks like in practice.</p>"
+    },
+    {
+      "type": "narrative",
+      "id": "a1e400000000000000000002",
+      "title": "The evolution of AI",
+      "body": "",
+      "items": [
+        {
+          "title": "Predictive AI",
+          "body": "<p>The first wave of modern AI focused on prediction - using historical data to forecast outcomes. Think credit scoring, fraud detection, and early recommendation engines. Predictions are probabilistic, and errors carry real consequences for people.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
+          "graphicAlt": ""
+        },
+        {
+          "title": "Generative AI",
+          "body": "<p>Generative AI can produce new content: text, images, code and audio. Tools like large language models have made this accessible to everyone, transforming how we communicate, create and work. New capabilities bring new ethical responsibilities.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
+          "graphicAlt": ""
+        },
+        {
+          "title": "Agentic AI",
+          "body": "<p>The latest shift is towards agentic AI - systems that can take autonomous actions, make decisions and interact with the world on behalf of users, often with minimal human oversight. The stakes of getting ethics right have never been higher.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
+          "graphicAlt": ""
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "What is Responsible AI?",
+      "body": "<p>The International Organization for Standardization (ISO) defines <strong>Responsible AI (RAI)</strong> as the practice of developing and using AI systems in a way that benefits society while minimising the risk of negative consequences.</p><p>It's about creating AI technologies that not only advance our capabilities, but also address ethical concerns - particularly with regard to bias, transparency and privacy. The goal is to build trustworthy AI systems that are, all at once, reliable, fair and aligned with human values.</p><p><em>Source: <a class=\"customlink\" href=\"https://www.iso.org/artificial-intelligence/responsible-ai-ethics\" target=\"_blank\" rel=\"noopener noreferrer\">ISO - Responsible AI and Ethics</a></em></p>"
+    },
+    {
+      "type": "text",
+      "title": "Coming up...",
+      "body": "<p>We'll begin by exploring the <strong>foundations of AI ethics</strong> - the key ethical concerns that AI raises, and the principles that guide responsible approaches. We'll then follow the <strong>AI lifecycle</strong>, examining what responsible AI looks like at each stage.</p>"
+    }
+  ]
+}

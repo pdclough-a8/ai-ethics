@@ -1,0 +1,108 @@
+{
+  "title": "Modeling",
+  "duration": "6 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Modeling",
+      "body": "<p>The modeling stage is where data becomes intelligence - and where the ethical properties of the AI system begin to take shape. Choices made here, such as which features to include, how to weight different outcomes, and what to optimise for, all carry ethical consequences.</p><p>This is also the stage where bias can emerge or be amplified, and where the tools of responsible AI - explainability, documentation and security testing - are most directly applied.</p>"
+    },
+    {
+      "type": "text",
+      "title": "The frameworks suggest...",
+      "body": "<p>The <strong>EU AI Act</strong> requires high-risk AI systems to achieve appropriate levels of accuracy, robustness and cybersecurity - and to be sufficiently transparent that deployers can understand and oversee their operation.</p><p><strong>ISO 42001</strong> recommends that AI systems be evaluated against defined performance criteria, with documentation of known limitations and risks - including records that allow the system's behaviour to be explained and audited, before and after deployment.</p>"
+    },
+    {
+      "type": "narrative",
+      "id": "a1e400000000000000000028",
+      "title": "Explainability and transparency",
+      "body": "",
+      "items": [
+        {
+          "title": "Why explainability matters",
+          "body": "<p>When an AI system makes or influences a decision that affects a person - whether they receive a loan, a job interview, or a medical diagnosis - that person has a legitimate interest in understanding why. Explainability is not just a technical goal; it is an ethical and legal requirement.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
+          "graphicAlt": ""
+        },
+        {
+          "title": "Types of explainability",
+          "body": "<p><strong>Global explainability</strong> helps us understand how the model behaves overall - which features it weighs most heavily. <strong>Local explainability</strong> helps us understand why the model made a specific decision in a specific case. Both matter for responsible AI, serving different stakeholders.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
+          "graphicAlt": ""
+        },
+        {
+          "title": "Explainable AI (XAI) tools",
+          "body": "<p>Tools such as LIME, SHAP and counterfactual explanations are designed to make AI reasoning interpretable to humans. They translate complex model outputs into language that can be understood, challenged and acted upon - by developers, decision-makers and those affected.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
+          "graphicAlt": ""
+        },
+        {
+          "title": "Ask yourself",
+          "body": "<ul><li>Could you explain to someone why your AI made the decision it did about them?</li><li>Are there groups for whom the AI's reasoning is less well understood?</li><li>What would you do if an AI decision appeared wrong or unfair?</li></ul>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
+          "graphicAlt": ""
+        }
+      ]
+    },
+    {
+      "type": "accordion",
+      "title": "Model evaluation and documentation",
+      "items": [
+        {
+          "title": "Testing for bias",
+          "body": "<p>Before deployment, AI models should be tested not only for overall accuracy but for <strong>differential performance across groups</strong>. A model that is 90% accurate overall may be significantly less accurate for minority groups - a pattern that must be detected and addressed before the model goes live.</p>"
+        },
+        {
+          "title": "Model cards",
+          "body": "<p><strong>Model cards</strong> are structured documents describing an AI model's intended use, performance across demographic groups, known limitations and ethical considerations. Originally proposed by Google researchers, they are now a widely adopted best practice for transparent AI documentation.</p>"
+        },
+        {
+          "title": "AI security testing",
+          "body": "<p>AI systems face specific security risks: adversarial attacks (inputs designed to fool the model), data poisoning (corrupting training data) and model inversion (extracting personal data from a trained model). Security testing is an important and often overlooked component of responsible development.</p>"
+        },
+        {
+          "title": "Implementation tips",
+          "body": "<ul><li>Test performance separately for different demographic groups - not just overall accuracy.</li><li>Produce a model card documenting limitations and ethical considerations before deployment.</li><li>Include security testing as a standard part of your development process, not an afterthought.</li><li>Set a threshold for acceptable differential performance - and don't deploy until it's met.</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Case study: Facial recognition and bias",
+      "body": "<p>A 2018 study by MIT researcher Joy Buolamwini and Timnit Gebru examined commercial facial recognition systems from IBM, Microsoft and Face++. All three systems performed significantly worse on darker-skinned faces - and worst of all on darker-skinned women, with error rates up to 34 percentage points higher than for lighter-skinned men.</p><p>The systems had been trained predominantly on images of lighter-skinned individuals, reflecting the demographics of the datasets used. The bias was not a programming error - it was a direct consequence of unrepresentative training data and a failure to test for differential performance before deployment.</p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000031",
+      "title": "Case study: Facial recognition and bias",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "Using a more advanced modeling algorithm with higher overall accuracy.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Collecting significantly more training images overall.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Testing the model's performance separately across demographic groups, rather than overall accuracy alone.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "Using synthetic training data instead of real images.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> The bias was detectable through disaggregated testing - breaking down performance metrics by demographic group. Testing for overall accuracy alone would have missed the problem. Responsible AI requires differential testing across the groups a model will be applied to, before deployment.</p>",
+      "feedbackIncorrect": "<p>Not quite. The bias was detectable through disaggregated testing - breaking down performance by demographic group. Overall accuracy alone would have missed it. This is why responsible AI requires differential testing across all groups a model will be applied to.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Coming up...",
+      "body": "<p>Once an AI system is built and tested, the work of responsible AI enters a new phase. In <strong>Deployment and Beyond</strong>, we'll look at monitoring AI systems in the real world, governing their use, and ensuring accountability over time.</p>"
+    }
+  ]
+}

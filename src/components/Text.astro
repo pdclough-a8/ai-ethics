@@ -1,0 +1,26 @@
+---
+// Recreates Adapt's "text" component type - a plain narrative text block.
+interface Props {
+  title?: string;
+  body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+<section class="a8-text">
+  {title && <h2>{title}</h2>}
+  <div class="a8-prose" set:html={body} />
+</section>
+
+<style>
+  .a8-text {
+    margin-bottom: var(--a8-space-lg);
+  }
+  .a8-prose :global(ul) {
+    padding-left: 1.25rem;
+  }
+  .a8-prose :global(a.customlink) {
+    color: var(--a8-accent);
+  }
+</style>
