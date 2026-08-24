@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Block from '../components/Block.astro';
+import content from '../content/using-copilot-responsibly.json';
+---
+
+<Layout title={content.title} duration={content.duration}>
+  {content.blocks.map((block) => <Block block={block} />)}
+</Layout>

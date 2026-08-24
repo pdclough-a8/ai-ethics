@@ -1,0 +1,99 @@
+{
+  "title": "Using Copilot Responsibly",
+  "duration": "4 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "Applying what you've learned to the tool you actually use",
+      "body": "<p>The rest of this course covered AI ethics in general - the principles, the lifecycle, the case studies. This page applies those same principles - fairness, transparency, accountability, privacy and security - specifically to <strong>Microsoft Copilot</strong>, the AI tool your organisation has rolled out.</p><p>None of this replaces what you've already learned. It's the practical, day-to-day version of it: what Copilot actually does with your data, what it's deliberately restricted from doing, and what remains your responsibility to check.</p>"
+    },
+    {
+      "type": "accordion",
+      "title": "How Copilot handles your data",
+      "items": [
+        {
+          "title": "It only sees what you can already see",
+          "body": "<p>Copilot draws on your organisation's data - emails, documents, chats, meetings - through Microsoft Graph, using the same permission model as the rest of Microsoft 365. It can't show you a colleague's file you don't already have access to. If you couldn't open something before Copilot existed, you still can't open it through Copilot.</p>"
+        },
+        {
+          "title": "Your prompts aren't used to train the model",
+          "body": "<p>Microsoft states that prompts, the data Copilot retrieves to answer them, and its responses aren't used to train the underlying foundation models. Optional customer feedback may be used to improve the product, but not to train the model itself.</p>"
+        },
+        {
+          "title": "Existing data protection commitments carry over",
+          "body": "<p>Copilot operates under Microsoft 365's existing contractual commitments, including GDPR and, for EU users, the EU Data Boundary. Microsoft states Copilot meets the ISO 42001 standard for AI management systems - the same voluntary standard covered earlier in this course.</p>"
+        },
+        {
+          "title": "You can review and delete your activity",
+          "body": "<p>Your Copilot activity history - your prompts and its responses - can be reviewed and deleted by you, and is handled under your organisation's own retention policies, in the same way as other Microsoft 365 content.</p>"
+        }
+      ]
+    },
+    {
+      "type": "accordion",
+      "title": "What Copilot is deliberately restricted from doing",
+      "items": [
+        {
+          "title": "Built-in content filters",
+          "body": "<p>Copilot has protections against harmful content (such as hate speech, violence or self-harm content) and against attempts to manipulate it into ignoring its own safeguards - so-called 'jailbreak' or prompt injection attacks.</p>"
+        },
+        {
+          "title": "It won't profile you at work",
+          "body": "<p>Microsoft explicitly restricts Copilot from being used to infer or judge an employee's performance, attitude, emotional state or personal characteristics from their workplace communications. If you ever see it being used this way, that's a misuse to raise - not an accepted feature.</p>"
+        },
+        {
+          "title": "Agents and add-ons are admin-controlled",
+          "body": "<p>Copilot can extend itself with 'agents' that connect to other tools and services. Your admin controls which agents are available in your organisation, and you choose which of those you turn on. Check an agent's own privacy statement before relying on it with sensitive information - it isn't automatically covered by Microsoft's commitments for Copilot itself.</p>"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "The one habit that matters most: verify before you rely",
+      "body": "<p>Copilot drafts, summarises and suggests - it doesn't guarantee accuracy. Its responses can be wrong, outdated, or subtly misleading, especially when asked to reason, calculate or cite specifics. Treat every Copilot output as a first draft from a fast, well-read colleague: useful, but not something to send onward, act on, or repeat as fact until you've checked it yourself.</p><p>This is the <strong>explainability and human oversight</strong> principle from earlier in this course, applied to your own inbox: whoever sends, publishes or acts on Copilot's output is accountable for it - not Copilot.</p>"
+    },
+    {
+      "type": "accordion",
+      "title": "Ask yourself",
+      "items": [
+        {
+          "title": "Before you rely on it",
+          "body": "<ul><li>Have I checked this output before sending, publishing or acting on it - especially any facts, figures or citations?</li><li>Would I be comfortable if a colleague knew this came from Copilot rather than me?</li><li>Am I putting information into a prompt that I wouldn't otherwise be allowed to share - even though Copilot only shows results to people who could already see the source data?</li><li>If this is an agent or add-on rather than Copilot itself, do I know what it does with the information I give it?</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000040",
+      "title": "Knowledge check",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "Copilot can show any user any document across the organisation, regardless of their existing permissions.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Copilot only surfaces data the individual user already has permission to access, and does not use prompts or retrieved data to train the underlying model.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "Copilot automatically fact-checks its own outputs before showing them to the user.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Using Copilot removes the need for human review before sending or publishing its output.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> Copilot layers on top of your existing Microsoft 365 permissions rather than creating new access, and Microsoft states that prompts, responses and retrieved data aren't used to train its foundation models. It does not automatically fact-check its own outputs, though - that responsibility stays with you.</p>",
+      "feedbackIncorrect": "<p>Not quite. Copilot only surfaces data a user already has permission to access - it never grants new access - and Microsoft states prompts and retrieved data aren't used to train its models. It also doesn't automatically fact-check its own outputs; verifying what it produces remains the user's responsibility.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Where to go for more",
+      "body": "<p>This page is a snapshot to support your organisation's Copilot rollout, not a replacement for Microsoft's own documentation - product policies and safeguards evolve, so check these directly for the current detail, and for whichever specific Copilot feature you're using:</p><p><a class=\"customlink\" href=\"https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/responsible-ai-overview\" target=\"_blank\" rel=\"noopener noreferrer\">Responsible AI FAQ for Microsoft Copilot</a> &nbsp;|&nbsp; <a class=\"customlink\" href=\"https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Data, Privacy and Security for Microsoft Copilot</a></p>"
+    }
+  ]
+}

@@ -26,6 +26,16 @@ const pages = [
   { title: 'Deployment & Beyond', href: '/deployment-beyond/' },
   { title: 'Conclusion', href: '/conclusion/' },
 ];
+
+// Tool-specific practical add-ons, kept out of the numbered lifecycle grid
+// above (they're not lifecycle stages, and not every organisation uses
+// every tool). Each entry applies the same course principles to one
+// specific AI assistant an organisation has actually rolled out - add
+// further tiles here (Gemini, ChatGPT Enterprise, Claude for Work, ...)
+// as/when those pages are written, rather than growing the main grid.
+const bonusPages = [
+  { title: 'Using Copilot Responsibly', href: '/using-copilot-responsibly/' },
+];
 ---
 
 <Layout title="AI Ethics and Responsible AI" variant="landing">
@@ -55,6 +65,26 @@ const pages = [
         </a>
       ))}
     </div>
+
+    {bonusPages.length > 0 && (
+      <div class="a8-menu__bonus">
+        <h2 class="a8-menu__bonus-heading">Your organisation's AI tools</h2>
+        <p class="a8-menu__instruction">
+          Optional add-ons applying the principles above to a specific AI assistant your organisation uses.
+        </p>
+        <div class="a8-menu__grid">
+          {bonusPages.map((p) => (
+            <a href={withBase(p.href)} class="a8-menu__tile a8-menu__tile--bonus" data-menu-tile>
+              <span class="a8-menu__tile-top">
+                <span class="a8-menu__tile-check" aria-hidden="true">✓</span>
+              </span>
+              <span class="a8-menu__tile-title">{p.title}</span>
+              <span class="a8-menu__tile-continue" data-continue-badge hidden>Continue here</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
   </section>
 </Layout>
 
@@ -70,7 +100,9 @@ const pages = [
   // the home page's own path, the moment someone lands here. So "has this
   // visitor made any course progress" can't just be "is the visited list
   // non-empty" (that's true immediately, for everyone) - it has to check
-  // specifically against the 7 course-page tiles below.
+  // specifically against the course-page tiles below (the 7 lifecycle
+  // stages, plus any bonus tool-specific tiles - this selector and the
+  // logic below don't care which section a tile came from).
   const visited = new Set(getVisitedPages());
   const tiles = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-menu-tile]'));
   const tileStates = tiles.map((tile) => ({
@@ -195,6 +227,36 @@ const pages = [
   }
   .a8-menu__tile[data-continue] {
     outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+  .a8-menu__bonus {
+    margin-top: var(--a8-space-lg);
+    padding-top: var(--a8-space-md);
+    border-top: 1px solid #ddd;
+  }
+  .a8-menu__bonus-heading {
+    font-size: 1.1rem;
+    margin-bottom: var(--a8-space-sm);
+  }
+  /* Lighter surface + accent border, not the solid navy of the core
+     lifecycle tiles - signals "optional add-on", not "step N of 7". */
+  .a8-menu__tile--bonus {
+    background: var(--a8-surface);
+    color: var(--a8-ink);
+    border: 1px solid #ddd;
+    border-top: 3px solid var(--a8-accent);
+  }
+  .a8-menu__tile--bonus:hover,
+  .a8-menu__tile--bonus:focus {
+    background: #f4f4f4;
+    outline: 2px solid var(--a8-accent);
+    outline-offset: 2px;
+  }
+  .a8-menu__tile--bonus .a8-menu__tile-top {
+    justify-content: flex-end;
+  }
+  .a8-menu__tile--bonus[data-continue] {
+    outline: 2px solid var(--a8-accent);
     outline-offset: 2px;
   }
 </style>
