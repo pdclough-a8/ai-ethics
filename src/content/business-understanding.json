@@ -42,7 +42,7 @@
       "items": [
         {
           "title": "Unacceptable risk",
-          "body": "<p>Some AI applications are prohibited outright under the EU AI Act. These include social scoring systems used by governments to evaluate citizens, AI that exploits psychological vulnerabilities, and most uses of real-time remote biometric identification in public spaces.</p>",
+          "body": "<p>Some AI applications are prohibited outright under the EU AI Act. These include social scoring systems used by governments to evaluate citizens, AI that uses subliminal or manipulative techniques to distort someone's behaviour in harmful ways or that exploits vulnerabilities linked to age or disability, and most uses of real-time remote biometric identification in public spaces.</p>",
           "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMTY5IiByPSI2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjI1NCIgeTE9IjEyMyIgeDI9IjM0NiIgeTI9IjIxNSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
           "graphicAlt": "A prohibition symbol - a circle with a diagonal line through it"
         },
