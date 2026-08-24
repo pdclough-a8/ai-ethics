@@ -21,19 +21,40 @@ interface Props {
 }
 
 const { id, title, first, second, showText = 'Show', hideText = 'Hide' } = Astro.props;
+
+// A panel with body text is the "reveal" payload itself - in the sibling
+// Data Ethics course, a panel like this originally used its image as a
+// standalone photo, which (when that image was really a dark background
+// swatch rather than a real photo) rendered as a broken-looking black box
+// sitting above the text. Panels with body text get the image as a
+// background wash behind the copy instead; an image-only panel (no body)
+// still renders as a normal photo.
+function panelStyle(panel: { src: string }) {
+  return `background-image: linear-gradient(rgba(26, 26, 26, 0.72), rgba(26, 26, 26, 0.72)), url(${withBase(panel.src)})`;
+}
 ---
 
 <section class="a8-reveal" data-reveal-id={id}>
   {title && <h2>{title}</h2>}
 
   <div class="a8-reveal__panel" data-reveal-panel="first">
-    <img src={withBase(first.src)} alt={first.alt ?? ''} />
-    {first.body && <div class="a8-prose" set:html={first.body} />}
+    {first.body ? (
+      <div class="a8-reveal__card" style={panelStyle(first)} role={first.alt ? 'img' : undefined} aria-label={first.alt || undefined}>
+        <div class="a8-prose" set:html={first.body} />
+      </div>
+    ) : (
+      <img src={withBase(first.src)} alt={first.alt ?? ''} />
+    )}
   </div>
 
   <div class="a8-reveal__panel" data-reveal-panel="second" hidden>
-    <img src={withBase(second.src)} alt={second.alt ?? ''} />
-    {second.body && <div class="a8-prose" set:html={second.body} />}
+    {second.body ? (
+      <div class="a8-reveal__card" style={panelStyle(second)} role={second.alt ? 'img' : undefined} aria-label={second.alt || undefined}>
+        <div class="a8-prose" set:html={second.body} />
+      </div>
+    ) : (
+      <img src={withBase(second.src)} alt={second.alt ?? ''} />
+    )}
   </div>
 
   <button type="button" class="a8-reveal__toggle" data-reveal-toggle data-show-text={showText} data-hide-text={hideText}>
@@ -48,6 +69,24 @@ const { id, title, first, second, showText = 'Show', hideText = 'Hide' } = Astro
   .a8-reveal__panel img {
     max-width: 100%;
     border-radius: var(--a8-radius);
+  }
+  .a8-reveal__card {
+    min-height: 260px;
+    border-radius: var(--a8-radius);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: var(--a8-space-lg);
+    display: flex;
+    align-items: center;
+  }
+  /* No single accent shade clears 4.5:1 against both a light page
+     background and this card's dark overlay - rather than pick one and
+     fail the other, links on this dark card inherit the card's own white
+     text colour instead; the underline (set globally on a.customlink)
+     still marks them as links without relying on colour alone. */
+  .a8-reveal__card :global(a.customlink) {
+    color: inherit;
   }
   .a8-reveal__toggle {
     display: block;

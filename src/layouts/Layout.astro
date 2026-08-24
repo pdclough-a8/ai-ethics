@@ -84,7 +84,7 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
           <a href={withBase(prevPage.href)} class="a8-page-nav__link a8-page-nav__link--prev">← {prevPage.title}</a>
         ) : <span />}
         {nextPage ? (
-          <a href={withBase(nextPage.href)} class="a8-page-nav__link a8-page-nav__link--next">{nextPage.title} →</a>
+          <a href={withBase(nextPage.href)} class="a8-page-nav__link a8-page-nav__link--next">Next: {nextPage.title} →</a>
         ) : (
           <a href={withBase('/')} class="a8-page-nav__link a8-page-nav__link--next">Back to Home →</a>
         )}

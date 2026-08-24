@@ -30,6 +30,7 @@ const { title, body, items } = Astro.props;
       <button type="button" class="a8-flipcard__card" data-flipcard-card aria-pressed="false">
         <span class="a8-flipcard__face a8-flipcard__face--front">
           <img src={withBase(item.frontImageSrc)} alt={item.frontImageAlt ?? ''} />
+          {item.backTitle && <strong class="a8-flipcard__front-label">{item.backTitle}</strong>}
         </span>
         <span class="a8-flipcard__face a8-flipcard__face--back">
           {item.backTitle && <strong>{item.backTitle}</strong>}
@@ -81,11 +82,17 @@ const { title, body, items } = Astro.props;
     max-width: 100%;
     max-height: 120px;
   }
+  .a8-flipcard__front-label {
+    text-align: center;
+    color: var(--a8-ink);
+    font-size: 0.95rem;
+  }
   .a8-flipcard__face--back {
     background: var(--a8-ink);
     color: #fff;
     transform: rotateY(180deg);
     align-items: flex-start;
+    justify-content: flex-start;
     font-size: 0.9rem;
     overflow-y: auto;
   }

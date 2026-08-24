@@ -1,13 +1,32 @@
 /*
  * Provisional Analytics8 theme tokens.
  *
- * --a8-accent is back to the orange-coral estimate (read off the Brand
- * Foundations Playbook's slide styling) - per direct feedback, this is
- * closer to A8's actual brand style than the green trialled briefly (which
- * came from one specific course's own artwork, not the core brand palette).
- * Still an eyeballed hex, not a confirmed swatch. Everything else in the
- * site reads from these variables, so updating them here re-themes the
- * whole course.
+ * --a8-accent is the orange-coral estimate (read off the Brand Foundations
+ * Playbook's slide styling) - per direct feedback, this is closer to A8's
+ * actual brand style than the green trialled briefly (which came from one
+ * specific course's own artwork, not the core brand palette). Still an
+ * eyeballed hue, not a confirmed swatch.
+ *
+ * Darkened from the original #ff5a36 (76% brightness scale - same hue and
+ * saturation, just deeper) because that value only cleared ~3.1:1 contrast
+ * against both white and black, well under WCAG AA's 4.5:1 for normal
+ * text. This one color does double duty as button/CTA fill (white text on
+ * top) *and* inline link/emphasis color, almost always on the page's own
+ * light background (--a8-bg, #f2f2f2) or a white card - #c24429 clears
+ * 4.5:1 against both, with the button/CTA case (vs. white) comfortably
+ * over 5:1.
+ *
+ * Note this can't also be used as accent-colored TEXT on the dark --a8-ink
+ * background - no single color clears 4.5:1 against both white and near-
+ * black at once (darkening further to help one case actively hurts the
+ * other). If the accent is ever needed as text on a dark surface, inherit
+ * that surface's own light text color instead (see Reveal.astro's dark
+ * card in the sibling Data Ethics course for the pattern). When real brand
+ * hex codes replace this estimate, re-check contrast the same way before
+ * dropping them in.
+ *
+ * Everything else in the site reads from these variables, so updating them
+ * here re-themes the whole course.
  */
 
 :root {
@@ -15,7 +34,7 @@
   --a8-ink: #1a1a1a;       /* headings, section-divider backgrounds */
   --a8-bg: #f2f2f2;        /* page background */
   --a8-surface: #ffffff;   /* cards / content boxes */
-  --a8-accent: #ff5a36;    /* headline emphasis, links, active states, CTAs, menu tiles */
+  --a8-accent: #c24429;    /* headline emphasis, links, active states, CTAs, menu tiles */
   --a8-accent-text: #ffffff; /* text colour when sitting on top of --a8-accent */
   --a8-rule: #1a1a1a;      /* thin hairline under headers */
   --a8-text: #1a1a1a;      /* body copy */

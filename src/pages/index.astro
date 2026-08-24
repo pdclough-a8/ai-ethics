@@ -1,12 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import HeroGraphic from '../components/HeroGraphic.astro';
 import { withBase } from '../scripts/paths';
 
 // Real copy, from course/en/course.json's title/body/_menu fields (the
 // course "home" page Adapt renders separately from the 7 topic pages).
 const introBody = `<p>AI systems are transforming how we work, communicate and make decisions. As these technologies become more powerful and pervasive, the question of how to develop and deploy them ethically and responsibly has never been more important.</p><p>In this course, you'll explore the foundations of AI ethics, follow the AI lifecycle to see where ethical considerations apply in practice, and examine real-world case studies where things went wrong - and why.</p><p>This content was written and curated by Paul Clough, Lead Data Science and AI Consultant at Analytics8 and Professor Emeritus at the University of Sheffield.</p><p><strong>Select 'Introduction' to begin.</strong></p>`;
 
-const menuInstructionText = 'Click or tap on the blocks below to find out more';
+// Reconciles the two navigation models this course previously mixed (the
+// hero copy's "select Introduction to begin", implying a sequence, against
+// this grid's old "click any block" framing, implying a free-for-all): the
+// AI lifecycle stages genuinely do build on each other, so order is
+// suggested via numbering + this instruction, but every tile stays a plain
+// link - nothing here gates navigation, and progress (via tracking.ts) lets
+// a returning visitor jump straight back to where they left off.
+const menuInstructionText =
+  "Best worked through in order, but every topic is one click away - jump ahead, or pick up right where you left off.";
 
 const pages = [
   { title: 'Introduction', href: '/introduction/' },
@@ -27,7 +36,7 @@ const pages = [
         <div class="a8-prose" set:html={introBody} />
       </div>
       <div class="a8-hero__image">
-        <img src={withBase('/assets/landing-hero.jpg')} alt="" />
+        <HeroGraphic />
       </div>
     </div>
   </section>
@@ -35,12 +44,53 @@ const pages = [
   <section class="a8-menu a8-container">
     <p class="a8-menu__instruction">{menuInstructionText}</p>
     <div class="a8-menu__grid">
-      {pages.map((p) => (
-        <a href={withBase(p.href)} class="a8-menu__tile">{p.title}</a>
+      {pages.map((p, i) => (
+        <a href={withBase(p.href)} class="a8-menu__tile" data-menu-tile>
+          <span class="a8-menu__tile-top">
+            <span class="a8-menu__tile-number">{i + 1}</span>
+            <span class="a8-menu__tile-check" aria-hidden="true">✓</span>
+          </span>
+          <span class="a8-menu__tile-title">{p.title}</span>
+          <span class="a8-menu__tile-continue" data-continue-badge hidden>Continue here</span>
+        </a>
       ))}
     </div>
   </section>
 </Layout>
+
+<script>
+  // Marks each tile as visited/not, and flags the first not-yet-visited
+  // stage as "Continue here" for a returning visitor - but only once
+  // there's some progress to resume; a brand-new visitor already has the
+  // hero copy's "select Introduction to begin" and doesn't need a second,
+  // possibly-redundant prompt pointing at the same tile.
+  import { getVisitedPages, normalisePath } from '../scripts/tracking';
+
+  // Layout.astro records every page visit under this same key - including
+  // the home page's own path, the moment someone lands here. So "has this
+  // visitor made any course progress" can't just be "is the visited list
+  // non-empty" (that's true immediately, for everyone) - it has to check
+  // specifically against the 7 course-page tiles below.
+  const visited = new Set(getVisitedPages());
+  const tiles = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-menu-tile]'));
+  const tileStates = tiles.map((tile) => ({
+    tile,
+    path: normalisePath(new URL(tile.href).pathname),
+  }));
+  const hasCourseProgress = tileStates.some(({ path }) => visited.has(path));
+
+  let continueAssigned = false;
+  tileStates.forEach(({ tile, path }) => {
+    if (visited.has(path)) {
+      tile.setAttribute('data-visited', 'true');
+    } else if (hasCourseProgress && !continueAssigned) {
+      tile.setAttribute('data-continue', 'true');
+      const badge = tile.querySelector<HTMLElement>('[data-continue-badge]');
+      if (badge) badge.hidden = false;
+      continueAssigned = true;
+    }
+  });
+</script>
 
 <style>
   /* Solid dark backdrop behind the text - no image sits behind the copy,
@@ -64,11 +114,6 @@ const pages = [
   .a8-hero__image {
     flex: 1 1 16rem;
     max-width: 22rem;
-  }
-  .a8-hero__image img {
-    display: block;
-    width: 100%;
-    border-radius: var(--a8-radius);
   }
   @media (max-width: 640px) {
     .a8-hero__image {
@@ -103,20 +148,52 @@ const pages = [
      (rgb(15,35,65) at 80% opacity, white text), so carried over here
      rather than defaulting to the same tile styling as Data Ethics. */
   .a8-menu__tile {
+    position: relative;
     background: #0f2341;
     color: #ffffff;
-    font-weight: 700;
     font-family: var(--a8-font-heading);
     text-decoration: none;
     border-radius: var(--a8-radius);
     padding: var(--a8-space-md);
     min-height: 6rem;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
   }
   .a8-menu__tile:hover,
   .a8-menu__tile:focus {
     background: #142d54;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+  .a8-menu__tile-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .a8-menu__tile-number {
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.75;
+  }
+  .a8-menu__tile-check {
+    font-weight: 700;
+    opacity: 0;
+  }
+  .a8-menu__tile[data-visited] .a8-menu__tile-check {
+    opacity: 1;
+  }
+  .a8-menu__tile-title {
+    font-weight: 700;
+  }
+  .a8-menu__tile-continue {
+    margin-top: auto;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .a8-menu__tile[data-continue] {
     outline: 2px solid #fff;
     outline-offset: 2px;
   }
