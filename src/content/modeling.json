@@ -9,6 +9,11 @@
     },
     {
       "type": "text",
+      "title": "If you use AI tools rather than build them",
+      "body": "<p>You won't be testing a model's performance across demographic groups or writing its model card - the vendor should have done that already. But knowing these are the checks a responsible developer runs turns them into fair questions you can ask: does this tool have a model card? Has its performance been tested across the groups it's actually used with? That's a reasonable thing to ask of any AI vendor - including the one your own organisation already uses.</p>"
+    },
+    {
+      "type": "text",
       "title": "The frameworks suggest...",
       "body": "<p>The <strong>EU AI Act</strong> requires high-risk AI systems to achieve appropriate levels of accuracy, robustness and cybersecurity - and to be sufficiently transparent that deployers can understand and oversee their operation.</p><p><strong>ISO 42001</strong> recommends that AI systems be evaluated against defined performance criteria, with documentation of known limitations and risks - including records that allow the system's behaviour to be explained and audited, before and after deployment.</p>"
     },

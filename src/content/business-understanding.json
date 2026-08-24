@@ -9,6 +9,11 @@
     },
     {
       "type": "text",
+      "title": "If you use AI tools rather than build them",
+      "body": "<p>Not everyone taking this course decides whether an AI system gets built - plenty of us just use tools, like Copilot, that someone else already built and rolled out. That doesn't make this stage irrelevant to you. Knowing the questions a responsible team should have asked - was AI actually the right tool here, who could this harm, how was 'success' defined - gives you a basis for judging how much to trust a tool's output, and for raising a concern if something about how it's used doesn't sit right.</p>"
+    },
+    {
+      "type": "text",
       "title": "The frameworks suggest...",
       "body": "<p>The <strong>EU AI Act</strong> requires organisations to consider potential risks before deploying AI systems, with higher-risk applications subject to stricter requirements. It classifies AI systems into four risk levels: unacceptable risk (prohibited), high risk (heavily regulated), limited risk (transparency obligations), and minimal risk.</p><p><strong>ISO 42001</strong>, the international standard for AI management systems, recommends that organisations establish clear accountability from the outset - including defining the intended purpose and potential harms of any AI project before development begins. Unlike the EU AI Act or UK GDPR, ISO 42001 is a voluntary, certifiable standard rather than law - organisations choose to adopt and be audited against it, rather than being legally required to.</p>"
     },

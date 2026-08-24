@@ -9,6 +9,11 @@
     },
     {
       "type": "text",
+      "title": "If you use AI tools rather than build them",
+      "body": "<p>You can't audit the training data behind a tool like Copilot yourself - that's not your job, and you don't have access to it. But knowing that bias usually enters through <em>how the data was collected</em>, not through anyone deliberately programming discrimination in, changes how you read a tool's output. If it seems to perform less well for a particular group, task or context, that's usually why - worth treating as a signal to check further, not dismissing as a one-off glitch.</p>"
+    },
+    {
+      "type": "text",
       "title": "The frameworks suggest...",
       "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to use training, validation and testing data that is relevant, sufficiently representative, free of errors and complete - and to take steps to identify and address data biases that could lead to discriminatory outcomes.</p><p><strong>UK GDPR</strong> applies to any personal data used to train AI models, including requirements around lawful basis, data minimisation and purpose limitation. Using personal data to train an AI for a purpose beyond that for which it was originally collected is likely to be unlawful.</p>"
     },
