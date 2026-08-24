@@ -5,7 +5,7 @@
     {
       "type": "text",
       "title": "Business Understanding",
-      "body": "<p>The first stage of the AI lifecycle asks a fundamental question: <strong>should we build this AI system at all?</strong></p><p>This is where ethical thinking has the greatest impact. Decisions made here - about what problem to solve, what data to use, how to measure success - shape everything that follows. Rushing this stage without ethical consideration means building the wrong thing, however technically accomplished the result.</p>"
+      "body": "<p>The first stage of the AI lifecycle asks two distinct questions, not one. First: <strong>is AI even the right approach to this problem</strong> - or would a simpler, non-AI solution (a fixed rule, a checklist, an unchanged human process) do the job with less risk and complexity? Only once that's answered does the second question arise: if AI genuinely is appropriate, <strong>should this particular system, as currently conceived, actually be built?</strong></p><p>This is where ethical thinking has the greatest impact. Decisions made here - about whether AI is the right tool at all, what problem to solve, what data to use, how to measure success - shape everything that follows. Rushing this stage without ethical consideration risks building the wrong thing well, or building something at all when a simpler approach would have served people better.</p>"
     },
     {
       "type": "text",
@@ -18,7 +18,7 @@
       "items": [
         {
           "title": "Clarifying the problem",
-          "body": "<p>Before any AI project begins, it is essential to justify why AI is the right solution. What problem are you solving? Could it be addressed another way, with less risk? An AI Impact Assessment documents the intended use, potential benefits and possible harms - ensuring these questions are answered before resources are committed.</p>"
+          "body": "<p>Before any AI project begins, it is essential to justify why AI - rather than a simpler rule-based system, an unchanged manual process, or no intervention at all - is the right solution. What problem are you actually solving, and could it be addressed another way, with less risk and less complexity? An AI Impact Assessment documents the intended use, potential benefits and possible harms - including the live possibility that the right answer is not to build an AI system at all - ensuring these questions are answered before resources are committed.</p>"
         },
         {
           "title": "Defining success ethically",
@@ -30,7 +30,7 @@
         },
         {
           "title": "Ask yourself",
-          "body": "<ul><li>What problem are we solving, and is AI the right tool?</li><li>Have we identified who could be harmed by this system?</li><li>Have we defined success in a way that includes fairness, not just accuracy?</li><li>Have we engaged the people who will be affected by this system?</li></ul>"
+          "body": "<ul><li>Is AI actually the right approach here - or would a simpler rule, process or human judgement work with less risk?</li><li>If AI is appropriate, should this particular system, as currently designed, be built?</li><li>Have we identified who could be harmed by this system?</li><li>Have we defined success in a way that includes fairness, not just accuracy?</li><li>Have we engaged the people who will be affected by this system?</li></ul>"
         }
       ]
     },
