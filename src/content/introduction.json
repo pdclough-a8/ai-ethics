@@ -8,6 +8,11 @@
       "body": "<p>Artificial intelligence is transforming the way we live and work. From recommending what to watch next to influencing hiring decisions, AI systems are making - or informing - decisions that affect people's lives every day.</p><p>But with that power comes responsibility. How AI is designed, trained and deployed has real consequences for real people. This course explores what it means to use AI ethically and responsibly - and what that looks like in practice.</p>"
     },
     {
+      "type": "text",
+      "title": "What is AI?",
+      "body": "<p>In simple terms: <strong>AI is software that works out its own output from the data it's given, rather than following a fixed set of steps a person wrote in advance.</strong> Give it an input, and it infers - based on patterns learned from data - a prediction, a recommendation, a decision or a piece of generated content.</p><p>The formal version, from the <strong>OECD</strong> - adopted almost word-for-word into the EU AI Act - puts it this way:</p><p><em>\"An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments. Different AI systems vary in their levels of autonomy and adaptiveness after deployment.\"</em></p><p><em>Source: <a class=\"customlink\" href=\"https://oecd.ai/en/ai-principles\" target=\"_blank\" rel=\"noopener noreferrer\">OECD AI Principles</a></em></p><p>That last sentence matters for this course: as you'll see next, AI systems range from largely fixed and predictable to highly autonomous and adaptive - and that range is exactly what drives how much ethical scrutiny each one needs.</p>"
+    },
+    {
       "type": "narrative",
       "id": "a1e400000000000000000002",
       "title": "The evolution of AI",
@@ -16,20 +21,20 @@
         {
           "title": "Predictive AI",
           "body": "<p>The first wave of modern AI focused on prediction - using historical data to forecast outcomes. Think credit scoring, fraud detection, and early recommendation engines. Predictions are probabilistic, and errors carry real consequences for people.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBvbHlsaW5lIHBvaW50cz0iMTUwLDI0MCAyNTAsMTkwIDM1MCwyMTAgNDUwLDEzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjQ1MCIgY3k9IjEzMCIgcj0iMTAiIGZpbGw9IiNmZmYiLz48L3N2Zz4K",
+          "graphicAlt": "An upward-trending line ending in a dot, representing a forecast or prediction"
         },
         {
           "title": "Generative AI",
           "body": "<p>Generative AI can produce new content: text, images, code and audio. Tools like large language models have made this accessible to everyone, transforming how we communicate, create and work. New capabilities bring new ethical responsibilities.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBhdGggZD0iTTMwMCw5MCBMMzE4LDE1OCBMMzg2LDE2OSBMMzE4LDE4MCBMMzAwLDI0OCBMMjgyLDE4MCBMMjE0LDE2OSBMMjgyLDE1OCBaIiBmaWxsPSIjZmZmIi8+PC9zdmc+Cg==",
+          "graphicAlt": "A four-point sparkle, representing newly generated content"
         },
         {
           "title": "Agentic AI",
           "body": "<p>The latest shift is towards agentic AI - systems that can take autonomous actions, make decisions and interact with the world on behalf of users, often with minimal human oversight. The stakes of getting ethics right have never been higher.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjYwIiBjeT0iMTY5IiByPSI1NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48bGluZSB4MT0iMzAwIiB5MT0iMTQwIiB4Mj0iNDAwIiB5Mj0iOTAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjQwMCw5MCAzNjUsOTUgMzg1LDEyMCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPgo=",
+          "graphicAlt": "A circle with an arrow breaking outward from it, representing a system acting autonomously in the world"
         }
       ]
     },

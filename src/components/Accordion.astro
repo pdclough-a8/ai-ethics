@@ -9,14 +9,16 @@ interface AccordionItem {
 
 interface Props {
   title?: string;
+  body?: string; // optional intro copy shown above the items, e.g. framing/attribution
   items: AccordionItem[];
 }
 
-const { title, items } = Astro.props;
+const { title, body, items } = Astro.props;
 ---
 
 <section class="a8-accordion">
   {title && <h2>{title}</h2>}
+  {body && <div class="a8-prose" set:html={body} />}
   {items.map((item) => (
     <details class="a8-accordion__item">
       <summary>{item.title}</summary>

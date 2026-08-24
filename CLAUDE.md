@@ -4,69 +4,86 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Project Is
 
-A **SCORM 1.2 compliant e-learning course** about AI ethics, built with the [Adapt Learning](https://www.adaptlearning.org/) framework (v5.31.20). The course follows the AI project lifecycle across 7 pages: Introduction, AI Ethics: The Foundations, Business Understanding, Data Acquisition & Understanding, Modeling, Deployment & Beyond, and Conclusion.
+An **Analytics8-branded AI Ethics and Responsible AI learning object**, built as a static [Astro](https://astro.build/) site (v7). The course follows the AI project lifecycle across 7 pages: Introduction, AI Ethics: The Foundations, Business Understanding, Data Acquisition & Understanding, Modeling, Deployment & Beyond, and Conclusion.
 
-This is a **pre-built static distribution** - all JavaScript and CSS are already compiled and minified. There is no build step or package manager. Changes are made directly to JSON content files and deployed as-is.
+This was originally an Adapt Learning / SCORM 1.2 course (see git history). It has since been **rebuilt as a standalone Astro site, decoupled from Adapt and from any LMS/SCORM dependency** — there is no `course/` directory, SCORM manifest, or LMS entry point anymore. Progress and quiz-answer tracking is now purely client-side (localStorage), not SCORM reporting.
+
+## Stack & Commands
+
+- Node >=22.12.0, Astro ^7.1.6, TypeScript (`astro/tsconfigs/strict`). No other runtime dependencies.
+- `npm run dev` — local dev server
+- `npm run build` — static build to `dist/`
+- `npm run preview` — preview the built `dist/` output
 
 ## Deployment
 
-Push to `main` to publish to GitHub Pages (the GitHub Actions workflow in [.github/workflows/](github/workflows/) deploys the entire repo root automatically).
+Push to `main` triggers [.github/workflows/static.yml](.github/workflows/static.yml), which runs `npm run build` and publishes `dist/` to GitHub Pages.
 
-- **Standalone (no LMS):** `index.html`
-- **LMS/SCORM entry point:** `index_lms.html`
-- **Local SCORM testing:** `scorm_test_harness.html` (simulates a cookie-based LMS)
+- Site is served at `https://pdclough-a8.github.io/ai-ethics/` — a **project site, not the domain root** — so [astro.config.mjs](astro.config.mjs) sets `base: '/ai-ethics'`.
+- Any hand-written internal link or asset path (nav `href`s, image `src` values pulled from content JSON) **must** go through `withBase()` in [src/scripts/paths.ts](src/scripts/paths.ts). Astro only auto-prefixes URLs it generates itself (its own bundled JS/CSS) — plain `"/..."` strings we write ourselves resolve against the domain root unless passed through `withBase()`.
+- Astro's default `build.assets` output folder (`_astro`) is intentionally left alone — do not rename it to something like `assets`, which would collide with `public/assets/` (course images).
 
 ## Content Architecture
 
-Course content is driven entirely by JSON files in [course/en/](course/en/):
+Course content is driven entirely by JSON files in [src/content/](src/content/), one per page:
 
-| File | Purpose |
-|------|---------|
-| `course.json` | Course metadata, global nav, and settings |
-| `contentObjects.json` | The 7 pages (menu items) |
-| `articles.json` | Article containers within pages |
-| `blocks.json` | Block groupings within articles |
-| `components.json` | All interactive components (~43 total) |
+`introduction.json`, `foundations.json`, `business-understanding.json`, `data-acquisition.json`, `modeling.json`, `deployment-beyond.json`, `conclusion.json`
 
-The hierarchy is: **Course → Pages → Articles → Blocks → Components**
+Each file is flat, not a nested tree:
 
-Each JSON item has a unique `_id` string. Items reference their parent via `_parentId`. Navigation and completion tracking follow this tree.
+```json
+{
+  "title": "Page Title",
+  "duration": "6 minutes.",
+  "blocks": [ { "type": "text", ... }, { "type": "mcq", ... }, ... ]
+}
+```
 
-`_latestTrackingId` in `course.json` must be incremented when adding new trackable components - it is the high-water mark for SCORM interaction IDs.
+`blocks` is an ordered array rendered top-to-bottom. Each entry's `type` field selects the Astro component that renders it, dispatched by [src/components/Block.astro](src/components/Block.astro):
 
-## Component Types in Use
+| `type` | Component | Purpose |
+|---|---|---|
+| `text` | [Text.astro](src/components/Text.astro) | Narrative content (most common) |
+| `graphic` | [Graphic.astro](src/components/Graphic.astro) | Standalone image |
+| `accordion` | [Accordion.astro](src/components/Accordion.astro) | Expandable sections |
+| `mcq` | [Mcq.astro](src/components/Mcq.astro) | Multiple-choice knowledge check |
+| `narrative` | [Narrative.astro](src/components/Narrative.astro) | Image+text carousel |
+| `hotgraphic` | [Hotgraphic.astro](src/components/Hotgraphic.astro) | Clickable image regions |
+| `flipcard` | [Flipcard.astro](src/components/Flipcard.astro) | Flip card interactions |
+| `reveal` | [Reveal.astro](src/components/Reveal.astro) | Before/after image reveal |
 
-Components in `components.json` have a `_component` field identifying their type:
+A page's `.astro` file (in [src/pages/](src/pages/)) is just: import its JSON, `<Layout>`, then map `blocks` through `<Block block={block} />`. Each block object's fields must match the `Props` interface of its target component exactly (see that component's file) — there is no schema validation, so a typo in a field name silently renders as missing content rather than erroring.
 
-- `text` - narrative content (most common)
-- `mcq` - multiple choice questions
-- `accordion` - expandable sections
-- `narrative` - image+text carousel
-- `hotgraphic` - clickable image regions
-- `flipcard` - flip card interactions
+[src/pages/index.astro](src/pages/index.astro) is the landing/menu page and is hand-authored HTML (hero copy + a 7-tile menu grid), not driven by a content JSON file.
 
-## Framework Configuration
+## MCQ Components
 
-[course/config.json](course/config.json) controls SCORM tracking and completion behaviour:
+`mcq` blocks are **ungraded, single-attempt self-checks** — no scoring, no pass/fail, no completion gating:
 
-- `_requireContentCompleted: true`, `_requireAssessmentCompleted: false` - completion triggers when all content is visited (not when assessments pass)
-- `_shouldSubmitScore: true` - scores are still reported to the LMS even though assessment completion is not required
-- `_forceRouteLocking: true` - pages must be visited sequentially; learners cannot skip ahead
-- The `_spoor` section configures SCORM 1.2 LMS interaction (commit frequency, retry logic, exit state)
+- `isRadio: true` → single-select (radio); `false`/omitted → multi-select (checkbox).
+- Each item has `shouldBeSelected: boolean`. Result is `correct` / `partlyCorrect` / `incorrect`, computed client-side in [Mcq.astro](src/components/Mcq.astro)'s inline script.
+- Once answered, the question is locked and the same result is shown on revisit — persisted via `recordInteraction()`/`getInteraction()` in [src/scripts/tracking.ts](src/scripts/tracking.ts), not SCORM.
+- `id` on an `mcq` block must be stable and unique — it's the localStorage key.
 
-[adapt/js/build.min.js](adapt/js/build.min.js) contains the compiled plugin manifest - do not edit this manually.
+## Progress Tracking (no LMS)
+
+[src/scripts/tracking.ts](src/scripts/tracking.ts) is the **single place** that touches `localStorage` for progress/quiz state, namespaced `a8-ai-ethics-*` (kept distinct from the sibling Data Ethics course, which shares the same GitHub Pages origin). `Layout.astro` calls `recordPageVisit()` on every page load; `index.astro` uses `getVisitedPages()` to mark visited tiles and suggest a "Continue here" tile.
+
+If SCORM/LMS reporting is ever reintroduced, this file is where a `wrapper.setValue(...)` call would be added — no other file should touch storage directly.
 
 ## Making Content Changes
 
-All content edits go into the JSON files under `course/en/`. Key conventions:
+All content edits go into the JSON files under `src/content/`. Key conventions:
 
-- Component and block `_id` values must remain unique across the entire course
-- `_isAvailable` and `_isVisible` flags control what renders
-- Assessment components reference an `_assessment` block via `_id`
-- Images live in `course/en/assets/` and are referenced by relative path in component JSON
+- `mcq` block `id` values must stay unique (they're localStorage keys) — otherwise, block ordering within a page is just array order, and there's no cross-file ID scheme to maintain (unlike the old Adapt `_id`/`_parentId` tree).
+- Body text is raw HTML strings (`<p>`, `<strong>`, `<em>`, `<a class="customlink" ...>` etc.) — matches the component's `set:html` usage.
+- Images referenced from content JSON live in `public/assets/` and use paths like `/assets/filename.png` — pass through `withBase()` when used in a hand-written link/`src`, same as nav hrefs.
+- To add a new page: create `src/content/<slug>.json`, create `src/pages/<slug>.astro` following the existing pattern, and add it to the menu grid in `index.astro`.
 
-To add a new page: add an entry to `contentObjects.json`, then add corresponding articles/blocks/components referencing that page's `_id` as `_parentId`.
+## Known Content Gap
 
-## SCORM Compliance
+`conclusion.json`'s `flipcard` block ("Top tips") has 6 items with **every field empty** (`frontImageSrc`, `frontImageAlt`, `backTitle`, `backBody` all `""`). This renders as 6 blank cards — it's unpopulated placeholder content carried over from the migration, not a bug in the flipcard component itself, and needs real "top tips" copy written before it's meaningful to a learner.
 
-The course targets **SCORM 1.2**. The manifest is [imsmanifest.xml](imsmanifest.xml). SCORM communication is handled by [libraries/SCORM_API_wrapper.js](libraries/SCORM_API_wrapper.js) (pipwerks wrapper v1.1). Do not modify the SCORM wrapper or manifest structure without verifying LMS compatibility.
+## Migration History
+
+[scripts/extract-content.mjs](scripts/extract-content.mjs) is a **one-off, non-runtime** migration script that converted the old Adapt JSON tree (`course/en/{contentObjects,articles,blocks,components}.json`) into the current flat `src/content/*.json` files. The old Adapt source (`course/`, the SCORM manifest, LMS entry points) has been deleted from the repo but remains recoverable via git history. The script is kept for reference/re-running only until content is fully verified as ported.

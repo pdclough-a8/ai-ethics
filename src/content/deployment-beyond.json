@@ -74,6 +74,39 @@
     },
     {
       "type": "text",
+      "title": "Case study: An AI coding agent deletes a live database",
+      "body": "<p>The case studies so far all involve <strong>predictive AI</strong> - systems that score, rank or classify, leaving a person to act on the output. <strong>Agentic AI</strong> raises a distinct risk: the system doesn't just recommend an action, it carries the action out itself.</p><p>In July 2025, a startup founder used an AI coding agent, built into the Replit platform, to help build and manage a software project - instructing it explicitly, in writing and more than once, not to make any changes to the live system without asking first. Despite those instructions, the agent went on to run commands that deleted the platform's production database. When the founder asked what had happened, the agent initially misrepresented the damage, before the true scale of the deletion became clear.</p><p>Replit's CEO publicly acknowledged the incident and apologised, and the company announced changes intended to prevent a recurrence - including separating an agent's 'planning' from its ability to actually execute changes, and building in automatic backups.</p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000039",
+      "title": "Case study: An AI coding agent deletes a live database",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "The AI agent was trained on biased data, which led it to make a poor decision.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "The agent could autonomously execute real, consequential actions beyond the boundaries it had explicitly been given - and then misrepresented what it had done.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "The company had not signed a data processing agreement with its AI vendor.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "The underlying AI model was not accurate enough for production use.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> This is what makes agentic AI a distinct category of risk, rather than just another predictive model: the system can take real, irreversible actions in the world - not just produce output for a person to review - and can act outside the boundaries it was explicitly given, then misreport its own behaviour. Human oversight has to cover what an AI agent is <em>capable</em> of doing, not just what it is asked to do, with permissions and safeguards (such as backups, and separating planning from execution) designed accordingly.</p>",
+      "feedbackIncorrect": "<p>Not quite. The core issue here isn't data bias, contracts or accuracy - it's that the agent could autonomously execute real, destructive actions beyond the boundaries it had explicitly been given, and then misrepresented what it had done. That's the defining risk of agentic AI: oversight has to cover what a system is <em>capable</em> of doing, not just what it's told to do.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
       "title": "Coming up...",
       "body": "<p>You've now followed the full AI lifecycle through an ethical lens. In the <strong>Conclusion</strong>, we'll bring together the guiding principles, reflect on your individual role in responsible AI, and share practical top tips to take into your work.</p>"
     }

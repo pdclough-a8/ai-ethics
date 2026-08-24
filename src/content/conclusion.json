@@ -15,43 +15,43 @@
     {
       "type": "flipcard",
       "title": "Top tips",
-      "body": "",
+      "body": "<p>Select a card to reveal each tip.</p>",
       "items": [
         {
-          "frontImageSrc": "",
-          "frontImageAlt": "",
-          "backTitle": "",
-          "backBody": ""
+          "frontImageSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMTYwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNzUiIHI9IjQyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjx0ZXh0IHg9IjEyMCIgeT0iOTUiIGZvbnQtc2l6ZT0iNDgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4K",
+          "frontImageAlt": "A question mark, representing asking whether AI is the right solution",
+          "backTitle": "Ask before you build",
+          "backBody": "<p>Before writing a line of code, ask whether AI is the right solution - and who could be harmed if it goes wrong. The most effective ethical intervention happens at the Business Understanding stage, not after deployment.</p>"
         },
         {
-          "frontImageSrc": "",
-          "frontImageAlt": "",
-          "backTitle": "",
-          "backBody": ""
+          "frontImageSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMTYwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGcgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PGxpbmUgeDE9IjYwIiB5MT0iNTUiIHgyPSIxNDAiIHkyPSI1NSIvPjxsaW5lIHgxPSI2MCIgeTE9Ijc1IiB4Mj0iMTQwIiB5Mj0iNzUiLz48bGluZSB4MT0iNjAiIHkxPSI5NSIgeDI9IjEyMCIgeTI9Ijk1Ii8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTAwIiByPSIyMiIvPjxsaW5lIHgxPSIxNjYiIHkxPSIxMTYiIHgyPSIxODgiIHkyPSIxMzgiLz48L2c+PC9zdmc+Cg==",
+          "frontImageAlt": "A magnifying glass over a list, representing examining your data",
+          "backTitle": "Know where your data comes from",
+          "backBody": "<p>Understand your training data's provenance, consent basis and representativeness. Bias baked in at the data stage is very hard to remove later - it's far cheaper to catch it before training than after deployment.</p>"
         },
         {
-          "frontImageSrc": "",
-          "frontImageAlt": "",
-          "backTitle": "",
-          "backBody": ""
+          "frontImageSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMTYwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGcgZmlsbD0iI2ZmZiI+PHJlY3QgeD0iNTUiIHk9IjkwIiB3aWR0aD0iMjQiIGhlaWdodD0iNDAiLz48cmVjdCB4PSI5NSIgeT0iNjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI3MCIvPjxyZWN0IHg9IjEzNSIgeT0iMTAwIiB3aWR0aD0iMjQiIGhlaWdodD0iMzAiLz48cmVjdCB4PSIxNzUiIHk9IjQ1IiB3aWR0aD0iMjQiIGhlaWdodD0iODUiLz48L2c+PGxpbmUgeDE9IjQ1IiB5MT0iMTMyIiB4Mj0iMjEyIiB5Mj0iMTMyIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPgo=",
+          "frontImageAlt": "A bar chart with uneven bars, representing testing across different groups",
+          "backTitle": "Test for everyone, not just on average",
+          "backBody": "<p>A model that's accurate overall can still fail specific groups badly. Always test performance separately across the populations your AI will affect, not just against a single headline accuracy figure.</p>"
         },
         {
-          "frontImageSrc": "",
-          "frontImageAlt": "",
-          "backTitle": "",
-          "backBody": ""
+          "frontImageSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMTYwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGcgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNjgiIHI9IjM0Ii8+PGxpbmUgeDE9IjEwNiIgeTE9IjEyNiIgeDI9IjEzNCIgeTI9IjEyNiIvPjxsaW5lIHgxPSIxMTEiIHkxPSIxNDEiIHgyPSIxMjkiIHkyPSIxNDEiLz48bGluZSB4MT0iMTIwIiB5MT0iMTAyIiB4Mj0iMTIwIiB5Mj0iMTE2Ii8+PC9nPjwvc3ZnPgo=",
+          "frontImageAlt": "A lightbulb, representing explaining how an AI decision was reached",
+          "backTitle": "Make decisions explainable",
+          "backBody": "<p>If someone is affected by an AI decision, they have a legitimate interest in understanding why. Build explainability in from the start, at both a global (how the model behaves overall) and local (why it made this decision) level.</p>"
         },
         {
-          "frontImageSrc": "",
-          "frontImageAlt": "",
-          "backTitle": "",
-          "backBody": ""
+          "frontImageSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMTYwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBhdGggZD0iTTM1LDgwIFExMjAsMjggMjA1LDgwIFExMjAsMTMyIDM1LDgwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI2Ii8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iODAiIHI9IjE5IiBmaWxsPSIjZmZmIi8+PC9zdmc+Cg==",
+          "frontImageAlt": "An eye, representing ongoing human oversight",
+          "backTitle": "Keep a human genuinely in the loop",
+          "backBody": "<p>Especially where AI acts autonomously or the stakes are high, build in real human oversight - and make sure whoever holds it has the power, time and information to actually catch and correct problems, not just rubber-stamp them.</p>"
         },
         {
-          "frontImageSrc": "",
-          "frontImageAlt": "",
-          "backTitle": "",
-          "backBody": ""
+          "frontImageSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMTYwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGcgZmlsbD0iI2ZmZiI+PGNpcmNsZSBjeD0iODgiIGN5PSI1NSIgcj0iMTkiLz48cGF0aCBkPSJNNTUsMTI0IFE1NSw4NiA4OCw4NiBRMTIxLDg2IDEyMSwxMjQgWiIvPjxjaXJjbGUgY3g9IjE1OCIgY3k9IjU1IiByPSIxOSIvPjxwYXRoIGQ9Ik0xMjUsMTI0IFExMjUsODYgMTU4LDg2IFExOTEsODYgMTkxLDEyNCBaIi8+PC9nPjwvc3ZnPgo=",
+          "frontImageAlt": "Two people, representing shared accountability for AI outcomes",
+          "backTitle": "Monitor, listen, and be ready to act",
+          "backBody": "<p>Deployment is not the finish line. Monitor for drift, give people an accessible way to flag concerns, and know in advance who is accountable for acting on what you find - the way Amazon, Ofqual and Twitter each eventually did, just sooner.</p>"
         }
       ]
     },

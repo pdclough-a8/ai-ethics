@@ -15,6 +15,7 @@
     {
       "type": "accordion",
       "title": "Guiding principles",
+      "body": "<p>No single, universally agreed list of AI principles exists - different bodies group and word them slightly differently (compare the OECD's five AI Principles, or the EU's seven requirements for Trustworthy AI). The six below, closely modelled on Microsoft's Responsible AI Standard, are a widely used and representative starting point.</p>",
       "items": [
         {
           "title": "Fairness",
@@ -63,7 +64,7 @@
     {
       "type": "text",
       "title": "Case study: Amazon's hiring algorithm",
-      "body": "<p>In 2014, Amazon began developing an AI tool to automate the screening of job applicants. Trained on CVs submitted over a ten-year period, the system was designed to score candidates and surface the best talent.</p><p>The problem? The training data reflected a decade of Amazon's historically male-dominated hiring. The algorithm learned to penalise CVs that included the word 'women's' - such as 'women's chess club' - and downgraded graduates of all-women's colleges.</p><p>Despite attempts to fix the bias, Amazon could not guarantee the tool was operating fairly. In 2018, the project was quietly scrapped.</p>"
+      "body": "<p>In 2014, Amazon began developing an AI tool to automate the screening of job applicants. Trained on CVs submitted over a ten-year period, the system was designed to score candidates and surface the best talent.</p><p>The problem? The training data reflected a decade of Amazon's historically male-dominated hiring. The algorithm learned to penalise CVs that included the word 'women's' - such as 'women's chess club' - and downgraded graduates of all-women's colleges.</p><p>Despite attempts to fix the bias, Amazon could not guarantee the tool was operating fairly. The recruiting team quietly abandoned the project by 2017 - it only became public knowledge when Reuters reported on it in 2018.</p>"
     },
     {
       "type": "mcq",
