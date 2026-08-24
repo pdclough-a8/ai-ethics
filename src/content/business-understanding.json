@@ -43,20 +43,20 @@
         {
           "title": "Unacceptable risk",
           "body": "<p>Some AI applications are prohibited outright under the EU AI Act. These include social scoring systems used by governments to evaluate citizens, AI that exploits psychological vulnerabilities, and most uses of real-time remote biometric identification in public spaces.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMTY5IiByPSI2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjI1NCIgeTE9IjEyMyIgeDI9IjM0NiIgeTI9IjIxNSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
+          "graphicAlt": "A prohibition symbol - a circle with a diagonal line through it"
         },
         {
           "title": "High risk",
           "body": "<p>High-risk AI systems include those used in critical infrastructure, education, employment, access to essential services, law enforcement, migration and the administration of justice. These must meet strict requirements around accuracy, transparency, oversight and documentation.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBvbHlnb24gcG9pbnRzPSIzMDAsOTAgMjIwLDI1MCAzODAsMjUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxsaW5lIHgxPSIzMDAiIHkxPSIxNDAiIHgyPSIzMDAiIHkyPSIxOTUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjIyIiByPSI3IiBmaWxsPSIjZmZmIi8+PC9zdmc+Cg==",
+          "graphicAlt": "A warning triangle with an exclamation mark"
         },
         {
           "title": "Limited and minimal risk",
           "body": "<p>Many AI systems fall into lower risk categories. Chatbots and AI-generated content carry transparency obligations - users must know they are interacting with AI. Most AI, such as spam filters and recommendation systems, is minimal risk and subject only to general requirements.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWEzYTVjIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBhdGggZD0iTTMwMCw5NSBMMzY1LDEyMCBMMzY1LDE5MCBRMzY1LDIzNSAzMDAsMjU1IFEyMzUsMjM1IDIzNSwxOTAgTDIzNSwxMjAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWxpbmUgcG9pbnRzPSIyNzAsMTc1IDI5MiwyMDAgMzM1LDE1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4K",
+          "graphicAlt": "A shield with a checkmark inside it"
         }
       ]
     },

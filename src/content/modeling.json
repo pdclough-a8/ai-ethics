@@ -21,26 +21,26 @@
         {
           "title": "Why explainability matters",
           "body": "<p>When an AI system makes or influences a decision that affects a person - whether they receive a loan, a job interview, or a medical diagnosis - that person has a legitimate interest in understanding why. Explainability is not just a technical goal; it is an ethical and legal requirement.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjAwIiB5PSI4MCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIxNTAiIHJ4PSI2IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxsaW5lIHgxPSIyMjIiIHkxPSIxMTUiIHgyPSIyOTgiIHkyPSIxMTUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI1Ii8+PGxpbmUgeDE9IjIyMiIgeTE9IjE0MCIgeDI9IjI5OCIgeTI9IjE0MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiLz48bGluZSB4MT0iMjIyIiB5MT0iMTY1IiB4Mj0iMjc4IiB5Mj0iMTY1IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNSIvPjxjaXJjbGUgY3g9IjM3MCIgY3k9IjIyMCIgcj0iNDIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI4Ii8+PGxpbmUgeDE9IjQwMSIgeTE9IjI1MSIgeDI9IjQzNSIgeTI9IjI4NSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPgo=",
+          "graphicAlt": "A magnifying glass inspecting a document, representing scrutinising a decision"
         },
         {
           "title": "Types of explainability",
           "body": "<p><strong>Global explainability</strong> helps us understand how the model behaves overall - which features it weighs most heavily. <strong>Local explainability</strong> helps us understand why the model made a specific decision in a specific case. Both matter for responsible AI, serving different stakeholders.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjgwIiBjeT0iMTY5IiByPSI4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjYiLz48Y2lyY2xlIGN4PSIzMzAiIGN5PSIxNjkiIHI9IjI4IiBmaWxsPSIjZmZmIi8+PC9zdmc+Cg==",
+          "graphicAlt": "A large outlined circle (the overall model) containing a smaller solid circle (one specific decision)"
         },
         {
           "title": "Explainable AI (XAI) tools",
           "body": "<p>Tools such as LIME, SHAP and counterfactual explanations are designed to make AI reasoning interpretable to humans. They translate complex model outputs into language that can be understood, challenged and acted upon - by developers, decision-makers and those affected.</p>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMTY5IiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNjkiIHI9IjE0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxnIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxsaW5lIHgxPSIzNTAiIHkxPSIxNjkiIHgyPSIzNjUiIHkyPSIxNjkiLz48bGluZSB4MT0iMzM1IiB5MT0iMjA0IiB4Mj0iMzQ2IiB5Mj0iMjE1Ii8+PGxpbmUgeDE9IjMwMCIgeTE9IjIxOSIgeDI9IjMwMCIgeTI9IjIzNCIvPjxsaW5lIHgxPSIyNjUiIHkxPSIyMDQiIHgyPSIyNTQiIHkyPSIyMTUiLz48bGluZSB4MT0iMjUwIiB5MT0iMTY5IiB4Mj0iMjM1IiB5Mj0iMTY5Ii8+PGxpbmUgeDE9IjI2NSIgeTE9IjEzNCIgeDI9IjI1NCIgeTI9IjEyMyIvPjxsaW5lIHgxPSIzMDAiIHkxPSIxMTkiIHgyPSIzMDAiIHkyPSIxMDQiLz48bGluZSB4MT0iMzM1IiB5MT0iMTM0IiB4Mj0iMzQ2IiB5Mj0iMTIzIi8+PC9nPjwvc3ZnPgo=",
+          "graphicAlt": "A cog, representing the tools used to inspect how a model works"
         },
         {
           "title": "Ask yourself",
           "body": "<ul><li>Could you explain to someone why your AI made the decision it did about them?</li><li>Are there groups for whom the AI's reasoning is less well understood?</li><li>What would you do if an AI decision appeared wrong or unfair?</li></ul>",
-          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQzYjVlIi8+PC9zdmc+",
-          "graphicAlt": ""
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMTU1IiByPSI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48dGV4dCB4PSIzMDAiIHk9IjE4NSIgZm9udC1zaXplPSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pjwvc3ZnPgo=",
+          "graphicAlt": "A question mark in a circle"
         }
       ]
     },
