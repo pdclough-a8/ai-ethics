@@ -11,6 +11,13 @@ import Narrative from './Narrative.astro';
 import Hotgraphic from './Hotgraphic.astro';
 import Flipcard from './Flipcard.astro';
 import Reveal from './Reveal.astro';
+import Group from './Group.astro';
+// Self-import: a 'group' block's own nested blocks are dispatched by
+// recursing back into this same component. Safe as a same-file
+// self-reference (only called later, during render, not at module-init
+// time) - unlike a Group<->Block cross-file circular import, which is
+// exactly what Group.astro's own comment explains avoiding.
+import Block from './Block.astro';
 
 interface Props {
   block: Record<string, any> & { type: string };
@@ -27,3 +34,8 @@ const { block } = Astro.props;
 {block.type === 'hotgraphic' && <Hotgraphic {...block} />}
 {block.type === 'flipcard' && <Flipcard {...block} />}
 {block.type === 'reveal' && <Reveal {...block} />}
+{block.type === 'group' && (
+  <Group title={block.title}>
+    {(block.blocks ?? []).map((nested: Record<string, any>) => <Block block={nested} />)}
+  </Group>
+)}

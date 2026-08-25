@@ -1,0 +1,44 @@
+---
+// A visual boundary around a run of related blocks - e.g. a hands-on
+// activity that should read as one self-contained unit rather than
+// blending into the page's surrounding narrative (which is exactly what
+// happened before this existed: an activity's own blocks looked no
+// different from the ordinary page flow either side of them).
+//
+// Deliberately dumb: takes no block data itself, just wraps whatever's
+// rendered into its slot. The caller (Block.astro) is what actually
+// resolves the group's nested block list to real components - by
+// rendering <Block> for each one *inside its own template*, which is
+// plain same-file recursion (fine), not a circular import between this
+// file and Block.astro (which would be fragile/order-dependent). Keeping
+// this file import-free of Block.astro is what makes that safe.
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section class="a8-group">
+  {title && <h2 class="a8-group__title">{title}</h2>}
+  <slot />
+</section>
+
+<style>
+  .a8-group {
+    border: 2px solid var(--a8-accent);
+    border-radius: var(--a8-radius);
+    padding: var(--a8-space-md);
+    margin: var(--a8-space-lg) 0;
+    background: var(--a8-surface);
+  }
+  .a8-group__title {
+    margin-top: 0;
+  }
+  /* Nested blocks bring their own bottom margin (see Text.astro etc.) -
+     drop the last one's so the box doesn't end with extra empty space
+     beneath the final block's own spacing. */
+  .a8-group > :global(*:last-child) {
+    margin-bottom: 0;
+  }
+</style>

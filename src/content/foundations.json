@@ -13,6 +13,11 @@
       "body": "<p>AI ethics is a branch of applied ethics that examines the moral questions raised by the development and use of artificial intelligence. These include: <strong>Who benefits from AI - and who might be harmed?</strong> How should we balance innovation with the protection of individual rights? What obligations do organisations have when AI systems affect people's lives?</p><p>A useful starting principle: <em>just because you can build something doesn't mean you should.</em> Every AI project involves choices - about what to build, what data to use, and how to weigh competing interests. AI ethics provides the tools to make those choices well.</p>"
     },
     {
+      "type": "text",
+      "title": "Two social risks worth naming",
+      "body": "<p>Two effects of AI are easy to overlook amid discussions of bias and privacy, but are just as real. The EU's Ethics Guidelines for Trustworthy AI (covered later in this course) name 'social impact' as part of their societal and environmental wellbeing requirement - not a side effect to set aside.</p><p><strong>Job displacement.</strong> AI doesn't just change how work gets done - it changes who does it. A widely-cited 2023 Goldman Sachs report estimated that around two-thirds of jobs in the US and Europe are exposed to some degree of AI automation, with roughly a quarter of current tasks in those roles potentially automatable - though 'exposed' isn't the same as 'eliminated': the same report expected most affected roles to be augmented rather than replaced outright. The IMF's 2024 analysis found close to 40% of jobs worldwide exposed to AI, with advanced economies facing the highest exposure (around 60%), and cautioned that without deliberate policy responses, this could widen inequality both within and between countries.</p><p><strong>Cognitive effects on the people who use it.</strong> Relying on AI to think for us may come at a cost to our own thinking. A 2025 study by Microsoft Research and Carnegie Mellon University, surveying knowledge workers who used tools including ChatGPT and Copilot weekly, found that higher confidence in an AI tool's answer was associated with less critical engagement with that answer - people were more likely to accept AI output uncritically on tasks they felt less confident doing themselves. Separately, a 2025 MIT Media Lab study (not yet peer-reviewed) used EEG to compare brain activity across essay-writing methods, finding weaker neural engagement among people using an AI writing assistant than among those writing unaided - what the researchers termed 'cognitive debt'. Neither study claims AI makes people permanently less capable, but both suggest the habits formed by leaning on AI are worth paying attention to.</p>"
+    },
+    {
       "type": "accordion",
       "title": "Guiding principles",
       "body": "<p>No single, universally agreed list of AI principles exists - different bodies group and word them slightly differently (compare the OECD's five AI Principles, or the EU's seven requirements for Trustworthy AI). The six below, closely modelled on Microsoft's Responsible AI Standard, are a widely used and representative starting point.</p>",
@@ -62,31 +67,36 @@
       ]
     },
     {
-      "type": "text",
-      "title": "Try it yourself: Consequence Scanning",
-      "body": "<p>The tools named above aren't just theory - they're meant to be used. <strong>Consequence Scanning</strong> is a lightweight technique originally developed by Doteveryone, a UK think tank (it closed in 2020; the <a class=\"customlink\" href=\"https://www.adalovelaceinstitute.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Ada Lovelace Institute</a> now keeps its resources publicly available). It's designed to run in 15-30 minutes, at any point in a product's life - before you build something, partway through, or on a tool you already use - by asking three questions about one specific AI product, feature or use case:</p><ul><li>What are the <strong>intended and unintended</strong> consequences of this?</li><li>What are the <strong>positive</strong> consequences we want to focus on?</li><li>What are the <strong>negative</strong> consequences we want to mitigate?</li></ul>"
-    },
-    {
-      "type": "reveal",
-      "id": "a1e400000000000000000042",
-      "title": "Have a go",
-      "showText": "Reveal one example response",
-      "hideText": "Hide example response",
-      "first": {
-        "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMTUwIiByPSI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjMyMCIgeTE9IjIwMCIgeDI9IjM4MCIgeTI9IjI2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
-        "alt": "A magnifying glass, representing scanning a scenario for its consequences",
-        "body": "<p><strong>The scenario:</strong> Your organisation is rolling out an AI meeting assistant. It joins video calls, transcribes what's said, writes a summary with action items, and shares it with everyone who was invited - whether they attended or not.</p><p>Take a few minutes - on paper, or just in your head - and work through the three questions above for this tool. Then select the button below to compare against one example response.</p>"
-      },
-      "second": {
-        "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjIwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMDAiIHJ4PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cmVjdCB4PSIyNzAiIHk9IjY1IiB3aWR0aD0iNjAiIGhlaWdodD0iMjQiIHJ4PSI2IiBmaWxsPSIjMGQxZjNjIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxwb2x5bGluZSBwb2ludHM9IjI1NSwxOTAgMjg1LDIyMCAzNDUsMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=",
-        "alt": "A clipboard with a checkmark, representing a completed example response",
-        "body": "<p><strong>Intended and unintended:</strong> Intended to save time and create a reliable record of decisions. Unintended: it also creates a permanent, searchable transcript of things people said assuming they wouldn't be recorded verbatim - and transcription is typically less accurate for some accents, so those contributions can be under-represented or garbled in the summary.</p><p><strong>Positive to focus on:</strong> better accessibility for anyone who missed the meeting or finds live listening difficult; a more reliable record of commitments than relying on memory.</p><p><strong>Negative to mitigate:</strong> a 'chilling effect' if people self-censor knowing everything is transcribed; summaries built for one purpose (team coordination) later being repurposed for another (performance review) without anyone agreeing to that; and no clear point at which transcripts get deleted.</p><p>Your own answers may well differ - that's the point. The value of Consequence Scanning is in the discussion it prompts, not in reaching one 'correct' list.</p>"
-      }
-    },
-    {
-      "type": "text",
-      "title": "Go deeper",
-      "body": "<p>Try running Consequence Scanning on an AI tool you actually use at work - it takes minutes and works just as well solo as in a group. For a more detailed version covering a wider range of risks (truth and disinformation, addiction, inequality, algorithmic bias, surveillance, and more), the <strong>Ethical OS Toolkit</strong> mentioned above sets out eight risk zones to work through in the same way - see the <a class=\"customlink\" href=\"https://oecd-opsi.org/toolkits/ethical-os-toolkit/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethical OS Toolkit overview</a>.</p>"
+      "type": "group",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Try it yourself: Consequence Scanning",
+          "body": "<p>The tools named above aren't just theory - they're meant to be used. <strong>Consequence Scanning</strong> is a lightweight technique originally developed by Doteveryone, a UK think tank (it closed in 2020; the <a class=\"customlink\" href=\"https://www.adalovelaceinstitute.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Ada Lovelace Institute</a> now keeps its resources publicly available). It's designed to run in 15-30 minutes, at any point in a product's life - before you build something, partway through, or on a tool you already use - by asking three questions about one specific AI product, feature or use case:</p><ul><li>What are the <strong>intended and unintended</strong> consequences of this?</li><li>What are the <strong>positive</strong> consequences we want to focus on?</li><li>What are the <strong>negative</strong> consequences we want to mitigate?</li></ul>"
+        },
+        {
+          "type": "reveal",
+          "id": "a1e400000000000000000042",
+          "title": "Have a go",
+          "showText": "Reveal one example response",
+          "hideText": "Hide example response",
+          "first": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMTUwIiByPSI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjMyMCIgeTE9IjIwMCIgeDI9IjM4MCIgeTI9IjI2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
+            "alt": "A magnifying glass, representing scanning a scenario for its consequences",
+            "body": "<p><strong>The scenario:</strong> Your organisation is rolling out an AI meeting assistant. It joins video calls, transcribes what's said, writes a summary with action items, and shares it with everyone who was invited - whether they attended or not.</p><p>Take a few minutes - on paper, or just in your head - and work through the three questions above for this tool. Then select the button below to compare against one example response.</p>"
+          },
+          "second": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjIwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMDAiIHJ4PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cmVjdCB4PSIyNzAiIHk9IjY1IiB3aWR0aD0iNjAiIGhlaWdodD0iMjQiIHJ4PSI2IiBmaWxsPSIjMGQxZjNjIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxwb2x5bGluZSBwb2ludHM9IjI1NSwxOTAgMjg1LDIyMCAzNDUsMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=",
+            "alt": "A clipboard with a checkmark, representing a completed example response",
+            "body": "<p><strong>Intended and unintended:</strong> Intended to save time and create a reliable record of decisions. Unintended: it also creates a permanent, searchable transcript of things people said assuming they wouldn't be recorded verbatim - and transcription is typically less accurate for some accents, so those contributions can be under-represented or garbled in the summary.</p><p><strong>Positive to focus on:</strong> better accessibility for anyone who missed the meeting or finds live listening difficult; a more reliable record of commitments than relying on memory.</p><p><strong>Negative to mitigate:</strong> a 'chilling effect' if people self-censor knowing everything is transcribed; summaries built for one purpose (team coordination) later being repurposed for another (performance review) without anyone agreeing to that; and no clear point at which transcripts get deleted.</p><p>Your own answers may well differ - that's the point. The value of Consequence Scanning is in the discussion it prompts, not in reaching one 'correct' list.</p>"
+          }
+        },
+        {
+          "type": "text",
+          "title": "Go deeper",
+          "body": "<p>Try running Consequence Scanning on an AI tool you actually use at work - it takes minutes and works just as well solo as in a group. For a more detailed version covering a wider range of risks (truth and disinformation, addiction, inequality, algorithmic bias, surveillance, and more), the <strong>Ethical OS Toolkit</strong> mentioned above sets out eight risk zones to work through in the same way - see the <a class=\"customlink\" href=\"https://oecd-opsi.org/toolkits/ethical-os-toolkit/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethical OS Toolkit overview</a>.</p>"
+        }
+      ]
     },
     {
       "type": "text",
