@@ -2,8 +2,41 @@
 import Layout from '../layouts/Layout.astro';
 import Block from '../components/Block.astro';
 import content from '../content/conclusion.json';
+import { bonusPages } from '../scripts/bonusPages';
+import { withBase } from '../scripts/paths';
 ---
 
 <Layout title={content.title} duration={content.duration}>
   {content.blocks.map((block) => <Block block={block} />)}
+
+  {bonusPages.length > 0 && (
+    <section class="a8-conclusion-bonus">
+      <h2>Now apply it to the tool you actually use</h2>
+      <p class="a8-prose">
+        You've just learned the principles this course is built on - this is the moment to apply them to a
+        specific AI assistant your organisation has rolled out, rather than leaving them as theory.
+      </p>
+      <ul class="a8-prose">
+        {bonusPages.map((p) => (
+          <li><a class="customlink" href={withBase(p.href)}>{p.title}</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
 </Layout>
+
+<style>
+  .a8-conclusion-bonus {
+    margin-top: var(--a8-space-lg);
+    padding-top: var(--a8-space-md);
+    border-top: 1px solid #ddd;
+  }
+  /* Text.astro's own .a8-prose ul/link rules are scoped to that
+     component, not global - this markup bypasses Text.astro entirely
+     (it's a page-level section, not a content block), so it needs its
+     own copy of the same rule to render consistently with the rest of
+     the page's content. */
+  .a8-conclusion-bonus ul {
+    padding-left: 1.25rem;
+  }
+</style>

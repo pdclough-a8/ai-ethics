@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import HeroGraphic from '../components/HeroGraphic.astro';
 import { withBase } from '../scripts/paths';
+import { bonusPages } from '../scripts/bonusPages';
 
 // Real copy, from course/en/course.json's title/body/_menu fields (the
 // course "home" page Adapt renders separately from the 7 topic pages) -
@@ -28,15 +29,6 @@ const pages = [
   { title: 'Conclusion', href: '/conclusion/' },
 ];
 
-// Tool-specific practical add-ons, kept out of the numbered lifecycle grid
-// above (they're not lifecycle stages, and not every organisation uses
-// every tool). Each entry applies the same course principles to one
-// specific AI assistant an organisation has actually rolled out - add
-// further tiles here (Gemini, ChatGPT Enterprise, Claude for Work, ...)
-// as/when those pages are written, rather than growing the main grid.
-const bonusPages = [
-  { title: 'Using Copilot Responsibly', href: '/using-copilot-responsibly/' },
-];
 ---
 
 <Layout title="AI Ethics and Responsible AI" variant="landing">
@@ -71,7 +63,9 @@ const bonusPages = [
       <div class="a8-menu__bonus">
         <h2 class="a8-menu__bonus-heading">Your organisation's AI tools</h2>
         <p class="a8-menu__instruction">
-          Optional add-ons applying the principles above to a specific AI assistant your organisation uses.
+          Come back here once you've finished the seven stages above - each of these applies what you've just
+          learned to one specific AI assistant your organisation actually uses. (You'll also find a link here again
+          at the end of the Conclusion page.)
         </p>
         <div class="a8-menu__grid">
           {bonusPages.map((p) => (
