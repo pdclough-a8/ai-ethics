@@ -1,0 +1,108 @@
+{
+  "title": "Operationalising Responsible AI",
+  "duration": "5 minutes.",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "From principles to practice",
+      "body": "<p>Everything up to this point has been about principles, lifecycle stages and individual behaviour - what one person, or one project team, should do differently. This page is about a different question: <strong>how does an organisation actually operationalise this, not just agree with it?</strong></p><p>Knowing you need to 'be responsible with AI' and having a repeatable process for actually doing it are very different things. This page is a practical starting point for whoever is accountable for that - a leadership team, a governance function, a single person told to 'sort out our AI policy'. It doesn't replace the principles covered earlier; it's the organisational machinery that puts them into practice.</p>"
+    },
+    {
+      "type": "text",
+      "title": "Where to start: a practical roadmap",
+      "body": "<p>There's no single correct starting point, but this is a reasonable sequence if you're starting close to zero:</p><ol><li><strong>Find out what AI you already have.</strong> Most organisations are already using more AI than anyone in leadership realises - embedded in existing software, adopted informally by individual teams, or trialled and forgotten. You can't govern what you haven't found.</li><li><strong>Adopt a set of principles.</strong> Don't start from a blank page - adapt an existing set (the seven covered earlier in this course, or a named framework like the OECD's or EU's) rather than inventing your own.</li><li><strong>Stand up a governance body with real authority.</strong> A committee that can only advise, not block or delay a launch, gets bypassed the first time it's inconvenient.</li><li><strong>Risk-tier what you have and what's coming.</strong> Not every use of AI needs the same scrutiny - a spam filter and a hiring tool don't carry the same risk. Use an existing risk-tiering approach (the EU AI Act's four tiers, or NIST's Map function below) rather than inventing one from scratch.</li><li><strong>Put controls into the pipeline that acquires or builds AI</strong> - procurement questions for vendor tools, testing and documentation requirements for anything built in-house - so responsible AI is a gate applications pass through, not a review that happens after the fact.</li><li><strong>Train your people.</strong> Governance structures only work if the people using and building AI actually understand why they exist - this course is one example of that control, not a replacement for it.</li><li><strong>Monitor, and keep the loop open.</strong> Revisit your inventory and risk assessments periodically, and make sure there's a real channel for people to flag concerns - governance set once and never revisited goes stale as fast as the technology does.</li></ol>"
+    },
+    {
+      "type": "accordion",
+      "title": "Building blocks of AI governance",
+      "items": [
+        {
+          "title": "A cross-functional governance body",
+          "body": "<p>An AI ethics committee or working group needs cross-functional membership - legal, security, HR, and someone representing the people affected by AI decisions, not just technical staff - and real decision rights over what launches, not just advisory input. Meeting quarterly to discuss AI in the abstract achieves little; reviewing specific, real proposals against clear criteria achieves much more.</p>"
+        },
+        {
+          "title": "An AI system inventory",
+          "body": "<p>You cannot manage AI risk across an organisation you can't see. A usable inventory captures, per system: its purpose, who owns it, whether it's built in-house or bought in, what data it uses, and its risk tier - kept current as new tools are adopted, not compiled once and left to go stale.</p>"
+        },
+        {
+          "title": "Policies people actually read",
+          "body": "<p>A single exhaustive AI policy document is a policy nobody reads. Short, role-specific guidance - what this means for someone using Copilot day to day, versus someone commissioning a new AI system - travels further than one long document trying to cover everyone at once.</p>"
+        },
+        {
+          "title": "Training and enablement",
+          "body": "<p>Governance structures are only as good as the people operating inside them. Recurring, role-appropriate AI literacy training - not a single one-off session - keeps pace with a technology that changes faster than most policies can be rewritten.</p>"
+        }
+      ]
+    },
+    {
+      "type": "narrative",
+      "id": "a1e400000000000000000043",
+      "title": "NIST's AI Risk Management Framework",
+      "body": "<p>Published by the US National Institute of Standards and Technology in 2023, and voluntary rather than mandatory, the AI Risk Management Framework (AI RMF) is one of the most widely referenced practical frameworks specifically for the <em>how</em> of AI governance - a natural complement to the EU AI Act's 'what's required' and ISO 42001's 'how to get certified'. It organises the work into four functions, meant to run continuously rather than once:</p>",
+      "items": [
+        {
+          "title": "Govern",
+          "body": "<p>Cultivating an organisational culture of AI risk management: clear policies, defined accountability, and oversight that applies across the whole AI lifecycle, not just at launch.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMTY5IiByPSI3NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cG9seWdvbiBwb2ludHM9IjMwMCwxMTAgMzIyLDE2OSAzMDAsMjI4IDI3OCwxNjkiIGZpbGw9IiNmZmYiLz48L3N2Zz4K",
+          "graphicAlt": "A compass, representing setting overall direction and accountability"
+        },
+        {
+          "title": "Map",
+          "body": "<p>Understanding the context an AI system operates in: its intended use, who it affects, and what could go wrong for them - essentially the impact assessment work covered in Business Understanding, applied at an organisational scale.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBhdGggZD0iTTMwMCw5NSBDMzQ1LDk1IDM4MCwxMzAgMzgwLDE3MiBDMzgwLDIyNSAzMDAsMjc1IDMwMCwyNzUgQzMwMCwyNzUgMjIwLDIyNSAyMjAsMTcyIEMyMjAsMTMwIDI1NSw5NSAzMDAsOTUgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNzIiIHI9IjI2IiBmaWxsPSIjZmZmIi8+PC9zdmc+Cg==",
+          "graphicAlt": "A map pin, representing understanding the context an AI system operates in"
+        },
+        {
+          "title": "Measure",
+          "body": "<p>Analysing and tracking AI risk with real metrics, not just intentions: testing for bias, tracking performance across groups, and monitoring for drift over time.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBhdGggZD0iTTIyMCwyMjAgQTEwMCwxMDAgMCAwIDEgMzgwLDIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48bGluZSB4MT0iMzAwIiB5MT0iMjIwIiB4Mj0iMzQ1IiB5Mj0iMTU1IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjIwIiByPSIxMSIgZmlsbD0iI2ZmZiIvPjwvc3ZnPgo=",
+          "graphicAlt": "A gauge with a needle, representing measuring AI risk with real metrics"
+        },
+        {
+          "title": "Manage",
+          "body": "<p>Responding to the risks that Measure surfaces: prioritising them, applying controls, and deciding what's an acceptable risk to carry versus what needs fixing before deployment continues.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBhdGggZD0iTTIzMCwxNDAgUTMwMCw5NSAzNzAsMTQwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMzcwLDE0MCAzNDgsMTI4IDM1MiwxNTIiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMzcwLDIwMCBRMzAwLDI0NSAyMzAsMjAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iMjMwLDIwMCAyNTIsMjEyIDI0OCwxODgiIGZpbGw9IiNmZmYiLz48L3N2Zz4K",
+          "graphicAlt": "Two curved arrows forming a cycle, representing ongoing, iterative risk management"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Questions to ask an AI vendor",
+      "body": "<p>Most organisations adopt far more AI through procurement than they build in-house. These questions belong in that process, not as an afterthought once a contract's signed:</p><ul><li>What data was this trained on, and has it been tested for bias - can we see the results, not just a statement that testing happened?</li><li>Is there a model card or equivalent documentation of intended use, known limitations and performance across different groups?</li><li>Is our data used to train your models? Can we opt out, and is that opt-out retroactive?</li><li>Have you adopted a recognised framework - ISO 42001, NIST's AI RMF - or do you have an internal ethics review process?</li><li>What explainability support or audit access do you provide if we need to understand a specific decision?</li><li>What happens when something goes wrong - what's your incident response commitment, and how would we find out?</li></ul>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000044",
+      "title": "Knowledge check",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "A written AI policy document is sufficient on its own to make an organisation's use of AI responsible.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Operationalising responsible AI requires ongoing structures - governance, an inventory, risk-tiering, training - not a one-off document or a single review.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "Only AI systems built in-house need governance; vendor tools are the vendor's responsibility alone.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Once a governance body is set up, it doesn't need to revisit its decisions as the organisation's use of AI changes.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> None of the components covered on this page work as a one-off. An inventory that isn't kept current, a governance body that never reconvenes, or a policy that's never revisited all drift out of date as fast as the technology itself changes - and vendor-supplied AI needs the same scrutiny as anything built in-house, since your organisation is still accountable for how it's used.</p>",
+      "feedbackIncorrect": "<p>Not quite. Responsible AI at an organisational level depends on ongoing structures working together - governance, an inventory, risk-tiering, training - not a document written once, and not something that only applies to systems built in-house. Vendor-supplied AI needs the same scrutiny, since your organisation remains accountable for how it's used.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Where to go for more",
+      "body": "<p>For the current detail on NIST's framework, including its practice guides and playbook: <a class=\"customlink\" href=\"https://www.nist.gov/itl/ai-risk-management-framework\" target=\"_blank\" rel=\"noopener noreferrer\">NIST AI Risk Management Framework</a>. For UK-specific practical guidance on auditing AI systems against data protection law, see the ICO's AI and Data Protection Risk Toolkit, covered in Deployment and Beyond.</p>"
+    }
+  ]
+}
