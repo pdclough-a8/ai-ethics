@@ -63,6 +63,33 @@
     },
     {
       "type": "text",
+      "title": "Try it yourself: Consequence Scanning",
+      "body": "<p>The tools named above aren't just theory - they're meant to be used. <strong>Consequence Scanning</strong> is a lightweight technique originally developed by Doteveryone, a UK think tank (it closed in 2020; the <a class=\"customlink\" href=\"https://www.adalovelaceinstitute.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Ada Lovelace Institute</a> now keeps its resources publicly available). It's designed to run in 15-30 minutes, at any point in a product's life - before you build something, partway through, or on a tool you already use - by asking three questions about one specific AI product, feature or use case:</p><ul><li>What are the <strong>intended and unintended</strong> consequences of this?</li><li>What are the <strong>positive</strong> consequences we want to focus on?</li><li>What are the <strong>negative</strong> consequences we want to mitigate?</li></ul>"
+    },
+    {
+      "type": "reveal",
+      "id": "a1e400000000000000000042",
+      "title": "Have a go",
+      "showText": "Reveal one example response",
+      "hideText": "Hide example response",
+      "first": {
+        "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMTUwIiByPSI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjMyMCIgeTE9IjIwMCIgeDI9IjM4MCIgeTI9IjI2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
+        "alt": "A magnifying glass, representing scanning a scenario for its consequences",
+        "body": "<p><strong>The scenario:</strong> Your organisation is rolling out an AI meeting assistant. It joins video calls, transcribes what's said, writes a summary with action items, and shares it with everyone who was invited - whether they attended or not.</p><p>Take a few minutes - on paper, or just in your head - and work through the three questions above for this tool. Then select the button below to compare against one example response.</p>"
+      },
+      "second": {
+        "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjIwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMDAiIHJ4PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cmVjdCB4PSIyNzAiIHk9IjY1IiB3aWR0aD0iNjAiIGhlaWdodD0iMjQiIHJ4PSI2IiBmaWxsPSIjMGQxZjNjIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxwb2x5bGluZSBwb2ludHM9IjI1NSwxOTAgMjg1LDIyMCAzNDUsMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=",
+        "alt": "A clipboard with a checkmark, representing a completed example response",
+        "body": "<p><strong>Intended and unintended:</strong> Intended to save time and create a reliable record of decisions. Unintended: it also creates a permanent, searchable transcript of things people said assuming they wouldn't be recorded verbatim - and transcription is typically less accurate for some accents, so those contributions can be under-represented or garbled in the summary.</p><p><strong>Positive to focus on:</strong> better accessibility for anyone who missed the meeting or finds live listening difficult; a more reliable record of commitments than relying on memory.</p><p><strong>Negative to mitigate:</strong> a 'chilling effect' if people self-censor knowing everything is transcribed; summaries built for one purpose (team coordination) later being repurposed for another (performance review) without anyone agreeing to that; and no clear point at which transcripts get deleted.</p><p>Your own answers may well differ - that's the point. The value of Consequence Scanning is in the discussion it prompts, not in reaching one 'correct' list.</p>"
+      }
+    },
+    {
+      "type": "text",
+      "title": "Go deeper",
+      "body": "<p>Try running Consequence Scanning on an AI tool you actually use at work - it takes minutes and works just as well solo as in a group. For a more detailed version covering a wider range of risks (truth and disinformation, addiction, inequality, algorithmic bias, surveillance, and more), the <strong>Ethical OS Toolkit</strong> mentioned above sets out eight risk zones to work through in the same way - see the <a class=\"customlink\" href=\"https://oecd-opsi.org/toolkits/ethical-os-toolkit/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethical OS Toolkit overview</a>.</p>"
+    },
+    {
+      "type": "text",
       "title": "Case study: Amazon's hiring algorithm",
       "body": "<p>In 2014, Amazon began developing an AI tool to automate the screening of job applicants. Trained on CVs submitted over a ten-year period, the system was designed to score candidates and surface the best talent.</p><p>The problem? The training data reflected a decade of Amazon's historically male-dominated hiring. The algorithm learned to penalise CVs that included the word 'women's' - such as 'women's chess club' - and downgraded graduates of all-women's colleges.</p><p>Despite attempts to fix the bias, Amazon could not guarantee the tool was operating fairly. The recruiting team quietly abandoned the project by 2017 - it only became public knowledge when Reuters reported on it in 2018.</p>"
     },
