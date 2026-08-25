@@ -56,8 +56,12 @@
           "body": "<p>Where consent or representativeness is a challenge, <strong>synthetic data</strong> - artificially generated data that mirrors real data's statistical properties - can help. However, synthetic data is not a silver bullet: it can still encode the biases present in the real data it was derived from.</p>"
         },
         {
+          "title": "Who prepared this data?",
+          "body": "<p>Behind most large training datasets is significant human labour: people who labelled, moderated, ranked or filtered the data an AI model learns from. This work is frequently outsourced to workers paid far less than equivalent roles in the country commissioning the AI, and can involve prolonged exposure to disturbing material. Responsible data sourcing has to consider not just what data was used, but who prepared it, and under what conditions.</p>"
+        },
+        {
           "title": "Ask yourself",
-          "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected with consent that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li></ul>"
+          "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected with consent that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li><li>Do you know who prepared or labelled this data, and under what conditions?</li></ul>"
         }
       ]
     },
@@ -92,6 +96,39 @@
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> COMPAS illustrates that there is no single, agreed definition of fairness in algorithmic systems - and meeting one definition often means violating another. Building fair AI is not just a technical challenge; it requires explicit ethical choices about which definition of fairness to prioritise, and for whom.</p>",
       "feedbackIncorrect": "<p>Not quite. COMPAS illustrates that there is no single, agreed definition of fairness in algorithmic systems. Meeting one definition often means violating another. Fairness in AI requires explicit ethical choices - not just better data or more sophisticated algorithms.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Case study: The human labour behind AI",
+      "body": "<p>Not every data ethics issue is about the people an AI system is used <em>on</em> - some are about the people used to build it. Large AI models, especially generative ones, rely on vast amounts of human labour to label, moderate and rank training data, work that is often outsourced to lower-income countries and paid far below rates typical in the country where the AI company itself is based.</p><p>In 2023, an investigation revealed that OpenAI had used workers in Kenya, employed through an outsourcing firm, to label text for ChatGPT's safety systems - including graphic descriptions of violence, child sexual abuse and self-harm, so the model could learn to recognise and avoid producing it. Workers were reportedly paid between roughly $1.32 and $2 an hour, and several described lasting psychological harm from the material they were exposed to.</p><p>This was not an isolated case: similar labelling and content-moderation supply chains sit behind other major AI systems. Data provenance is not only a question of representativeness and consent - it also raises the question of who did the work of preparing the data, under what conditions, and for what pay.</p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000041",
+      "title": "Case study: The human labour behind AI",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "The labelling work was performed entirely by automated systems, with no human involvement.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "Data labelling and content moderation for AI systems is often outsourced to low-paid workers, sometimes exposed to psychologically harmful material with limited support.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "This practice was isolated to one company and has not been reported elsewhere in the industry.",
+          "shouldBeSelected": false
+        },
+        {
+          "text": "The workers were paid at rates comparable to equivalent roles in the AI company's home country.",
+          "shouldBeSelected": false
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> Responsible data practices don't end with checking a dataset for representativeness and consent - they extend to the conditions under which the data was prepared. Labelling and moderation work for AI systems is frequently outsourced to workers paid a fraction of rates typical in the commissioning company's home country, sometimes at real psychological cost.</p>",
+      "feedbackIncorrect": "<p>Not quite. This work was performed by human workers, paid a fraction of the rates typical in the country where the AI company itself is based, and reporting has found this pattern is not limited to one company. Responsible data practices have to consider not just what data is used, but the conditions under which it was prepared.</p>",
       "feedbackPartlyCorrect": ""
     },
     {
