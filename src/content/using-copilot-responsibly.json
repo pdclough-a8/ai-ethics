@@ -35,7 +35,7 @@
       "items": [
         {
           "title": "Built-in content filters",
-          "body": "<p>Copilot has protections against harmful content (such as hate speech, violence or self-harm content) and against attempts to manipulate it into ignoring its own safeguards - so-called 'jailbreak' or prompt injection attacks.</p>"
+          "body": "<p>Copilot has protections against harmful content (such as hate speech, violence or self-harm content) and against attempts to manipulate it into ignoring its own safeguards - so-called 'jailbreak' or <strong>prompt injection</strong> attacks, ranked by the OWASP Top 10 for LLM Applications as the single most significant risk facing tools built on large language models.</p>"
         },
         {
           "title": "It won't profile you at work",
