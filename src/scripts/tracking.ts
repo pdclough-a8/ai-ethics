@@ -44,7 +44,11 @@ export interface McqResultRecord {
   result: McqResult;
 }
 
-/** Records a single-attempt quiz answer, keyed by the question's id. */
+/**
+ * Records a quiz attempt, keyed by the question's id. Multiple attempts
+ * are allowed until the learner answers correctly - each call overwrites
+ * the previously-saved attempt for that id.
+ */
 export function recordInteraction(id: string, data: McqResultRecord): void {
   localStorage.setItem(`${INTERACTION_PREFIX}${id}`, JSON.stringify(data));
 }

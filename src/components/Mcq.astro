@@ -135,11 +135,14 @@ const {
 </style>
 
 <script>
-  // Handles every .a8-mcq on the page. Single attempt, matching the
-  // current course (_attempts: 1) - once answered, inputs stay disabled
-  // and the same result shows on future visits. Persistence goes through
-  // src/scripts/tracking.ts (shared with Layout.astro) rather than calling
-  // localStorage directly here - see that file for why.
+  // Handles every .a8-mcq on the page. Multiple attempts are allowed -
+  // an incorrect or partly-correct answer stays editable so the learner
+  // can change their selection and resubmit; only a fully correct answer
+  // locks the question. Persistence goes through src/scripts/tracking.ts
+  // (shared with Layout.astro) rather than calling localStorage directly
+  // here - see that file for why. Each resubmission overwrites the
+  // previously-saved attempt, so a revisit restores whatever was
+  // submitted last (still editable, unless it was correct).
   import { recordInteraction, getInteraction, type McqResult } from '../scripts/tracking';
 
   function evaluate(selected: Set<number>, correct: Set<number>): McqResult {
@@ -152,8 +155,8 @@ const {
 
   function resultLabel(result: McqResult): string {
     if (result === 'correct') return 'Correct!';
-    if (result === 'partlyCorrect') return 'Partly correct';
-    return 'Not quite';
+    if (result === 'partlyCorrect') return 'Partly correct - update your answer and select Submit to try again.';
+    return 'Not quite - update your answer and select Submit to try again.';
   }
 
   function showFeedback(mcqEl: HTMLElement, result: McqResult) {
@@ -189,14 +192,17 @@ const {
         .map((input) => Number(input.value))
     );
 
-    // Restore a previous answer, if this question's already been submitted.
+    // Restore a previous answer, if this question's already been attempted.
+    // Only a correct answer locks the question - an incorrect or
+    // partly-correct attempt is restored but left editable, so a returning
+    // learner can pick up where they left off and keep trying.
     const saved = getInteraction(mcqId);
     if (saved) {
       inputs.forEach((input) => {
         input.checked = saved.selected.includes(Number(input.value));
       });
-      disableInputs(mcqEl);
       showFeedback(mcqEl, saved.result);
+      if (saved.result === 'correct') disableInputs(mcqEl);
     }
 
     form?.addEventListener('submit', (event) => {
@@ -207,8 +213,10 @@ const {
       const result = evaluate(new Set(selected), correctIndexes);
 
       recordInteraction(mcqId, { selected, result });
-      disableInputs(mcqEl);
       showFeedback(mcqEl, result);
+      // Only lock the question once it's actually been answered correctly -
+      // otherwise leave inputs and Submit enabled for another attempt.
+      if (result === 'correct') disableInputs(mcqEl);
     });
   });
 </script>

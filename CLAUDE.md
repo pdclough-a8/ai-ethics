@@ -58,11 +58,11 @@ A page's `.astro` file (in [src/pages/](src/pages/)) is just: import its JSON, `
 
 ## MCQ Components
 
-`mcq` blocks are **ungraded, single-attempt self-checks** — no scoring, no pass/fail, no completion gating:
+`mcq` blocks are **ungraded, multi-attempt self-checks** — no scoring, no pass/fail, no completion gating:
 
 - `isRadio: true` → single-select (radio); `false`/omitted → multi-select (checkbox).
 - Each item has `shouldBeSelected: boolean`. Result is `correct` / `partlyCorrect` / `incorrect`, computed client-side in [Mcq.astro](src/components/Mcq.astro)'s inline script.
-- Once answered, the question is locked and the same result is shown on revisit — persisted via `recordInteraction()`/`getInteraction()` in [src/scripts/tracking.ts](src/scripts/tracking.ts), not SCORM.
+- Only a fully `correct` answer locks the question. An `incorrect`/`partlyCorrect` attempt shows feedback but leaves inputs and Submit enabled, so the learner can change their answer and resubmit — each resubmission overwrites the previously-saved attempt. Revisiting the page restores the last-saved attempt (still editable, unless it was correct) — persisted via `recordInteraction()`/`getInteraction()` in [src/scripts/tracking.ts](src/scripts/tracking.ts), not SCORM.
 - `id` on an `mcq` block must be stable and unique — it's the localStorage key.
 
 ## Progress Tracking (no LMS)
