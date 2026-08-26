@@ -79,11 +79,13 @@
       "items": [
         {
           "text": "Algorithms will always judge risk more accurately than a human decision-maker could.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. COMPAS's developers didn't dispute that its risk scores could be biased - they disputed which definition of fairness mattered most. This case isn't about algorithms beating humans on accuracy.</p>"
         },
         {
           "text": "Data drawn from the criminal justice system is generally too sensitive to ever be used in any predictive algorithm.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. The case doesn't argue this kind of data can never be used - it shows that even accurately-used data runs into fairness trade-offs that better data alone can't resolve.</p>"
         },
         {
           "text": "Different mathematical definitions of fairness can conflict, so satisfying one can break another.",
@@ -91,7 +93,8 @@
         },
         {
           "text": "The system would have been fair if it had simply been trained on more data overall.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. More data wouldn't have resolved the tension - the disputed definitions of fairness can conflict with each other mathematically, regardless of how much data trains the model.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> COMPAS illustrates that there is no single, agreed definition of fairness in algorithmic systems - and meeting one definition often means violating another. Building fair AI is not just a technical challenge; it requires explicit ethical choices about which definition of fairness to prioritise, and for whom.</p>",
@@ -112,7 +115,8 @@
       "items": [
         {
           "text": "The labelling work described was carried out entirely by automated systems, not people.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. This work was done by human workers in Kenya, not automated systems - someone has to review and label the disturbing content an AI needs to learn to recognise and avoid.</p>"
         },
         {
           "text": "Labelling and moderation work is often outsourced to low-paid workers exposed to harmful content.",
@@ -120,11 +124,13 @@
         },
         {
           "text": "This kind of outsourcing was a one-off event, not one repeated anywhere else in the industry.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Reporting has found similar outsourced labelling and moderation supply chains behind other major AI systems too, not just this one case.</p>"
         },
         {
           "text": "The workers involved were paid at rates similar to equivalent roles in the company's home country.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Workers were reportedly paid between roughly $1.32 and $2 an hour - far below rates typical for equivalent roles in the country where the AI company itself is based.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> Responsible data practices don't end with checking a dataset for representativeness and consent - they extend to the conditions under which the data was prepared. Labelling and moderation work for AI systems is frequently outsourced to workers paid a fraction of rates typical in the commissioning company's home country, sometimes at real psychological cost.</p>",

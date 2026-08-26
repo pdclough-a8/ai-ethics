@@ -80,7 +80,8 @@
       "items": [
         {
           "text": "A single written AI policy document is enough on its own to make AI use responsible.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. A policy document nobody actively uses or revisits doesn't operationalise anything by itself - it needs to be backed by structures like governance, an inventory and training.</p>"
         },
         {
           "text": "Ongoing structures - governance, an inventory, risk-tiering, training - not a single document.",
@@ -88,11 +89,13 @@
         },
         {
           "text": "Only systems built in-house need governance; vendor-supplied tools are the vendor's concern.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Your organisation stays accountable for how vendor-supplied AI is used, even though you didn't build it - vendor tools need the same scrutiny as anything built in-house.</p>"
         },
         {
           "text": "Once a governance body is established, its decisions never need to be revisited again.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Governance set once and never revisited goes stale as fast as the technology itself changes - it needs to be an ongoing loop, not a one-off decision.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> None of the components covered on this page work as a one-off. An inventory that isn't kept current, a governance body that never reconvenes, or a policy that's never revisited all drift out of date as fast as the technology itself changes - and vendor-supplied AI needs the same scrutiny as anything built in-house, since your organisation is still accountable for how it's used.</p>",

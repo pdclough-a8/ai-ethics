@@ -71,7 +71,8 @@
       "items": [
         {
           "text": "It can show any user any document across the organisation, regardless of their own permissions.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Copilot layers on top of your existing Microsoft 365 permissions - if you couldn't open a document before Copilot existed, you still can't open it through Copilot.</p>"
         },
         {
           "text": "It only surfaces data you already have access to, and doesn't use your prompts to train itself.",
@@ -79,11 +80,13 @@
         },
         {
           "text": "It automatically fact-checks its own outputs before ever showing them to the user.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Copilot drafts, summarises and suggests, but it doesn't verify its own outputs are accurate - that responsibility, verify before you rely, stays with you.</p>"
         },
         {
           "text": "Using it removes any need for human review before sending or publishing its output.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Whoever sends, publishes or acts on Copilot's output is accountable for it, not Copilot - human review doesn't become optional just because AI produced the draft.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> Copilot layers on top of your existing Microsoft 365 permissions rather than creating new access, and Microsoft states that prompts, responses and retrieved data aren't used to train its foundation models. It does not automatically fact-check its own outputs, though - that responsibility stays with you.</p>",

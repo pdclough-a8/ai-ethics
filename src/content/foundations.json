@@ -115,15 +115,18 @@
         },
         {
           "text": "Amazon's engineers deliberately built the algorithm to favour male candidates over female ones.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. There's no evidence anyone at Amazon set out to disadvantage women - the bias was an unintended side effect of learning from biased historical data, not a deliberate design choice.</p>"
         },
         {
           "text": "The algorithm was rushed into live use without any internal testing or validation process.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Amazon did test the system, repeatedly, and kept trying to fix the bias it found. The problem was that testing couldn't make the bias go away - not that testing never happened.</p>"
         },
         {
           "text": "The training dataset was far too small to generate statistically meaningful predictions.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. The dataset was large - a decade of CVs - not small. The problem was what that data reflected, years of male-dominated hiring, not how much of it there was.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> The bias originated in the training data. Because Amazon's historical hiring had favoured men, the algorithm learned to replicate that pattern - a clear example of how historical bias in data leads to bias in AI outputs, even without any deliberate intention.</p>",

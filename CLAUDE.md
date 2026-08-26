@@ -61,8 +61,9 @@ A page's `.astro` file (in [src/pages/](src/pages/)) is just: import its JSON, `
 `mcq` blocks are **ungraded, multi-attempt self-checks** — no scoring, no pass/fail, no completion gating:
 
 - `isRadio: true` → single-select (radio); `false`/omitted → multi-select (checkbox).
-- Each item has `shouldBeSelected: boolean`. Result is `correct` / `partlyCorrect` / `incorrect`, computed client-side in [Mcq.astro](src/components/Mcq.astro)'s inline script.
+- Each item has `shouldBeSelected: boolean` and an optional `feedback` string. Result is `correct` / `partlyCorrect` / `incorrect`, computed client-side in [Mcq.astro](src/components/Mcq.astro)'s inline script.
 - Only a fully `correct` answer locks the question. An `incorrect`/`partlyCorrect` attempt shows feedback but leaves inputs and Submit enabled, so the learner can change their answer and resubmit — each resubmission overwrites the previously-saved attempt. Revisiting the page restores the last-saved attempt (still editable, unless it was correct) — persisted via `recordInteraction()`/`getInteraction()` in [src/scripts/tracking.ts](src/scripts/tracking.ts), not SCORM.
+- An item's own `feedback` is shown (instead of the question's generic `feedbackIncorrect`) when that's the single wrong option selected — the common case for a single-select question answered incorrectly. It falls back to `feedbackIncorrect` if the item has no `feedback`, or if more than one wrong option was selected at once (multi-select). Every current `mcq` block's incorrect items have their own `feedback` written; a newly-added item without one just falls back gracefully.
 - `id` on an `mcq` block must be stable and unique — it's the localStorage key.
 
 ## Progress Tracking (no LMS)

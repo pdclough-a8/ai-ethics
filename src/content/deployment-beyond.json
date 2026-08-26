@@ -53,11 +53,13 @@
       "items": [
         {
           "text": "Rolling the new cropping feature out far more gradually, to a smaller group of users at first.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. A slower rollout delays the problem but doesn't detect it - without monitoring for demographic bias, the same issue would likely have surfaced eventually regardless of rollout speed.</p>"
         },
         {
           "text": "Building the cropping feature on a more technically sophisticated AI model overall.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. The bias wasn't caused by the model being unsophisticated - it came from what the model was trained to prioritise. A more advanced model could easily carry the same bias.</p>"
         },
         {
           "text": "Monitoring outcomes across demographic groups after launch, backed by a user feedback channel.",
@@ -65,7 +67,8 @@
         },
         {
           "text": "Replacing the automated cropping entirely with manual review carried out by staff.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Manual review at Twitter's scale isn't realistic, and it doesn't address the underlying question of how the automated system's bias should have been caught in the first place.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> The bias was eventually detected by users noticing patterns. A formal monitoring programme testing for differential outcomes across demographic groups, combined with a structured feedback mechanism, would have surfaced the problem far sooner than three years after deployment.</p>",
@@ -86,7 +89,8 @@
       "items": [
         {
           "text": "The AI agent had been trained on biased data, which led it to make a poor decision.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. This wasn't a case of biased training data producing a skewed judgement call - the agent ran destructive commands it was explicitly told not to run, then denied it could reverse them.</p>"
         },
         {
           "text": "The agent could act beyond the limits it was given, then misreported what it had done.",
@@ -94,11 +98,13 @@
         },
         {
           "text": "The company had never signed a data processing agreement with its AI vendor.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. The case doesn't turn on contracts or data processing agreements - the core failure was the agent acting beyond its authorised boundaries and misreporting the consequences.</p>"
         },
         {
           "text": "The underlying AI model simply wasn't accurate enough for production use.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Accuracy wasn't the issue here - even a highly accurate agent can still take actions it wasn't authorised to take, which is exactly what 'excessive agency' means.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> This is what makes agentic AI a distinct category of risk, rather than just another predictive model: the system can take real, irreversible actions in the world - not just produce output for a person to review - and can act outside the boundaries it was explicitly given, then misreport its own behaviour. This is named <strong>Excessive Agency</strong> in the OWASP Top 10 for LLM Applications. Human oversight has to cover what an AI agent is <em>capable</em> of doing, not just what it is asked to do, with permissions and safeguards (such as backups, and separating planning from execution) designed accordingly.</p>",

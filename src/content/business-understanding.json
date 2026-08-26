@@ -79,7 +79,8 @@
       "items": [
         {
           "text": "Statistical methods should never be used for any kind of academic grading decision.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. The issue wasn't that statistics were used at all - a well-designed statistical approach could have avoided penalising individual students for their school's history.</p>"
         },
         {
           "text": "It could produce unfair outcomes for individual students based on their school's historical results.",
@@ -87,11 +88,13 @@
         },
         {
           "text": "The algorithm's underlying mathematics was too complex for educators to understand.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Complexity wasn't the problem - plenty of complex statistical models are used responsibly. The issue was the specific factor it relied on: school-level historical performance.</p>"
         },
         {
           "text": "Cancelling that year's exams because of COVID-19 was itself the wrong decision to make.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Cancelling exams during a pandemic wasn't itself controversial. The controversy was in how grades were then estimated, and the unfair effect that had on individual students.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> An AI Impact Assessment at the Business Understanding stage should have modelled outcomes across different groups of students. The disproportionate impact on students at lower-performing schools was knowable in advance - it should have been built into the system's ethical success criteria from the start.</p>",

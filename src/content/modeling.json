@@ -93,11 +93,13 @@
       "items": [
         {
           "text": "Switching to a more advanced algorithm that achieved a higher score for overall accuracy.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. A higher overall accuracy score can still hide large gaps between groups - these systems could well have scored 'accurate' overall while still failing badly for darker-skinned women.</p>"
         },
         {
           "text": "Simply collecting a much larger volume of training images before building the model.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. More images alone don't fix the problem if the new images are drawn from the same unrepresentative sources as before - what matters is who's represented, not just the volume.</p>"
         },
         {
           "text": "Testing the model's performance separately across demographic groups, not just overall accuracy.",
@@ -105,7 +107,8 @@
         },
         {
           "text": "Training the model on synthetic images instead of real photographs of real people.",
-          "shouldBeSelected": false
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. Synthetic data isn't a fix by default - it can still encode the same biases as the real data it was generated from, unless that's specifically corrected for.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> The bias was detectable through disaggregated testing - breaking down performance metrics by demographic group. Testing for overall accuracy alone would have missed the problem. Responsible AI requires differential testing across the groups a model will be applied to, before deployment.</p>",

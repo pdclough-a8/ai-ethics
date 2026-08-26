@@ -1,16 +1,22 @@
 ---
 // Recreates Adapt's "mcq" component type: a multi-select (checkbox) or
-// single-select (radio) knowledge-check question with single-attempt
+// single-select (radio) knowledge-check question with multi-attempt
 // submission and correct/partly-correct/incorrect feedback.
 //
 // Matches the current course's actual behaviour (checked against
 // course/config.json + components.json): ungraded self-check only - no
 // pass/fail, no completion gating. Answered state persists via
-// localStorage so revisiting a page shows the same result rather than
-// resetting the question.
+// localStorage so revisiting a page restores the same attempt rather than
+// resetting the question - see Mcq.astro's inline script for how retries
+// and locking work.
 interface McqItem {
   text: string;
   shouldBeSelected: boolean;
+  // Shown instead of feedbackIncorrect when this specific wrong option is
+  // the only one selected (the common case for a single-select question).
+  // Falls back to feedbackIncorrect if omitted, or if more than one wrong
+  // option was selected at once (multi-select).
+  feedback?: string;
 }
 
 interface Props {
@@ -67,6 +73,9 @@ const {
   <template data-feedback="correct" set:html={feedbackCorrect} />
   <template data-feedback="incorrect" set:html={feedbackIncorrect} />
   <template data-feedback="partlyCorrect" set:html={feedbackPartlyCorrect ?? feedbackIncorrect} />
+  {items.map((item, i) => item.feedback && (
+    <template data-item-feedback={i} set:html={item.feedback} />
+  ))}
 </div>
 
 <style>
@@ -159,12 +168,31 @@ const {
     return 'Not quite - update your answer and select Submit to try again.';
   }
 
-  function showFeedback(mcqEl: HTMLElement, result: McqResult) {
+  /**
+   * The single wrong option selected, if the selection contains exactly
+   * one option outside the correct set - the normal case for a
+   * single-select question answered incorrectly. Returns null for a
+   * correct/partly-correct result, an empty selection, or a multi-select
+   * question where more than one wrong option was picked at once - all
+   * cases where a generic message fits better than one option's feedback.
+   */
+  function singleWrongSelection(selected: number[], correct: Set<number>): number | null {
+    const wrong = selected.filter((i) => !correct.has(i));
+    return wrong.length === 1 ? wrong[0] : null;
+  }
+
+  function showFeedback(mcqEl: HTMLElement, result: McqResult, wrongIndex: number | null) {
     mcqEl.setAttribute('data-result', result);
     const feedbackPanel = mcqEl.querySelector<HTMLElement>('[data-mcq-feedback]');
     const resultEl = mcqEl.querySelector<HTMLElement>('[data-mcq-result]');
     const bodyEl = mcqEl.querySelector<HTMLElement>('[data-mcq-feedback-body]');
-    const template = mcqEl.querySelector<HTMLTemplateElement>(`template[data-feedback="${result}"]`);
+    // Prefer feedback specific to the wrong option picked, when there is
+    // one, falling back to the question's generic feedback for that result.
+    const itemTemplate =
+      result === 'incorrect' && wrongIndex !== null
+        ? mcqEl.querySelector<HTMLTemplateElement>(`template[data-item-feedback="${wrongIndex}"]`)
+        : null;
+    const template = itemTemplate ?? mcqEl.querySelector<HTMLTemplateElement>(`template[data-feedback="${result}"]`);
 
     if (resultEl) resultEl.textContent = resultLabel(result);
     if (bodyEl && template) {
@@ -201,7 +229,7 @@ const {
       inputs.forEach((input) => {
         input.checked = saved.selected.includes(Number(input.value));
       });
-      showFeedback(mcqEl, saved.result);
+      showFeedback(mcqEl, saved.result, singleWrongSelection(saved.selected, correctIndexes));
       if (saved.result === 'correct') disableInputs(mcqEl);
     }
 
@@ -213,7 +241,7 @@ const {
       const result = evaluate(new Set(selected), correctIndexes);
 
       recordInteraction(mcqId, { selected, result });
-      showFeedback(mcqEl, result);
+      showFeedback(mcqEl, result, singleWrongSelection(selected, correctIndexes));
       // Only lock the question once it's actually been answered correctly -
       // otherwise leave inputs and Submit enabled for another attempt.
       if (result === 'correct') disableInputs(mcqEl);
