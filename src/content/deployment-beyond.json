@@ -17,6 +17,10 @@
       "title": "Monitoring and ongoing governance",
       "items": [
         {
+          "title": "Fair access and responsible release",
+          "body": "<p>Launch is itself an ethical moment, not just an operational one. A staged rollout - a small, representative pilot group before a full release - lets you catch problems before they scale, but only if 'small' doesn't mean 'the easiest users to reach': a pilot skewed toward existing power users or one demographic can miss exactly the harms it needs to catch. How a new AI feature is announced matters too - users should be told what it does, what it doesn't do, and how to get help or opt out, not left to discover an AI system through its mistakes.</p>"
+        },
+        {
           "title": "Monitoring for bias drift",
           "body": "<p>AI systems can develop new biases over time as the data they process changes. A model trained on pre-pandemic data may behave differently in a post-pandemic world. Ongoing monitoring - testing for changes in performance across different groups - is an essential part of responsible deployment.</p>"
         },

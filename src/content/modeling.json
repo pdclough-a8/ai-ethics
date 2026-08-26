@@ -54,6 +54,10 @@
       "title": "Model evaluation and documentation",
       "items": [
         {
+          "title": "Fairness by design",
+          "body": "<p>Fairness isn't only something to test for once a model already exists - it can be built in during training. Techniques include re-weighting or resampling underrepresented groups beforehand (pre-processing), adding fairness constraints directly to the training objective (in-processing), and adjusting a trained model's outputs to correct for measured disparities (post-processing). Deciding which groups to protect, and which definition of fairness to optimise for, is an ethical choice as much as a technical one - the same tension the COMPAS case study raises.</p>"
+        },
+        {
           "title": "Testing for bias",
           "body": "<p>Before deployment, AI models should be tested not only for overall accuracy but for <strong>differential performance across groups</strong>. A model that is 90% accurate overall may be significantly less accurate for minority groups - a pattern that must be detected and addressed before the model goes live.</p>"
         },
@@ -75,7 +79,7 @@
         },
         {
           "title": "Implementation tips",
-          "body": "<ul><li>Test performance separately for different demographic groups - not just overall accuracy.</li><li>Produce a model card documenting limitations and ethical considerations before deployment.</li><li>Include security testing as a standard part of your development process, not an afterthought.</li><li>Set a threshold for acceptable differential performance - and don't deploy until it's met.</li><li>Weigh a model's compute, energy and environmental footprint against its benefits - and prefer a smaller or more efficient model when it meets the need just as well.</li></ul>"
+          "body": "<ul><li>Consider fairness constraints as a design input, not just a post-hoc test - re-weighting, in-processing constraints or output adjustment may all be options depending on your model type.</li><li>Test performance separately for different demographic groups - not just overall accuracy.</li><li>Produce a model card documenting limitations and ethical considerations before deployment.</li><li>Include security testing as a standard part of your development process, not an afterthought.</li><li>Set a threshold for acceptable differential performance - and don't deploy until it's met.</li><li>Weigh a model's compute, energy and environmental footprint against its benefits - and prefer a smaller or more efficient model when it meets the need just as well.</li></ul>"
         }
       ]
     },
