@@ -15,7 +15,7 @@
     {
       "type": "text",
       "title": "The frameworks suggest...",
-      "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to use training, validation and testing data that is relevant, sufficiently representative, free of errors and complete - and to take steps to identify and address data biases that could lead to discriminatory outcomes.</p><p><strong>UK GDPR</strong> applies to any personal data used to train AI models, including requirements around lawful basis, data minimisation and purpose limitation. Using personal data to train an AI for a purpose beyond that for which it was originally collected is likely to be unlawful.</p>"
+      "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to use training, validation and testing data that is relevant, sufficiently representative, and - to the best extent possible, given its intended purpose - free of errors and complete, taking steps to identify and address data biases that could lead to discriminatory outcomes. The Act doesn't define what 'complete' means in practice - it's an obligation to document and justify gaps in your data's coverage, not a bright-line test you can simply tick off.</p><p><strong>UK GDPR</strong> applies to any personal data used to train AI models, including requirements around lawful basis, data minimisation and purpose limitation. Using personal data to train an AI for a purpose beyond that for which it was originally collected is likely to be unlawful.</p>"
     },
     {
       "type": "accordion",
