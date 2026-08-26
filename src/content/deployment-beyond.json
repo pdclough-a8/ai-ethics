@@ -29,6 +29,10 @@
           "body": "<p>Users and those affected by AI decisions should have a way to flag concerns, challenge decisions and seek redress. Effective feedback mechanisms are both an ethical obligation and a practical tool for identifying problems before they scale.</p>"
         },
         {
+          "title": "Planning for when things go wrong",
+          "body": "<p>Twitter and Replit, both covered below, only worked out how to communicate about their failures after the failure was already public. A pre-agreed plan - who speaks, what gets disclosed, how quickly, and to whom - turns an incident into a demonstration of accountability rather than a second, slower-moving crisis. This is worth deciding in advance, not improvising under pressure.</p>"
+        },
+        {
           "title": "Decommissioning",
           "body": "<p>When an AI system is retired, responsible practice requires documentation - such as an updated model card - recording the system's use, known limitations and any incidents. Submitting to an AI register ensures a public record of how AI has been used and decommissioned.</p>"
         }

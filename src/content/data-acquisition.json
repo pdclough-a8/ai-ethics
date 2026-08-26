@@ -49,7 +49,7 @@
         },
         {
           "title": "Consent for AI training",
-          "body": "<p>Even where data was collected lawfully, using it to train an AI may not have been covered by the original consent. Organisations need to consider whether individuals were informed their data might be used in this way - and whether they had a meaningful choice.</p>"
+          "body": "<p>Even where data was collected lawfully, using it to train an AI may not have been covered by the original consent. Organisations need to consider whether individuals were informed their data might be used in this way - and whether they had a meaningful choice.</p><p>This gets harder once a model has already been trained. Removing someone's data from a dataset is straightforward in principle; removing its influence from a model already trained on it - sometimes called machine unlearning - is a genuinely unsolved problem in many cases, not a checkbox to tick.</p>"
         },
         {
           "title": "Synthetic and anonymised data",
@@ -61,7 +61,7 @@
         },
         {
           "title": "Ask yourself",
-          "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected with consent that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li><li>Do you know who prepared or labelled this data, and under what conditions?</li></ul>"
+          "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected with consent that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li><li>Do you know who prepared or labelled this data, and under what conditions?</li><li>If someone withdraws consent, can they be removed not just from the dataset but from any model already trained on it - and if not, do the people affected know that?</li></ul>"
         }
       ]
     },

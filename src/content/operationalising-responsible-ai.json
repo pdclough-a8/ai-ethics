@@ -18,7 +18,7 @@
       "items": [
         {
           "title": "A cross-functional governance body",
-          "body": "<p>An AI ethics committee or working group needs cross-functional membership - legal, security, HR, and someone representing the people affected by AI decisions, not just technical staff - and real decision rights over what launches, not just advisory input. Meeting quarterly to discuss AI in the abstract achieves little; reviewing specific, real proposals against clear criteria achieves much more.</p>"
+          "body": "<p>An AI ethics committee or working group needs cross-functional membership - legal, security, HR, and someone representing the people affected by AI decisions, not just technical staff - and real decision rights over what launches, not just advisory input. Diversity of background matters here as much as diversity of function: a body drawn from a narrow slice of the organisation will tend to miss the same blind spots a narrow project team does. Meeting quarterly to discuss AI in the abstract achieves little; reviewing specific, real proposals against clear criteria achieves much more.</p>"
         },
         {
           "title": "An AI system inventory",
@@ -105,7 +105,7 @@
     {
       "type": "text",
       "title": "Where to go for more",
-      "body": "<p>For the current detail on NIST's framework, including its practice guides and playbook: <a class=\"customlink\" href=\"https://www.nist.gov/itl/ai-risk-management-framework\" target=\"_blank\" rel=\"noopener noreferrer\">NIST AI Risk Management Framework</a>. For UK-specific practical guidance on auditing AI systems against data protection law, see the ICO's AI and Data Protection Risk Toolkit, covered in Deployment and Beyond.</p>"
+      "body": "<p>For the current detail on NIST's framework, including its practice guides and playbook: <a class=\"customlink\" href=\"https://www.nist.gov/itl/ai-risk-management-framework\" target=\"_blank\" rel=\"noopener noreferrer\">NIST AI Risk Management Framework</a>. For UK-specific practical guidance on auditing AI systems against data protection law, see the ICO's AI and Data Protection Risk Toolkit, covered in Deployment and Beyond.</p><p>For a free, question-based framework aimed more at product and founding teams than compliance functions, see Digital Catapult's <a class=\"customlink\" href=\"https://www.digicatapult.org.uk/wp-content/uploads/2023/06/DC_AI_Ethics_Framework-2021.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">AI Ethics Framework</a>. Its seven concepts - benefits, risk, data, trust, inclusion, communication and business model - complement the frameworks above with practical questions to work through at project milestones.</p>"
     }
   ]
 }

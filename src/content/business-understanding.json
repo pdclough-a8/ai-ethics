@@ -5,12 +5,12 @@
     {
       "type": "text",
       "title": "Business Understanding",
-      "body": "<p>The first stage of the AI lifecycle asks two distinct questions, not one. First: <strong>is AI even the right approach to this problem</strong> - or would a simpler, non-AI solution (a fixed rule, a checklist, an unchanged human process) do the job with less risk and complexity? Only once that's answered does the second question arise: if AI genuinely is appropriate, <strong>should this particular system, as currently conceived, actually be built?</strong></p><p>This is where ethical thinking has the greatest impact. Decisions made here - about whether AI is the right tool at all, what problem to solve, what data to use, how to measure success - shape everything that follows. Rushing this stage without ethical consideration risks building the wrong thing well, or building something at all when a simpler approach would have served people better.</p>"
+      "body": "<p>The first stage of the AI lifecycle asks two distinct questions. First: <strong>is AI even the right approach to this problem</strong> - or would a simpler, non-AI solution (a fixed rule, a checklist, an unchanged human process) do the job with less risk and complexity? Only once that's answered does the second question arise: if AI genuinely is appropriate, <strong>should this particular system, as currently conceived, actually be built?</strong></p><p>This is where ethical thinking has the greatest impact. Decisions made here - about whether AI is the right tool at all, what problem to solve, what data to use, how to measure success - shape everything that follows. Rushing this stage without ethical consideration risks building systems that may cause harm.</p>"
     },
     {
       "type": "text",
       "title": "If you use AI tools rather than build them",
-      "body": "<p>Not everyone taking this course decides whether an AI system gets built - plenty of us just use tools, like Copilot, that someone else already built and rolled out. That doesn't make this stage irrelevant to you. Knowing the questions a responsible team should have asked - was AI actually the right tool here, who could this harm, how was 'success' defined - gives you a basis for judging how much to trust a tool's output, and for raising a concern if something about how it's used doesn't sit right.</p>"
+      "body": "<p>Not everyone taking this course decides whether an AI system gets built - plenty of us just use tools, like Copilot, that someone else already built and rolled out. That doesn't make this stage irrelevant to you. Knowing the questions a responsible team should have asked - was AI actually the right tool here, who could this harm, how was 'success' defined - gives you a basis for judging how much to trust a tool's output, and for raising a concern if something about how it's used (or could be used) doesn't sit right.</p>"
     },
     {
       "type": "text",
@@ -26,6 +26,10 @@
           "body": "<p>Before any AI project begins, it is essential to justify why AI - rather than a simpler rule-based system, an unchanged manual process, or no intervention at all - is the right solution. What problem are you actually solving, and could it be addressed another way, with less risk and less complexity? An AI Impact Assessment documents the intended use, potential benefits and possible harms - including the live possibility that the right answer is not to build an AI system at all - ensuring these questions are answered before resources are committed.</p>"
         },
         {
+          "title": "Weighing the benefit",
+          "body": "<p>Risk assessment needs an equal and opposite step: naming the benefit clearly enough to test it. Who benefits, how significant is that benefit, and for which groups - including people who won't use the system directly, but are still affected by it? A benefit that's vague, marginal, or accrues to a different group than the one bearing the risk is a signal to pause, not proceed.</p>"
+        },
+        {
           "title": "Defining success ethically",
           "body": "<p>Success metrics should go beyond technical performance. A model that is 95% accurate overall may still perform poorly for specific groups. Ethical success criteria ask: is the system fair across different populations? Are there groups who might be disproportionately harmed by errors? Defining this upfront creates accountability.</p>"
         },
@@ -35,7 +39,7 @@
         },
         {
           "title": "Ask yourself",
-          "body": "<ul><li>Is AI actually the right approach here - or would a simpler rule, process or human judgement work with less risk?</li><li>If AI is appropriate, should this particular system, as currently designed, be built?</li><li>Have we identified who could be harmed by this system?</li><li>Have we defined success in a way that includes fairness, not just accuracy?</li><li>Have we engaged the people who will be affected by this system?</li></ul>"
+          "body": "<ul><li>Is AI actually the right approach here - or would a simpler rule, process or human judgement work with less risk?</li><li>If AI is appropriate, should this particular system, as currently designed, be built?</li><li>Have we articulated who benefits from this system, and how significantly - not just who could be harmed?</li><li>Have we identified who could be harmed by this system?</li><li>Have we defined success in a way that includes fairness, not just accuracy?</li><li>Have we engaged the people who will be affected by this system?</li></ul>"
         }
       ]
     },
