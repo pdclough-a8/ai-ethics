@@ -105,7 +105,7 @@
     {
       "type": "mcq",
       "id": "a1e400000000000000000010",
-      "title": "Case study: Amazon's hiring algorithm",
+      "title": "Why did Amazon's hiring algorithm produce biased results?",
       "instruction": "Select one option, then select Submit.",
       "isRadio": true,
       "items": [

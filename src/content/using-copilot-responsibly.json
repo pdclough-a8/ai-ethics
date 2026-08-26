@@ -65,7 +65,7 @@
     {
       "type": "mcq",
       "id": "a1e400000000000000000040",
-      "title": "Knowledge check",
+      "title": "What's true about how Copilot handles your data and its own outputs?",
       "instruction": "Select one option, then select Submit.",
       "isRadio": true,
       "items": [

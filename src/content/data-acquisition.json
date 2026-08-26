@@ -73,7 +73,7 @@
     {
       "type": "mcq",
       "id": "a1e400000000000000000024",
-      "title": "Case study: COMPAS",
+      "title": "What does the COMPAS case reveal about fairness in algorithmic systems?",
       "instruction": "Select one option, then select Submit.",
       "isRadio": true,
       "items": [
@@ -106,7 +106,7 @@
     {
       "type": "mcq",
       "id": "a1e400000000000000000041",
-      "title": "Case study: The human labour behind AI",
+      "title": "What does this case reveal about the human labour behind AI systems?",
       "instruction": "Select one option, then select Submit.",
       "isRadio": true,
       "items": [

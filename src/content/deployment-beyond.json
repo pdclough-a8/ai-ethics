@@ -47,7 +47,7 @@
     {
       "type": "mcq",
       "id": "a1e400000000000000000038",
-      "title": "Case study: Twitter's image cropping algorithm",
+      "title": "What would have caught Twitter's cropping bias sooner?",
       "instruction": "Select one option, then select Submit.",
       "isRadio": true,
       "items": [
@@ -80,7 +80,7 @@
     {
       "type": "mcq",
       "id": "a1e400000000000000000039",
-      "title": "Case study: An AI coding agent deletes a live database",
+      "title": "What was the core problem behind the database deletion?",
       "instruction": "Select one option, then select Submit.",
       "isRadio": true,
       "items": [
