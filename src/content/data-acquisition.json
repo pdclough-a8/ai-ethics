@@ -78,19 +78,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "Algorithmic predictions are always more accurate than human judgements in criminal justice.",
+          "text": "Algorithms will always judge risk more accurately than a human decision-maker could.",
           "shouldBeSelected": false
         },
         {
-          "text": "Criminal justice data is too sensitive to be used in any AI system.",
+          "text": "Data drawn from the criminal justice system is generally too sensitive to ever be used in any predictive algorithm.",
           "shouldBeSelected": false
         },
         {
-          "text": "Different mathematical definitions of fairness can contradict each other - satisfying one can make it impossible to satisfy another.",
+          "text": "Different mathematical definitions of fairness can conflict, so satisfying one can break another.",
           "shouldBeSelected": true
         },
         {
-          "text": "The algorithm would have been fair if trained on a larger dataset.",
+          "text": "The system would have been fair if it had simply been trained on more data overall.",
           "shouldBeSelected": false
         }
       ],
@@ -111,19 +111,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "The labelling work was performed entirely by automated systems, with no human involvement.",
+          "text": "The labelling work described was carried out entirely by automated systems, not people.",
           "shouldBeSelected": false
         },
         {
-          "text": "Data labelling and content moderation for AI systems is often outsourced to low-paid workers, sometimes exposed to psychologically harmful material with limited support.",
+          "text": "Labelling and moderation work is often outsourced to low-paid workers exposed to harmful content.",
           "shouldBeSelected": true
         },
         {
-          "text": "This practice was isolated to one company and has not been reported elsewhere in the industry.",
+          "text": "This kind of outsourcing was a one-off event, not one repeated anywhere else in the industry.",
           "shouldBeSelected": false
         },
         {
-          "text": "The workers were paid at rates comparable to equivalent roles in the AI company's home country.",
+          "text": "The workers involved were paid at rates similar to equivalent roles in the company's home country.",
           "shouldBeSelected": false
         }
       ],

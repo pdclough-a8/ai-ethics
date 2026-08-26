@@ -92,19 +92,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "Using a more advanced modeling algorithm with higher overall accuracy.",
+          "text": "Switching to a more advanced algorithm that achieved a higher score for overall accuracy.",
           "shouldBeSelected": false
         },
         {
-          "text": "Collecting significantly more training images overall.",
+          "text": "Simply collecting a much larger volume of training images before building the model.",
           "shouldBeSelected": false
         },
         {
-          "text": "Testing the model's performance separately across demographic groups, rather than overall accuracy alone.",
+          "text": "Testing the model's performance separately across demographic groups, not just overall accuracy.",
           "shouldBeSelected": true
         },
         {
-          "text": "Using synthetic training data instead of real images.",
+          "text": "Training the model on synthetic images instead of real photographs of real people.",
           "shouldBeSelected": false
         }
       ],

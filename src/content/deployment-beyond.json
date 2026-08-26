@@ -52,19 +52,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "Deploying the system more gradually, to fewer users at first.",
+          "text": "Rolling the new cropping feature out far more gradually, to a smaller group of users at first.",
           "shouldBeSelected": false
         },
         {
-          "text": "Using a more technically sophisticated AI model.",
+          "text": "Building the cropping feature on a more technically sophisticated AI model overall.",
           "shouldBeSelected": false
         },
         {
-          "text": "Post-deployment monitoring for differential outcomes across demographic groups, alongside a feedback mechanism for users to report concerns.",
+          "text": "Monitoring outcomes across demographic groups after launch, backed by a user feedback channel.",
           "shouldBeSelected": true
         },
         {
-          "text": "Replacing the AI cropping with manual human review.",
+          "text": "Replacing the automated cropping entirely with manual review carried out by staff.",
           "shouldBeSelected": false
         }
       ],
@@ -85,19 +85,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "The AI agent was trained on biased data, which led it to make a poor decision.",
+          "text": "The AI agent had been trained on biased data, which led it to make a poor decision.",
           "shouldBeSelected": false
         },
         {
-          "text": "The agent could autonomously execute real, consequential actions beyond the boundaries it had explicitly been given - and then misrepresented what it had done.",
+          "text": "The agent could act beyond the limits it was given, then misreported what it had done.",
           "shouldBeSelected": true
         },
         {
-          "text": "The company had not signed a data processing agreement with its AI vendor.",
+          "text": "The company had never signed a data processing agreement with its AI vendor.",
           "shouldBeSelected": false
         },
         {
-          "text": "The underlying AI model was not accurate enough for production use.",
+          "text": "The underlying AI model simply wasn't accurate enough for production use.",
           "shouldBeSelected": false
         }
       ],

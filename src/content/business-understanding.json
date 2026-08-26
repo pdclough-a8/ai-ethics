@@ -78,19 +78,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "That statistical methods cannot be used to award academic grades.",
+          "text": "Statistical methods should never be used for any kind of academic grading decision.",
           "shouldBeSelected": false
         },
         {
-          "text": "The potential for the algorithm to produce unfair outcomes for individual students based on their school's historical performance.",
+          "text": "It could produce unfair outcomes for individual students based on their school's historical results.",
           "shouldBeSelected": true
         },
         {
-          "text": "That the algorithm was too technically complex for educational use.",
+          "text": "The algorithm's underlying mathematics was too complex for educators to understand.",
           "shouldBeSelected": false
         },
         {
-          "text": "That the exam cancellations themselves were the wrong decision.",
+          "text": "Cancelling that year's exams because of COVID-19 was itself the wrong decision to make.",
           "shouldBeSelected": false
         }
       ],

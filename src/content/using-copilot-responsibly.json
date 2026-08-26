@@ -70,19 +70,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "Copilot can show any user any document across the organisation, regardless of their existing permissions.",
+          "text": "It can show any user any document across the organisation, regardless of their own permissions.",
           "shouldBeSelected": false
         },
         {
-          "text": "Copilot only surfaces data the individual user already has permission to access, and does not use prompts or retrieved data to train the underlying model.",
+          "text": "It only surfaces data you already have access to, and doesn't use your prompts to train itself.",
           "shouldBeSelected": true
         },
         {
-          "text": "Copilot automatically fact-checks its own outputs before showing them to the user.",
+          "text": "It automatically fact-checks its own outputs before ever showing them to the user.",
           "shouldBeSelected": false
         },
         {
-          "text": "Using Copilot removes the need for human review before sending or publishing its output.",
+          "text": "Using it removes any need for human review before sending or publishing its output.",
           "shouldBeSelected": false
         }
       ],

@@ -110,19 +110,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "The algorithm was trained on historical hiring data that reflected existing gender bias in the workforce.",
+          "text": "It was trained on historical hiring data that reflected the company's own long-standing gender bias.",
           "shouldBeSelected": true
         },
         {
-          "text": "The algorithm was deliberately programmed to favour male candidates.",
+          "text": "Amazon's engineers deliberately built the algorithm to favour male candidates over female ones.",
           "shouldBeSelected": false
         },
         {
-          "text": "The algorithm had not been tested by Amazon before it was deployed.",
+          "text": "The algorithm was rushed into live use without any internal testing or validation process.",
           "shouldBeSelected": false
         },
         {
-          "text": "The training dataset was too small to produce accurate predictions.",
+          "text": "The training dataset was far too small to generate statistically meaningful predictions.",
           "shouldBeSelected": false
         }
       ],

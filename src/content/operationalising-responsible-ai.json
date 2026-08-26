@@ -79,19 +79,19 @@
       "isRadio": true,
       "items": [
         {
-          "text": "A written AI policy document is sufficient on its own to make an organisation's use of AI responsible.",
+          "text": "A single written AI policy document is enough on its own to make AI use responsible.",
           "shouldBeSelected": false
         },
         {
-          "text": "Operationalising responsible AI requires ongoing structures - governance, an inventory, risk-tiering, training - not a one-off document or a single review.",
+          "text": "Ongoing structures - governance, an inventory, risk-tiering, training - not a single document.",
           "shouldBeSelected": true
         },
         {
-          "text": "Only AI systems built in-house need governance; vendor tools are the vendor's responsibility alone.",
+          "text": "Only systems built in-house need governance; vendor-supplied tools are the vendor's concern.",
           "shouldBeSelected": false
         },
         {
-          "text": "Once a governance body is set up, it doesn't need to revisit its decisions as the organisation's use of AI changes.",
+          "text": "Once a governance body is established, its decisions never need to be revisited again.",
           "shouldBeSelected": false
         }
       ],
