@@ -13,6 +13,25 @@
       "body": "<p>Here's a summary of what we covered:</p><ul><li><strong>Introduction:</strong> AI is a socio-technical system. Responsible AI means developing and using AI in a way that benefits society while minimising harm.</li><li><strong>AI Ethics - The Foundations:</strong> Seven guiding principles - Fairness, Reliability and Safety, Transparency, Accountability, Privacy and Security, Inclusiveness, and Societal and Environmental Wellbeing - frame responsible AI.</li><li><strong>Business Understanding:</strong> The decision to build an AI system must be ethically justified. An AI Impact Assessment surfaces potential harms before development begins.</li><li><strong>Data Acquisition and Understanding:</strong> Bias in training data leads to bias in AI. Data provenance, consent and representation all matter.</li><li><strong>Modeling:</strong> Explainability, disaggregated testing, model documentation and security testing are the tools of responsible model development.</li><li><strong>Deployment and Beyond:</strong> Responsible AI requires ongoing monitoring, human oversight, governance structures and clear decommissioning practices.</li></ul>"
     },
     {
+      "type": "accordion",
+      "title": "Responsible AI, by role",
+      "body": "<p>Responsible AI isn't one job - it's three, depending on where you sit. Here's what each looks like at every stage of the lifecycle we've just covered.</p>",
+      "items": [
+        {
+          "title": "If you build or configure AI systems",
+          "body": "<ul><li><strong>Business Understanding:</strong> decide whether AI is the right tool at all, and who could be harmed.</li><li><strong>Data Acquisition:</strong> curate and audit training data; be honest about consent and provenance.</li><li><strong>Modeling:</strong> test for bias and build fairness in, not just test for it afterwards.</li><li><strong>Deployment:</strong> staged rollout, model cards, and a plan for when something goes wrong.</li></ul>"
+        },
+        {
+          "title": "If you govern how AI is used in your organisation",
+          "body": "<ul><li><strong>Business Understanding:</strong> decide whether and where to adopt a tool, and classify its risk.</li><li><strong>Data Acquisition:</strong> set rules for what can be pasted or connected, and negotiate whether your data trains a vendor's models.</li><li><strong>Modeling:</strong> procurement due diligence and pilot testing before rollout.</li><li><strong>Deployment:</strong> staff training, defined use cases, and closing the feedback loop - from user, to organisation, to vendor.</li></ul>"
+        },
+        {
+          "title": "If you use AI tools day to day",
+          "body": "<ul><li><strong>Business Understanding:</strong> decide what you'll actually trust the tool with, and notice what it's not built for.</li><li><strong>Data Acquisition:</strong> decide, prompt by prompt, what to paste in - the stage where you have the most direct personal control.</li><li><strong>Modeling:</strong> verify the specific output in front of you - check the citation, run the code, sanity-check the number - before relying on it.</li><li><strong>Deployment:</strong> actually be the oversight; treat output as a draft, not a decision, and disclose when AI helped produce your work.</li></ul>"
+        }
+      ]
+    },
+    {
       "type": "flipcard",
       "title": "Top tips",
       "body": "<p>Select a card to reveal each tip.</p>",
