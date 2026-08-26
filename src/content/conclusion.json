@@ -15,7 +15,7 @@
     {
       "type": "accordion",
       "title": "Responsible AI, by role",
-      "body": "<p>Responsible AI isn't one job - it's three, depending on where you sit. Here's what each looks like at every stage of the lifecycle we've just covered.</p>",
+      "body": "<p>Responsible AI isn't one job - it's three, depending on where you sit. Here's what each looks like at every stage of the lifecycle we've just covered - the six universal top tips below still apply, whichever one is yours. This is the condensed view - see <strong>Operationalising Responsible AI</strong> and <strong>Using Copilot Responsibly</strong> for the full detail behind the organisation and individual rows.</p>",
       "items": [
         {
           "title": "If you build or configure AI systems",
@@ -33,8 +33,8 @@
     },
     {
       "type": "flipcard",
-      "title": "Top tips",
-      "body": "<p>Select a card to reveal each tip.</p>",
+      "title": "Top tips for everyone",
+      "body": "<p>Whichever role above is yours, these six apply across the board. Select a card to reveal each tip.</p>",
       "items": [
         {
           "frontImageSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iMTYwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iNzUiIHI9IjQyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjx0ZXh0IHg9IjEyMCIgeT0iOTUiIGZvbnQtc2l6ZT0iNDgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PzwvdGV4dD48L3N2Zz4K",
