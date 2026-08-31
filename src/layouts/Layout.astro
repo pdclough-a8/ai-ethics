@@ -42,6 +42,21 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} - Analytics8 // AI Ethics</title>
+
+    <!-- PWA installability: manifest + icons + theme colour. The service
+         worker itself is registered from the inline script below, not
+         linked here - <link rel="manifest"> is what iOS/Android read to
+         build the "Add to Home Screen" icon/name/standalone-display, see
+         src/pages/manifest.webmanifest.ts. -->
+    <link rel="manifest" href={withBase('/manifest.webmanifest')} />
+    <meta name="theme-color" content="#c24429" />
+    <link rel="icon" type="image/png" sizes="32x32" href={withBase('/icons/favicon-32.png')} />
+    <link rel="icon" type="image/png" sizes="16x16" href={withBase('/icons/favicon-16.png')} />
+    <!-- iOS ignores <link rel="manifest"> for home-screen icon/standalone
+         behaviour - these two tags are what it actually reads. -->
+    <link rel="apple-touch-icon" href={withBase('/icons/apple-touch-icon.png')} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="AI Ethics" />
   </head>
   <body>
     <header class="a8-header">
@@ -248,6 +263,20 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
       // to change if SCORM reporting is ever added; this script just reads
       // its results back out and updates the nav/progress-bar DOM.
       import { recordPageVisit, normalisePath, resetProgress } from '../scripts/tracking';
+      import { withBase } from '../scripts/paths';
+
+      // Registers src/pages/sw.js.ts - safe to call on every load; the
+      // browser no-ops if the registration is unchanged, and re-installs
+      // it (see CACHE_VERSION in that file) when it isn't. Feature-detected
+      // since older browsers, and non-browser contexts, don't have this API.
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register(withBase('/sw.js')).catch(() => {
+            // Installability is a progressive enhancement here, not a
+            // requirement - the course works the same without it.
+          });
+        });
+      }
 
       document.querySelector('[data-reset-progress]')?.addEventListener('click', () => {
         if (window.confirm('Reset all page-visited and quiz progress for this course?')) {
