@@ -23,6 +23,17 @@ Push to `main` triggers [.github/workflows/static.yml](.github/workflows/static.
 - Any hand-written internal link or asset path (nav `href`s, image `src` values pulled from content JSON) **must** go through `withBase()` in [src/scripts/paths.ts](src/scripts/paths.ts). Astro only auto-prefixes URLs it generates itself (its own bundled JS/CSS) — plain `"/..."` strings we write ourselves resolve against the domain root unless passed through `withBase()`.
 - Astro's default `build.assets` output folder (`_astro`) is intentionally left alone — do not rename it to something like `assets`, which would collide with `public/assets/` (course images).
 
+## PWA (Installable App)
+
+The site is installable (Add to Home Screen / desktop browser install) as a Progressive Web App — this is additive, not a fork: the same build serves both the plain browser experience and the installed one, and it has no effect on desktop rendering.
+
+- [src/pages/manifest.webmanifest.ts](src/pages/manifest.webmanifest.ts) and [src/pages/sw.js.ts](src/pages/sw.js.ts) are Astro endpoints, not static files in `public/` — they're generated at build time so their `start_url`/`scope`/icon/precache paths go through `withBase()` like everything else, instead of hardcoding `/ai-ethics` a second place that could drift from `astro.config.mjs`. Astro prerenders them to `dist/manifest.webmanifest` and `dist/sw.js` same as any other route.
+- Both are registered from [Layout.astro](src/layouts/Layout.astro): the manifest/icons/theme-color via `<link>`/`<meta>` tags in `<head>`, the service worker via `navigator.serviceWorker.register()` in the existing inline script.
+- **Service worker strategy:** network-first for page navigations (always fresh when online; falls back to cache when offline), cache-first with background refresh for everything else. All 10 pages (7 core lifecycle pages + the 2 `bonusPages.ts` pages) are precached on install, so the course works fully offline once opened online at least once.
+- **Cache busting:** `CACHE_VERSION` at the top of `sw.js.ts` — bump it on any deploy where already-installed users should drop stale cached content immediately rather than waiting for the network-first/cache-first logic to refresh it naturally.
+- `CORE_PAGES` in `sw.js.ts` is a **fourth** hardcoded copy of the 7-page list (alongside `Layout.astro`'s nav, `index.astro`'s menu grid, and — for the bonus pages only — the shared `bonusPages.ts`). Keep it in sync if pages are added/renamed/removed.
+- **App icons** live in `public/icons/` (192/512 standard + maskable, 180 `apple-touch-icon`, 16/32 favicons), generated from the loop mark cropped out of `public/assets/logo-analytics8.png` — white mark on `--a8-accent`, plus a small ink-coloured "AI" badge chip in the bottom-right corner (favicons excluded — too small to read at 16/32px). The badge, not the mark or accent colour, is what should change for a different A8 resource's icon (e.g. "DE" for a Data Ethics PWA) — the accent colour is the one deliberately shared brand colour across courses (see `theme.css`'s note on `--a8-accent`), not something to fork per-resource. Regenerated via a one-off Python/Pillow script (not checked into the repo — recreate from this description, or ask for it, if the icons need regenerating) rather than a runtime dependency, matching this repo's "no other runtime dependencies" stance.
+
 ## Content Architecture
 
 Course content is driven entirely by JSON files in [src/content/](src/content/), one per page:
