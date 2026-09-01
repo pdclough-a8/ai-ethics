@@ -74,6 +74,7 @@
     {
       "type": "accordion",
       "title": "What makes governance real",
+      "body": "<p>The structures above are what let an organisation adopt AI safely - but having them doesn't guarantee anyone actually behaves differently because of them. These five aren't a further checklist to add to everything already on this page; they're examples of what tends to separate governance that's genuinely lived from governance that exists only on paper. Not all of them will fit every organisation, especially a smaller one without a dedicated governance function - and none of them need to be in place before you start. Treat them as things to keep in mind and grow into, not a bar to clear first.</p>",
       "items": [
         {
           "title": "Psychological safety to say no",
@@ -81,7 +82,7 @@
         },
         {
           "title": "Incentives that don't punish caution",
-          "body": "<p>If teams are measured purely on shipping speed, an ethics review becomes the thing everyone routes around rather than through. Whether a project engaged properly with governance - not just whether it launched on time - needs to be part of how success is actually judged, or the incentive structure will quietly work against everything else on this page.</p>"
+          "body": "<p>If teams are measured purely on shipping speed, an ethics review becomes the thing everyone routes around rather than through. Organisations that take this seriously build 'engaged properly with governance' into how a project's success gets judged, alongside whether it launched on time - not instead of it.</p>"
         },
         {
           "title": "Embedded champions, not just a central committee",
