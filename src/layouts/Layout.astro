@@ -255,6 +255,31 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
       .a8-reset:focus {
         opacity: 1;
       }
+
+      /* :global() because this targets the toast element
+         showOfflineReadyToast() creates at runtime, below - it isn't
+         present in this component's template, so it wouldn't otherwise
+         get Astro's scoped data-astro-cid attribute. */
+      :global(.a8-toast) {
+        position: fixed;
+        left: 50%;
+        bottom: var(--a8-space-lg);
+        transform: translate(-50%, 0.5rem);
+        z-index: 100;
+        max-width: calc(100vw - 2 * var(--a8-space-lg));
+        background: var(--a8-ink);
+        color: #fff;
+        font-size: 0.9rem;
+        padding: var(--a8-space-sm) var(--a8-space-md);
+        border-radius: var(--a8-radius);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        transition: opacity 0.25s ease, transform 0.25s ease;
+      }
+      :global(.a8-toast--visible) {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
     </style>
 
     <script>
@@ -271,11 +296,50 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
       // since older browsers, and non-browser contexts, don't have this API.
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register(withBase('/sw.js')).catch(() => {
-            // Installability is a progressive enhancement here, not a
-            // requirement - the course works the same without it.
-          });
+          navigator.serviceWorker
+            .register(withBase('/sw.js'))
+            .then((registration) => {
+              // The service worker's install step (see sw.js.ts) downloads
+              // every page up front via cache.addAll() - it doesn't need
+              // the learner to click through pages themselves. But that
+              // download happens silently, so there's otherwise no way to
+              // tell it's finished (and therefore safe to go offline) -
+              // this surfaces it. `registration.installing`/`.waiting` is
+              // only set the first time this SW version installs; on a
+              // later visit where it's already active, there's nothing new
+              // to report, so no toast.
+              const worker = registration.installing || registration.waiting;
+              if (!worker) return;
+              worker.addEventListener('statechange', () => {
+                // Reaching 'activated' only happens if the install step's
+                // cache.addAll() resolved - a failed download leaves the
+                // worker stuck in a failed/redundant state instead, so this
+                // is a reliable "fully cached" signal, not a guess.
+                if (worker.state === 'activated') {
+                  showOfflineReadyToast();
+                }
+              });
+            })
+            .catch(() => {
+              // Installability is a progressive enhancement here, not a
+              // requirement - the course works the same without it.
+            });
         });
+      }
+
+      function showOfflineReadyToast() {
+        const toast = document.createElement('div');
+        toast.className = 'a8-toast';
+        toast.setAttribute('role', 'status');
+        toast.textContent = 'This course is downloaded and ready to use offline.';
+        document.body.appendChild(toast);
+        // Let the browser register the initial (pre-transition) state
+        // before flipping the class that transitions it in.
+        requestAnimationFrame(() => toast.classList.add('a8-toast--visible'));
+        setTimeout(() => {
+          toast.classList.remove('a8-toast--visible');
+          toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+        }, 5000);
       }
 
       document.querySelector('[data-reset-progress]')?.addEventListener('click', () => {
