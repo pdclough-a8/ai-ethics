@@ -71,7 +71,7 @@
         {
           "type": "text",
           "title": "Try it yourself: Consequence Scanning",
-          "body": "<p>The tools named above aren't just theory - they're meant to be used. <strong>Consequence Scanning</strong> is a lightweight technique originally developed by Doteveryone, a UK think tank (it closed in 2020; the <a class=\"customlink\" href=\"https://www.adalovelaceinstitute.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Ada Lovelace Institute</a> now keeps its resources publicly available). It's designed to run in 15-30 minutes, at any point in a product's life - before you build something, partway through, or on a tool you already use - by asking three questions about one specific AI product, feature or use case:</p><ul><li>What are the <strong>intended and unintended</strong> consequences of this?</li><li>What are the <strong>positive</strong> consequences we want to focus on?</li><li>What are the <strong>negative</strong> consequences we want to mitigate?</li></ul>"
+          "body": "<p><strong>Consequence Scanning</strong> is a lightweight technique originally developed by Doteveryone, a UK think tank (it closed in 2020; the <a class=\"customlink\" href=\"https://www.adalovelaceinstitute.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Ada Lovelace Institute</a> now keeps its resources publicly available). It's designed to run at any point in a product's life - before you build something, partway through, or on a tool you already use - by asking three questions about one specific AI product, feature or use case:</p><ul><li>What are the <strong>intended and unintended</strong> consequences of this?</li><li>What are the <strong>positive</strong> consequences we want to focus on?</li><li>What are the <strong>negative</strong> consequences we want to mitigate?</li></ul>"
         },
         {
           "type": "reveal",
@@ -93,7 +93,7 @@
         {
           "type": "text",
           "title": "Go deeper",
-          "body": "<p>Try running Consequence Scanning on an AI tool you actually use at work - it takes minutes and works just as well solo as in a group. For a more detailed version covering a wider range of risks (truth and disinformation, addiction, inequality, algorithmic bias, surveillance, and more), the <strong>Ethical OS Toolkit</strong> mentioned above sets out eight risk zones to work through in the same way - see the <a class=\"customlink\" href=\"https://oecd-opsi.org/toolkits/ethical-os-toolkit/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethical OS Toolkit overview</a>.</p>"
+          "body": "<p>Try running Consequence Scanning on an AI tool you actually use at work. For a more detailed version covering a wider range of risks (truth and disinformation, addiction, inequality, algorithmic bias, surveillance, and more), the <strong>Ethical OS Toolkit</strong> mentioned above sets out eight risk zones to work through in the same way - see the <a class=\"customlink\" href=\"https://oecd-opsi.org/toolkits/ethical-os-toolkit/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethical OS Toolkit overview</a>.</p>"
         }
       ]
     },

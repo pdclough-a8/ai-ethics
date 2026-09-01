@@ -7,7 +7,7 @@ import { bonusPages } from '../scripts/bonusPages';
 // Real copy, from course/en/course.json's title/body/_menu fields (the
 // course "home" page Adapt renders separately from the 7 topic pages) -
 // plus one added paragraph (see below) that isn't part of that original text.
-const introBody = `<p>AI systems are transforming how we work, communicate and make decisions. As these technologies become more powerful and pervasive, the question of how to develop and deploy them ethically and responsibly has never been more important.</p><p>In this course, you'll explore the foundations of AI ethics, follow the AI lifecycle to see where ethical considerations apply in practice, and examine real-world case studies where things went wrong - and why.</p><p>Not everyone taking this course is building an AI system - many of us are using tools, like Copilot, that someone else already built, or overseeing how AI is used across an organisation. Every stage still applies, whichever describes you: what changes is what you're expected to <em>do</em> with it, not whether it's relevant.</p><p>This content was written and curated by Paul Clough, Lead Data Science and AI Consultant at Analytics8 and Professor Emeritus at the University of Sheffield.</p><p><strong>Select 'Introduction' to begin.</strong></p>`;
+const introBody = `<p>AI systems are transforming how we work, communicate and make decisions. As these technologies become more powerful and pervasive, the question of how to develop and deploy them ethically and responsibly has never been more important.</p><p>In this course, you'll explore the foundations of AI ethics, follow the AI lifecycle to see where ethical considerations apply in practice, and examine real-world case studies where things went wrong - and why.</p><p>Not everyone taking this course is building an AI system - many people are using tools, like Copilot or Claude, that someone else already built, or overseeing how AI is used across an organisation. Every stage still applies, whichever describes you: what changes is what you're expected to <em>do</em> with it, not whether it's relevant.</p><p>This content was written and curated by Paul Clough, Lead Data Science and AI Consultant at Analytics8 and Professor Emeritus at the University of Sheffield.</p><p><strong>Select 'Introduction' to begin.</strong></p>`;
 
 // Reconciles the two navigation models this course previously mixed (the
 // hero copy's "select Introduction to begin", implying a sequence, against
@@ -17,7 +17,7 @@ const introBody = `<p>AI systems are transforming how we work, communicate and m
 // link - nothing here gates navigation, and progress (via tracking.ts) lets
 // a returning visitor jump straight back to where they left off.
 const menuInstructionText =
-  "Best worked through in order, but every topic is one click away - jump ahead, or pick up right where you left off.";
+  "Best worked through in order, but not mandatory - jump ahead, or pick up right where you left off.";
 
 const pages = [
   { title: 'Introduction', href: '/introduction/' },
