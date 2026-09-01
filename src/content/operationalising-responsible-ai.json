@@ -18,7 +18,7 @@
       "items": [
         {
           "title": "A cross-functional governance body",
-          "body": "<p>An AI ethics committee or working group needs cross-functional membership - legal, security, HR, and someone representing the people affected by AI decisions, not just technical staff - and real decision rights over what launches, not just advisory input. Diversity of background matters here as much as diversity of function: a body drawn from a narrow slice of the organisation will tend to miss the same blind spots a narrow project team does. Meeting quarterly to discuss AI in the abstract achieves little; reviewing specific, real proposals against clear criteria achieves much more.</p>"
+          "body": "<p>An AI ethics committee or working group needs cross-functional membership - legal, security, HR, and someone representing the people affected by AI decisions, not just technical staff - and real decision rights over what launches, not just advisory input. Diversity of background matters here as much as diversity of function: a body drawn from a narrow slice of the organisation will tend to miss the same blind spots a narrow project team does. Meeting quarterly to discuss AI in the abstract achieves little; reviewing specific, real proposals against clear criteria achieves much more - and the <strong>AI Impact Assessment</strong> from Business Understanding is exactly that criteria. It shouldn't be a one-off exercise for whoever happens to be starting a new project; it's the actual artefact this body should be reviewing, case by case, every time.</p>"
         },
         {
           "title": "An AI system inventory",
@@ -70,6 +70,32 @@
       "type": "text",
       "title": "Questions to ask an AI vendor",
       "body": "<p>Most organisations adopt far more AI through procurement than they build in-house. These questions belong in that process, not as an afterthought once a contract's signed:</p><ul><li>What data was this trained on, and has it been tested for bias - can we see the results, not just a statement that testing happened?</li><li>Is there a model card or equivalent documentation of intended use, known limitations and performance across different groups?</li><li>Is our data used to train your models? Can we opt out, and is that opt-out retroactive?</li><li>Have you adopted a recognised framework - ISO 42001, NIST's AI RMF - or do you have an internal ethics review process?</li><li>What's the environmental footprint of the model you're asking us to run - can you share compute or energy figures, not just a sustainability statement?</li><li>What explainability support or audit access do you provide if we need to understand a specific decision?</li><li>What happens when something goes wrong - what's your incident response commitment, and how would we find out?</li></ul>"
+    },
+    {
+      "type": "accordion",
+      "title": "What makes governance real",
+      "items": [
+        {
+          "title": "Psychological safety to say no",
+          "body": "<p>A concern channel nobody trusts is decoration. What makes it real is what happens after someone uses it: whether a concern gets a genuine response, whether a project has ever actually been paused or killed on ethical grounds, and whether the person who raised it faces any career cost for doing so. Leadership modelling this - visibly, not just in policy - is what tells people the channel is safe to use before they actually need it.</p>"
+        },
+        {
+          "title": "Incentives that don't punish caution",
+          "body": "<p>If teams are measured purely on shipping speed, an ethics review becomes the thing everyone routes around rather than through. Whether a project engaged properly with governance - not just whether it launched on time - needs to be part of how success is actually judged, or the incentive structure will quietly work against everything else on this page.</p>"
+        },
+        {
+          "title": "Embedded champions, not just a central committee",
+          "body": "<p>A governance body that only reviews at the gate is reactive by design - it only sees a problem once someone brings it one. Organisations that do this well also embed 'responsible AI champions' inside product and engineering teams: people whose role includes noticing a concern early, before it reaches a formal review, not just gatekeeping at the end.</p>"
+        },
+        {
+          "title": "Learning loops from near-misses",
+          "body": "<p>This course leans on other organisations' well-documented failures - Amazon, COMPAS, the A-level algorithm - because they're public and instructive. A mature organisation also reviews its own near-misses periodically, including the ones that never became public, and shares them internally. That's what keeps ethical judgement sharp in practice, rather than something people encountered once in a training module like this one.</p>"
+        },
+        {
+          "title": "Proactive transparency",
+          "body": "<p>The vendor questions above are a floor, not a ceiling - due diligence you do because you have to. Publishing a model card, or engaging an affected community, before you're required to signals a genuinely different posture, and it's usually cheaper to do early than to do defensively after something's gone wrong.</p>"
+        }
+      ]
     },
     {
       "type": "mcq",
