@@ -259,26 +259,32 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
       /* :global() because this targets the toast element
          showOfflineReadyToast() creates at runtime, below - it isn't
          present in this component's template, so it wouldn't otherwise
-         get Astro's scoped data-astro-cid attribute. */
+         get Astro's scoped data-astro-cid attribute.
+
+         Deliberately NOT position:fixed - an earlier version floated this
+         over the bottom of the viewport, which meant it could sit directly
+         on top of page content (e.g. mid-paragraph on a short mobile
+         screen) for the few seconds it's visible, making that content
+         unreadable underneath it. Inserted in normal document flow at the
+         very top of <body> instead (see showOfflineReadyToast() below), so
+         it pushes the page down rather than covering any of it - possible
+         on any device, not just short mobile ones. */
       :global(.a8-toast) {
-        position: fixed;
-        left: 50%;
-        bottom: var(--a8-space-lg);
-        transform: translate(-50%, 0.5rem);
-        z-index: 100;
-        max-width: calc(100vw - 2 * var(--a8-space-lg));
+        display: block;
         background: var(--a8-ink);
         color: #fff;
         font-size: 0.9rem;
-        padding: var(--a8-space-sm) var(--a8-space-md);
-        border-radius: var(--a8-radius);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        padding: 0 var(--a8-space-md);
+        max-height: 0;
         opacity: 0;
-        transition: opacity 0.25s ease, transform 0.25s ease;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
       }
       :global(.a8-toast--visible) {
+        max-height: 6rem;
         opacity: 1;
-        transform: translate(-50%, 0);
+        padding: var(--a8-space-sm) var(--a8-space-md);
       }
     </style>
 
@@ -332,7 +338,10 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
         toast.className = 'a8-toast';
         toast.setAttribute('role', 'status');
         toast.textContent = 'This course is downloaded and ready to use offline.';
-        document.body.appendChild(toast);
+        // Inserted as the very first thing in <body> (above the header),
+        // in normal document flow rather than a fixed overlay - see the
+        // .a8-toast CSS comment for why.
+        document.body.insertBefore(toast, document.body.firstChild);
         // Let the browser register the initial (pre-transition) state
         // before flipping the class that transitions it in.
         requestAnimationFrame(() => toast.classList.add('a8-toast--visible'));
