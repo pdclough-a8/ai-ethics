@@ -66,6 +66,12 @@
           "body": "<p>Many AI systems fall into lower risk categories. Chatbots and AI-generated content carry transparency obligations - users must know they are interacting with AI. Most AI, such as spam filters and recommendation systems, is minimal risk and subject only to general requirements.</p>",
           "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHBhdGggZD0iTTMwMCw5NSBMMzY1LDEyMCBMMzY1LDE5MCBRMzY1LDIzNSAzMDAsMjU1IFEyMzUsMjM1IDIzNSwxOTAgTDIzNSwxMjAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cG9seWxpbmUgcG9pbnRzPSIyNzAsMTc1IDI5MiwyMDAgMzM1LDE1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4K",
           "graphicAlt": "A shield with a checkmark inside it"
+        },
+        {
+          "title": "General-purpose AI models: a separate track",
+          "body": "<p>Foundation models like GPT, Claude and Gemini sit alongside the four risk tiers above, not inside them. Their providers carry their own set of obligations regardless of what they're used for: technical documentation, a copyright policy, and a summary of the training data used - with extra duties, such as systemic-risk evaluation and incident reporting, for the most capable models. If your organisation deploys a tool built on one of these models - Copilot, for instance - you inherit certain deployer-side obligations even though you didn't build the underlying model yourself.</p>",
+          "graphicSrc": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjIwIiB5PSIxOTUiIHdpZHRoPSIxNjAiIGhlaWdodD0iNDUiIHJ4PSI2IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iOCIvPjxyZWN0IHg9IjI1MCIgeT0iMTQwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQ1IiByeD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cmVjdCB4PSIyNzIiIHk9IjkwIiB3aWR0aD0iNTYiIGhlaWdodD0iNDAiIHJ4PSI2IiBmaWxsPSIjZmZmIi8+PC9zdmc+",
+          "graphicAlt": "Three stacked blocks of decreasing size, representing tools built on top of a foundation model"
         }
       ]
     },
