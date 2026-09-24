@@ -54,7 +54,7 @@ export const GET: APIRoute = () => {
 // Bump this on any deploy where already-installed visitors should drop
 // their old cached content immediately rather than waiting for it to
 // expire naturally via the cache-first/network-first logic below.
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = 'a8-ai-ethics-' + CACHE_VERSION;
 const BASE = ${JSON.stringify(withBase('/'))};
 const PRECACHE_URLS = ${JSON.stringify(precacheUrls)};
