@@ -13,6 +13,11 @@ interface Props {
 
 const { title, duration, variant = 'default' } = Astro.props;
 
+// Single source of truth for the "last reviewed" date shown in the
+// footer of every page - update this when a content review is done,
+// rather than stamping a date into each content JSON file.
+const LAST_REVIEWED = 'September 2026';
+
 // Mirrors contentObjects.json's page list - hand-maintained for now.
 // (In the Adapt version this tree is generated across 5 JSON files;
 // here it's just this one array.)
@@ -112,7 +117,7 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
 
     <footer class="a8-footer">
       <div class="a8-container a8-footer__inner">
-        <p>Analytics8 // AI Ethics</p>
+        <p>Analytics8 // AI Ethics <span class="a8-footer__reviewed">&middot; Last reviewed: {LAST_REVIEWED}</span></p>
         <button type="button" class="a8-reset" data-reset-progress>Reset progress</button>
       </div>
     </footer>
@@ -251,6 +256,9 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
       }
       .a8-footer p {
         margin: 0;
+      }
+      .a8-footer__reviewed {
+        opacity: 0.7;
       }
       .a8-reset {
         background: none;
