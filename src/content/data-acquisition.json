@@ -15,7 +15,7 @@
     {
       "type": "text",
       "title": "The frameworks suggest...",
-      "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to use training, validation and testing data that is relevant, sufficiently representative, and - to the best extent possible, given its intended purpose - free of errors and complete, taking steps to identify and address data biases that could lead to discriminatory outcomes. The Act doesn't define what 'complete' means in practice - it's an obligation to document and justify gaps in your data's coverage, not a bright-line test you can simply tick off.</p><p><strong>UK GDPR</strong> applies to any personal data used to train AI models, including requirements around lawful basis, data minimisation and purpose limitation. Using personal data to train an AI for a purpose beyond that for which it was originally collected is likely to be unlawful.</p>"
+      "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to use training, validation and testing data that is relevant, sufficiently representative, and - to the best extent possible, given its intended purpose - free of errors and complete, taking steps to identify and address data biases that could lead to discriminatory outcomes. The Act doesn't define what 'complete' means in practice - it's an obligation to document and justify gaps in your data's coverage, not a bright-line test you can simply tick off.</p><p><strong>UK GDPR</strong> applies to any personal data used to train AI models, including requirements around lawful basis, data minimisation and purpose limitation. Repurposing personal data to train an AI beyond the purpose it was originally collected for needs either a compatibility assessment against that original purpose, or a new lawful basis - and may be unlawful without one. The Data (Use and Access) Act 2025 has since relaxed the compatibility test further for certain purposes, such as research, archiving and statistics, but the underlying requirement to justify the new use remains for everything else.</p>"
     },
     {
       "type": "accordion",
@@ -48,8 +48,8 @@
           "body": "<p>The provenance of training data matters both ethically and legally. Data scraped from the internet, purchased from third parties, or drawn from legacy systems may have been collected without the knowledge or consent of the individuals it relates to. Understanding where your data came from - and on what basis - is a foundational responsibility.</p>"
         },
         {
-          "title": "Consent for AI training",
-          "body": "<p>Even where data was collected lawfully, using it to train an AI may not have been covered by the original consent. Organisations need to consider whether individuals were informed their data might be used in this way - and whether they had a meaningful choice.</p><p>This gets harder once a model has already been trained. Removing someone's data from a dataset is straightforward in principle; removing its influence from a model already trained on it - sometimes called machine unlearning - is a genuinely unsolved problem in many cases, not a checkbox to tick.</p>"
+          "title": "Lawful basis and transparency",
+          "body": "<p>Even where data was collected lawfully, using it to train an AI may not have been covered by the original basis it was collected under. Organisations need to consider whether individuals were informed their data might be used in this way, and whether they had a meaningful choice or a meaningful way to object. Consent is only one of six lawful bases under UK GDPR - organisations training AI on personal data more often rely on legitimate interests than consent, but the same transparency questions apply whichever basis they use.</p><p>This gets harder once a model has already been trained. Removing someone's data from a dataset is straightforward in principle; removing its influence from a model already trained on it - sometimes called machine unlearning - is a genuinely unsolved problem in many cases, not a checkbox to tick.</p>"
         },
         {
           "title": "Synthetic and anonymised data",
@@ -61,7 +61,7 @@
         },
         {
           "title": "Ask yourself",
-          "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected with consent that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li><li>Do you know who prepared or labelled this data, and under what conditions?</li><li>If someone withdraws consent, can they be removed not just from the dataset but from any model already trained on it - and if not, do the people affected know that?</li></ul>"
+          "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected on a lawful basis that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li><li>Do you know who prepared or labelled this data, and under what conditions?</li><li>If someone withdraws consent, can they be removed not just from the dataset but from any model already trained on it - and if not, do the people affected know that?</li></ul>"
         }
       ]
     },
