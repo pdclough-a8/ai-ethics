@@ -15,7 +15,7 @@
     {
       "type": "text",
       "title": "The frameworks suggest...",
-      "body": "<p>The <strong>EU AI Act</strong> requires organisations to consider potential risks before deploying AI systems, with higher-risk applications subject to stricter requirements. It classifies AI systems into four risk levels: unacceptable risk (prohibited), high risk (heavily regulated), limited risk (transparency obligations), and minimal risk.</p><p><strong>ISO 42001</strong>, the international standard for AI management systems, recommends that organisations establish clear accountability from the outset - including defining the intended purpose and potential harms of any AI project before development begins. Unlike the EU AI Act or UK GDPR, ISO 42001 is a voluntary, certifiable standard rather than law - organisations choose to adopt and be audited against it, rather than being legally required to.</p>"
+      "body": "<p>The <strong>EU AI Act</strong> requires organisations to consider potential risks before deploying AI systems, with higher-risk applications subject to stricter requirements. It classifies AI systems into four risk levels: unacceptable risk (prohibited), high risk (heavily regulated), limited risk (transparency obligations), and minimal risk.</p><p><strong>ISO/IEC 42001</strong>, the international standard for AI management systems, sets requirements for organisations to establish clear accountability from the outset - including defining the intended purpose and potential harms of any AI project before development begins. Unlike the EU AI Act or UK GDPR, ISO/IEC 42001 is a voluntary, certifiable standard rather than law - organisations choose to adopt and be audited against it, rather than being legally required to.</p>"
     },
     {
       "type": "accordion",
@@ -23,7 +23,7 @@
       "items": [
         {
           "title": "Clarifying the problem",
-          "body": "<p>Before any AI project begins, it is essential to justify why AI - rather than a simpler rule-based system, an unchanged manual process, or no intervention at all - is the right solution. What problem are you actually solving, and could it be addressed another way, with less risk and less complexity? An AI Impact Assessment documents the intended use, potential benefits and possible harms - including the live possibility that the right answer is not to build an AI system at all - ensuring these questions are answered before resources are committed.</p>"
+          "body": "<p>Before any AI project begins, it is essential to justify why AI - rather than a simpler rule-based system, an unchanged manual process, or no intervention at all - is the right solution. What problem are you actually solving, and could it be addressed another way, with less risk and less complexity? An AI Impact Assessment documents the intended use, potential benefits and possible harms - including the live possibility that the right answer is not to build an AI system at all - ensuring these questions are answered before resources are committed. <strong>ISO/IEC 42005:2025</strong>, a companion standard to ISO/IEC 42001, sets out a structured methodology for exactly this kind of assessment if you want a template to start from.</p>"
         },
         {
           "title": "Weighing the benefit",
