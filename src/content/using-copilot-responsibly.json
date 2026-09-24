@@ -74,9 +74,9 @@
       "isRadio": true,
       "items": [
         {
-          "text": "It can show any user any document across the organisation, regardless of their own permissions.",
+          "text": "It can surface content from a Teams channel you were removed from, since it retains a memory of past permissions.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. Copilot layers on top of your existing Microsoft 365 permissions - if you couldn't open a document before Copilot existed, you still can't open it through Copilot.</p>"
+          "feedback": "<p>Not quite. Copilot checks your current permissions live, each time - it can't surface content you've since lost access to, and it doesn't retain any memory of former access.</p>"
         },
         {
           "text": "It only surfaces data you already have access to, and doesn't use your prompts to train itself.",

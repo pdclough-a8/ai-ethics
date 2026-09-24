@@ -88,18 +88,18 @@
       "isRadio": true,
       "items": [
         {
-          "text": "Statistical methods should never be used for any kind of academic grading decision.",
+          "text": "Statistical algorithms are generally too unreliable to inform any part of an academic grading decision.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. The issue wasn't that statistics were used at all - a well-designed statistical approach could have avoided penalising individual students for their school's history.</p>"
+          "feedback": "<p>Not quite. The issue wasn't that statistics have no place in grading - a well-designed statistical approach, with proper account taken of small cohorts, could have avoided penalising individual students for their school's history.</p>"
         },
         {
           "text": "It could produce unfair outcomes for individual students based on their school's historical results.",
           "shouldBeSelected": true
         },
         {
-          "text": "The algorithm's underlying mathematics was too complex for educators to understand.",
+          "text": "The algorithm's statistical methodology hadn't been peer-reviewed by external experts before use.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. Complexity wasn't the problem - plenty of complex statistical models are used responsibly. The issue was the specific factor it relied on: school-level historical performance.</p>"
+          "feedback": "<p>Not quite. External peer review wasn't the missing safeguard here - the problem was a specific design choice (weighting by school history) whose unequal impact should have been modelled and caught in advance, regardless of how rigorously the method itself had been reviewed.</p>"
         },
         {
           "text": "Cancelling that year's exams because of COVID-19 was itself the wrong decision to make.",

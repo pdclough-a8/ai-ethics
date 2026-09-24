@@ -83,14 +83,14 @@
       "isRadio": true,
       "items": [
         {
-          "text": "Algorithms will always judge risk more accurately than a human decision-maker could.",
+          "text": "COMPAS was significantly more accurate at predicting reoffending than the judges who used it.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. COMPAS's developers didn't dispute that its risk scores could be biased - they disputed which definition of fairness mattered most. This case isn't about algorithms beating humans on accuracy.</p>"
+          "feedback": "<p>Not quite. COMPAS's developers didn't dispute that its risk scores could be biased - they disputed which definition of fairness mattered most. This case isn't about comparing the algorithm's accuracy to human judges.</p>"
         },
         {
-          "text": "Data drawn from the criminal justice system is generally too sensitive to ever be used in any predictive algorithm.",
+          "text": "Criminal justice data is too inconsistently recorded across jurisdictions to train a reliable predictive algorithm.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. The case doesn't argue this kind of data can never be used - it shows that even accurately-used data runs into fairness trade-offs that better data alone can't resolve.</p>"
+          "feedback": "<p>Not quite. Data quality and consistency weren't the issue here - COMPAS's data was usable enough to produce risk scores; the dispute was about which fairness definition those scores should be judged against.</p>"
         },
         {
           "text": "Different mathematical definitions of fairness can conflict, so satisfying one can break another.",
@@ -119,18 +119,18 @@
       "isRadio": true,
       "items": [
         {
-          "text": "The labelling work described was carried out entirely by automated systems, not people.",
+          "text": "Most of this kind of labelling work has since been fully automated using AI classifiers.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. This work was done by human workers in Kenya, not automated systems - someone has to review and label the disturbing content an AI needs to learn to recognise and avoid.</p>"
+          "feedback": "<p>Not quite. This work still requires human judgement to review and label disturbing content accurately - it hasn't been automated away, and reporting continues to find human moderators behind similar systems today.</p>"
         },
         {
           "text": "Labelling and moderation work is often outsourced to low-paid workers exposed to harmful content.",
           "shouldBeSelected": true
         },
         {
-          "text": "This kind of outsourcing was a one-off event, not one repeated anywhere else in the industry.",
+          "text": "This was a temporary arrangement that ended once ChatGPT's initial safety systems were built.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. Reporting has found similar outsourced labelling and moderation supply chains behind other major AI systems too, not just this one case.</p>"
+          "feedback": "<p>Not quite. Reporting has found similar outsourced labelling and moderation arrangements are an ongoing, recurring part of how major AI systems are built - not a one-time exercise that later stopped.</p>"
         },
         {
           "text": "The workers involved were paid at rates similar to equivalent roles in the company's home country.",

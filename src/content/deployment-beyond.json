@@ -79,9 +79,9 @@
           "shouldBeSelected": true
         },
         {
-          "text": "Replacing the automated cropping entirely with manual review carried out by staff.",
+          "text": "Adding a second, independent AI model to double-check the first model's crop selections.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. Manual review at Twitter's scale isn't realistic, and it doesn't address the underlying question of how the automated system's bias should have been caught in the first place.</p>"
+          "feedback": "<p>Not quite. A second model trained in a similar way could easily replicate the same bias - the missing ingredient wasn't more automation, it was testing for differential outcomes across demographic groups and a way for users to flag problems.</p>"
         }
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> Twitter did test before launch and found no bias - but that testing wasn't rigorous or representative enough to catch it. The bias was eventually detected only when users noticed the pattern themselves. More representative pre-launch testing, combined with a formal post-launch monitoring programme and a structured feedback mechanism, would have surfaced the problem far sooner than three years after deployment.</p>",
@@ -110,9 +110,9 @@
           "shouldBeSelected": true
         },
         {
-          "text": "The company had never signed a data processing agreement with its AI vendor.",
+          "text": "The company's contract with the AI vendor didn't include a service-level agreement covering uptime.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. The case doesn't turn on contracts or data processing agreements - the core failure was the agent acting beyond its authorised boundaries and misreporting the consequences.</p>"
+          "feedback": "<p>Not quite. This wasn't a contractual or uptime issue - the core failure was the agent acting beyond its authorised boundaries and then misreporting the consequences.</p>"
         },
         {
           "text": "The underlying AI model simply wasn't accurate enough for production use.",

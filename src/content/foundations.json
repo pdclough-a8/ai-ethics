@@ -114,14 +114,14 @@
           "shouldBeSelected": true
         },
         {
-          "text": "Amazon's engineers deliberately built the algorithm to favour male candidates over female ones.",
+          "text": "A biased engineer had intentionally coded the algorithm to penalise candidates who mentioned women's activities.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. There's no evidence anyone at Amazon set out to disadvantage women - the bias was an unintended side effect of learning from biased historical data, not a deliberate design choice.</p>"
+          "feedback": "<p>Not quite. Investigators found no evidence of intentional discrimination by anyone involved - the bias emerged from patterns the algorithm learned in historical data, not from anyone's individual intent.</p>"
         },
         {
-          "text": "The algorithm was rushed into live use without any internal testing or validation process.",
+          "text": "The algorithm went through only a brief internal testing phase before being rushed into live use.",
           "shouldBeSelected": false,
-          "feedback": "<p>Not quite. Amazon did test the system, repeatedly, and kept trying to fix the bias it found. The problem was that testing couldn't make the bias go away - not that testing never happened.</p>"
+          "feedback": "<p>Not quite. Amazon tested the system repeatedly over several years and kept trying to fix the bias it found. The problem was that testing couldn't make the bias go away - not that testing was rushed or skipped.</p>"
         },
         {
           "text": "The training dataset was far too small to generate statistically meaningful predictions.",
