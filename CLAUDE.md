@@ -92,10 +92,6 @@ All content edits go into the JSON files under `src/content/`. Key conventions:
 - Images referenced from content JSON live in `public/assets/` and use paths like `/assets/filename.png` — pass through `withBase()` when used in a hand-written link/`src`, same as nav hrefs.
 - To add a new page: create `src/content/<slug>.json`, create `src/pages/<slug>.astro` following the existing pattern, and add it to the menu grid in `index.astro`.
 
-## Known Content Gap
-
-`conclusion.json`'s `flipcard` block ("Top tips") has 6 items with **every field empty** (`frontImageSrc`, `frontImageAlt`, `backTitle`, `backBody` all `""`). This renders as 6 blank cards — it's unpopulated placeholder content carried over from the migration, not a bug in the flipcard component itself, and needs real "top tips" copy written before it's meaningful to a learner.
-
 ## Migration History
 
 [scripts/extract-content.mjs](scripts/extract-content.mjs) is a **one-off, non-runtime** migration script that converted the old Adapt JSON tree (`course/en/{contentObjects,articles,blocks,components}.json`) into the current flat `src/content/*.json` files. The old Adapt source (`course/`, the SCORM manifest, LMS entry points) has been deleted from the repo but remains recoverable via git history. The script is kept for reference/re-running only until content is fully verified as ported.
