@@ -20,6 +20,7 @@
     {
       "type": "accordion",
       "title": "Bias in data",
+      "body": "<p>The categories below broadly follow Suresh & Guttag's (2021) taxonomy of where bias enters a machine learning pipeline.</p>",
       "items": [
         {
           "title": "Historical bias",
@@ -31,7 +32,11 @@
         },
         {
           "title": "Measurement bias",
-          "body": "<p>Bias can arise from how data is collected and labelled. If the people labelling training data bring their own assumptions, those assumptions become embedded in the model - particularly important for subjective tasks like content moderation or sentiment analysis.</p>"
+          "body": "<p>Measurement bias arises when a model optimises for a proxy - something easier to measure than what actually matters, but not quite the same thing. A widely used US healthcare algorithm used patients' past healthcare <em>costs</em> as a proxy for their health <em>need</em>, on the assumption that sicker patients cost more to treat. But less money is spent treating Black patients with the same level of need, so the algorithm systematically underestimated how sick they were, and under-referred them for extra care. Removing cost as the proxy and predicting illness directly eliminated the racial bias.</p><p><em>Source: Obermeyer et al., <a class=\"customlink\" href=\"https://www.science.org/doi/10.1126/science.aax2342\" target=\"_blank\" rel=\"noopener noreferrer\">Dissecting racial bias in an algorithm used to manage the health of populations</a>, Science (2019)</em></p>"
+        },
+        {
+          "title": "Label bias",
+          "body": "<p>Bias can also arise from how data is labelled, not just what's measured. If the people labelling training data bring their own assumptions, those assumptions become embedded in the model - particularly important for subjective tasks like content moderation or sentiment analysis.</p>"
         },
         {
           "title": "Aggregation bias",
@@ -53,7 +58,7 @@
         },
         {
           "title": "Synthetic and anonymised data",
-          "body": "<p>Where consent or representativeness is a challenge, <strong>synthetic data</strong> - artificially generated data that mirrors real data's statistical properties - can help. However, synthetic data is not a silver bullet: it can still encode the biases present in the real data it was derived from.</p>"
+          "body": "<p>Where consent or representativeness is a challenge, <strong>synthetic data</strong> - artificially generated data that mirrors real data's statistical properties - can help. However, synthetic data is not a silver bullet: it can still encode the biases present in the real data it was derived from.</p><p><strong>Anonymised data</strong> is a separate approach - data stripped of identifying details so it falls outside data protection law entirely. This is harder to achieve than it sounds: re-identification research has repeatedly shown that data combined with other available information can often be traced back to individuals, meaning much data labelled 'anonymised' is really only <strong>pseudonymised</strong>, and remains personal data subject to the same protections.</p>"
         },
         {
           "title": "Who prepared this data?",
