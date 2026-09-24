@@ -5,7 +5,7 @@
     {
       "type": "text",
       "title": "Applying what you've learned to the tool you actually use",
-      "body": "<p>The rest of this course covered AI ethics in general - the principles, the lifecycle, the case studies. This page applies those same principles - fairness, transparency, accountability, privacy and security - specifically to <strong>Microsoft Copilot</strong>, the AI tool your organisation has rolled out.</p><p>None of this replaces what you've already learned. It's the practical, day-to-day version of it: what Copilot actually does with your data, what it's deliberately restricted from doing, and what remains your responsibility to check.</p>"
+      "body": "<p>The rest of this course covered AI ethics in general - the principles, the lifecycle, the case studies. This page applies those same principles - fairness, transparency, accountability, privacy and security - specifically to <strong>Microsoft 365 Copilot</strong> (distinct from the consumer Microsoft Copilot app), the AI tool your organisation has rolled out.</p><p>None of this replaces what you've already learned. It's the practical, day-to-day version of it: what Copilot actually does with your data, what it's deliberately restricted from doing, and what remains your responsibility to check.</p>"
     },
     {
       "type": "accordion",
@@ -13,7 +13,7 @@
       "items": [
         {
           "title": "It only sees what you can already see",
-          "body": "<p>Copilot draws on your organisation's data - emails, documents, chats, meetings - through Microsoft Graph, using the same permission model as the rest of Microsoft 365. It can't show you a colleague's file you don't already have access to. If you couldn't open something before Copilot existed, you still can't open it through Copilot.</p>"
+          "body": "<p>Copilot draws on your organisation's data - emails, documents, chats, meetings - through Microsoft Graph, using the same permission model as the rest of Microsoft 365. It can't show you a colleague's file you don't already have access to. If you couldn't open something before Copilot existed, you still can't open it through Copilot.</p><p>That's also the catch: Copilot makes anything you technically have access to far easier to actually <em>find</em>. A file with permissions set too broadly months ago, that nobody had realistically stumbled across, is now one prompt away. Poor SharePoint or Teams permissions become a real exposure the moment Copilot is switched on - even though, technically, nothing about your access has changed.</p>"
         },
         {
           "title": "Your prompts aren't used to train the model",
@@ -26,6 +26,10 @@
         {
           "title": "You can review and delete your activity",
           "body": "<p>Your Copilot activity history - your prompts and its responses - can be reviewed and deleted by you, and is handled under your organisation's own retention policies, in the same way as other Microsoft 365 content.</p>"
+        },
+        {
+          "title": "It doesn't perform equally well for everyone",
+          "body": "<p>Like any AI tool, Copilot's output quality can vary by language, dialect, domain and task - answers for niche technical topics or non-English prompts may be less reliable than for common English-language ones. That's the fairness dimension of using it day to day: give unfamiliar-territory answers more scepticism, not less.</p>"
         }
       ]
     },
@@ -50,7 +54,7 @@
     {
       "type": "text",
       "title": "The one habit that matters most: verify before you rely",
-      "body": "<p>Copilot drafts, summarises and suggests - it doesn't guarantee accuracy. Its responses can be wrong, outdated, or subtly misleading, especially when asked to reason, calculate or cite specifics. Treat every Copilot output as a first draft from a fast, well-read colleague: useful, but not something to send onward, act on, or repeat as fact until you've checked it yourself.</p><p>This is the <strong>explainability and human oversight</strong> principle from earlier in this course, applied to your own inbox: whoever sends, publishes or acts on Copilot's output is accountable for it - not Copilot.</p><p>A 2025 Microsoft Research and Carnegie Mellon study of knowledge workers using tools including Copilot found a specific pattern worth watching for in yourself: people were most likely to skip critical thinking about an AI's answer precisely when they felt <em>less</em> confident doing the task themselves - the moment you'd most want a sceptical second look is exactly when it's easiest to skip giving one.</p>"
+      "body": "<p>Copilot drafts, summarises and suggests - it doesn't guarantee accuracy. Its responses can be wrong, outdated, or subtly misleading, especially when asked to reason, calculate or cite specifics. Treat every Copilot output as a first draft from a fast, well-read colleague: useful, but not something to send onward, act on, or repeat as fact until you've checked it yourself.</p><p>This is the <strong>Transparency and Accountability</strong> principles from earlier in this course, applied to your own inbox: whoever sends, publishes or acts on Copilot's output is accountable for it - not Copilot.</p><p>A 2025 Microsoft Research and Carnegie Mellon study of knowledge workers using tools including Copilot found a specific pattern worth watching for in yourself: people were most likely to skip critical thinking about an AI's answer precisely when they felt <em>less</em> confident doing the task themselves - the moment you'd most want a sceptical second look is exactly when it's easiest to skip giving one.</p>"
     },
     {
       "type": "accordion",
@@ -58,7 +62,7 @@
       "items": [
         {
           "title": "Before you rely on it",
-          "body": "<ul><li>Have I checked this output before sending, publishing or acting on it - especially any facts, figures or citations?</li><li>Would I be comfortable if a colleague knew this came from Copilot rather than me?</li><li>Am I putting information into a prompt that I wouldn't otherwise be allowed to share - even though Copilot only shows results to people who could already see the source data?</li><li>If this is an agent or add-on rather than Copilot itself, do I know what it does with the information I give it?</li></ul>"
+          "body": "<ul><li>Have I checked this output before sending, publishing or acting on it - especially any facts, figures or citations?</li><li>Would I be comfortable if a colleague knew this came from Copilot rather than me?</li><li>Am I putting information into a prompt that I wouldn't otherwise be allowed to share - even though Copilot only shows results to people who could already see the source data?</li><li>If this is an agent or add-on rather than Copilot itself, do I know what it does with the information I give it?</li><li>If Copilot surfaced something I didn't expect to have access to, do I know who to tell?</li></ul>"
         }
       ]
     },
