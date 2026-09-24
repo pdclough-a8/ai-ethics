@@ -9,6 +9,11 @@
     },
     {
       "type": "text",
+      "title": "If you use AI tools rather than build them",
+      "body": "<p>At the deployment stage, you're often the sensor no automated monitoring system can replace: if an AI tool's output looks off, unexpected, or unfair, you may be the first person to notice. Report it through whatever feedback channel your organisation provides - don't assume someone else will catch it - and don't forward or act on output you haven't verified just because it came from a tool your organisation has already approved. Being the human in the loop is a real responsibility, not a formality.</p>"
+    },
+    {
+      "type": "text",
       "title": "The frameworks suggest...",
       "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to implement post-market monitoring plans, collecting and reviewing performance data in real-world conditions and taking corrective action where problems are identified.</p><p>The <strong>ICO's AI and Data Protection Risk Toolkit</strong> provides practical guidance for organisations on auditing AI systems and ensuring compliance with data protection law throughout deployment - including tools for assessing automated decision-making and its impact on individuals.</p>"
     },
@@ -26,11 +31,11 @@
         },
         {
           "title": "Human oversight",
-          "body": "<p>Responsible AI does not mean replacing human judgement - it means augmenting it thoughtfully. High-stakes AI decisions should include a mechanism for human review, particularly where errors could cause serious harm: in healthcare, criminal justice, credit decisions and employment.</p>"
+          "body": "<p>Responsible AI does not mean replacing human judgement - it means augmenting it thoughtfully. High-stakes AI decisions should include a mechanism for human review, particularly where errors could cause serious harm: in healthcare, criminal justice, credit decisions and employment. This oversight fails more often through <strong>automation bias</strong> - a reviewer trusting the AI's output more than the evidence warrants, and rubber-stamping it - than through the review step being missing altogether. A human in the loop only provides real oversight if they have the time, information and standing to actually disagree with the system, not just to approve it.</p>"
         },
         {
           "title": "Feedback mechanisms",
-          "body": "<p>Users and those affected by AI decisions should have a way to flag concerns, challenge decisions and seek redress. Effective feedback mechanisms are both an ethical obligation and a practical tool for identifying problems before they scale.</p>"
+          "body": "<p>Users and those affected by AI decisions should have a way to flag concerns, challenge decisions and seek redress. Where a decision is solely automated, this is more than good practice - UK and EU GDPR give people a legal right to contest it and request meaningful human review. Contestability isn't a feedback form bolted on after launch; it's a design requirement, built in from the start, that someone can say a decision was wrong and have a real person able to act on that.</p>"
         },
         {
           "title": "Planning for when things go wrong",
@@ -38,7 +43,7 @@
         },
         {
           "title": "Decommissioning",
-          "body": "<p>When an AI system is retired, responsible practice requires documentation - such as an updated model card - recording the system's use, known limitations and any incidents. Submitting to an AI register ensures a public record of how AI has been used and decommissioned.</p>"
+          "body": "<p>When an AI system is retired, responsible practice requires documentation - such as an updated model card - recording the system's use, known limitations and any incidents. Public registers exist for some AI - the UK's Algorithmic Transparency Recording Standard (ATRS) for public-sector use, and the EU's public database for high-risk systems under the AI Act - but most private-sector AI has no public register to submit to. For everything else, the equivalent is keeping your organisation's internal AI system inventory up to date, including systems that have been retired (see Operationalising Responsible AI).</p>"
         }
       ]
     },
@@ -117,6 +122,42 @@
       ],
       "feedbackCorrect": "<p><strong>Correct.</strong> This is what makes agentic AI a distinct category of risk, rather than just another predictive model: the system can take real, irreversible actions in the world - not just produce output for a person to review - and can act outside the boundaries it was explicitly given, then misreport its own behaviour. This is named <strong>Excessive Agency</strong> in the OWASP Top 10 for LLM Applications. Human oversight has to cover what an AI agent is <em>capable</em> of doing, not just what it is asked to do, with permissions and safeguards (such as backups, and separating planning from execution) designed accordingly.</p>",
       "feedbackIncorrect": "<p>Not quite. The core issue here isn't data bias, contracts or accuracy - it's that the agent could autonomously execute real, destructive actions beyond the boundaries it had explicitly been given, and then misrepresented what it had done. That's the defining risk of agentic AI: oversight has to cover what a system is <em>capable</em> of doing, not just what it's told to do.</p>",
+      "feedbackPartlyCorrect": ""
+    },
+    {
+      "type": "text",
+      "title": "Case study: An airline's chatbot invents its own refund policy",
+      "body": "<p>Not every AI failure involves prediction or agency - sometimes it's simpler than that: a generative AI chatbot confidently gets a fact wrong, and the company deploying it is held responsible for what it said.</p><p>In 2022, a customer asked Air Canada's website chatbot about bereavement fares after a family member's death. The chatbot told him he could apply for the discount retroactively, within 90 days of travel. That was wrong - Air Canada's actual policy required the request to be made before travel - but he booked in reliance on what the chatbot told him, and the airline later refused to honour it, arguing the chatbot was 'a separate legal entity responsible for its own actions'.</p><p>In February 2024, Canada's Civil Resolution Tribunal rejected that argument and found Air Canada liable for negligent misrepresentation. The tribunal was blunt: a company is responsible for all the information on its website, 'whether it comes from a static page or a chatbot' - it makes no difference that a generative AI tool, not a person, produced the wrong answer.</p><p><em>Source: <a class=\"customlink\" href=\"https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html\" target=\"_blank\" rel=\"noopener noreferrer\">Moffatt v. Air Canada, 2024 BCCRT 149</a></em></p>"
+    },
+    {
+      "type": "mcq",
+      "id": "a1e400000000000000000045",
+      "title": "What does the Air Canada case establish about AI chatbots?",
+      "instruction": "Select one option, then select Submit.",
+      "isRadio": true,
+      "items": [
+        {
+          "text": "An organisation isn't responsible for what its own chatbot tells a customer, since the AI generated the answer itself.",
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. The tribunal specifically rejected this argument - Air Canada was found liable for its chatbot's incorrect statement, just as it would be for any other information on its own website.</p>"
+        },
+        {
+          "text": "An organisation is responsible for the information its chatbot gives customers, even where the chatbot generated it independently.",
+          "shouldBeSelected": true
+        },
+        {
+          "text": "The case turned on whether the chatbot's underlying AI model was defective or poorly trained.",
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. The tribunal didn't need to examine why the chatbot got it wrong - what mattered was that the airline presented the chatbot's answer as reliable information, and a customer relied on it.</p>"
+        },
+        {
+          "text": "Bereavement fares are not something airlines can legally offer through an automated tool.",
+          "shouldBeSelected": false,
+          "feedback": "<p>Not quite. This case wasn't about whether bereavement fares can be handled by an automated tool - it was about accountability for what the tool said, once it said something wrong.</p>"
+        }
+      ],
+      "feedbackCorrect": "<p><strong>Correct.</strong> The tribunal held that a company is responsible for all the information on its website, \"whether it comes from a static page or a chatbot\". Deploying a generative AI tool doesn't create a liability shield - an organisation remains accountable for what it tells customers, regardless of what produced the answer.</p>",
+      "feedbackIncorrect": "<p>Not quite. The tribunal ruled that a company is responsible for information on its website \"whether it comes from a static page or a chatbot\" - deploying an AI tool doesn't let an organisation disclaim what it told a customer.</p>",
       "feedbackPartlyCorrect": ""
     },
     {
