@@ -31,7 +31,7 @@
         },
         {
           "title": "Accountability",
-          "body": "<p>People should be accountable for AI systems. Clear lines of responsibility should exist for the development, deployment and consequences of AI - with mechanisms for redress when things go wrong.</p>"
+          "body": "<p>People should be accountable for AI systems. Clear lines of responsibility should exist for the development, deployment and consequences of AI - with mechanisms for redress when things go wrong. This includes maintaining meaningful human oversight and agency over AI systems, particularly for high-stakes decisions: most other principle sets, including the EU's High-Level Expert Group guidelines, treat human agency and oversight as a distinct, foundational requirement in its own right, and it's the safeguard that <strong>automation bias</strong> - the tendency to trust an algorithm's output more than the evidence warrants, simply because it came from a system - most directly undermines.</p>"
         },
         {
           "title": "Privacy and security",
