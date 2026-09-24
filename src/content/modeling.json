@@ -85,13 +85,13 @@
     },
     {
       "type": "text",
-      "title": "Case study: Facial recognition and bias",
-      "body": "<p>A 2018 study by MIT researcher Joy Buolamwini and Timnit Gebru examined commercial facial recognition systems from IBM, Microsoft and Face++. All three systems performed significantly worse on darker-skinned faces - and worst of all on darker-skinned women, with error rates up to 34 percentage points higher than for lighter-skinned men.</p><p>The systems had been trained predominantly on images of lighter-skinned individuals, reflecting the demographics of the datasets used. The bias was not a programming error - it was a direct consequence of unrepresentative training data and a failure to test for differential performance before deployment.</p>"
+      "title": "Case study: Facial analysis and bias",
+      "body": "<p>A 2018 study by MIT researcher Joy Buolamwini and Timnit Gebru, <em>Gender Shades</em>, examined commercial facial analysis (gender classification) systems from IBM, Microsoft and Face++ - software that infers a person's gender from their face, not systems that identify who they are. All three systems performed significantly worse on darker-skinned faces - and worst of all on darker-skinned women, with error rates up to 34 percentage points higher than for lighter-skinned men.</p><p>The researchers had no access to the vendors' training data, so they couldn't confirm directly what it contained - but the benchmark datasets they analysed were heavily skewed towards lighter-skinned faces, and the error pattern this produced is consistent with training and benchmark data likely dominated by lighter-skinned faces. The bias was not a programming error - it was a direct consequence of unrepresentative data and a failure to test for differential performance before deployment.</p><p><em>Source: <a class=\"customlink\" href=\"https://proceedings.mlr.press/v81/buolamwini18a.html\" target=\"_blank\" rel=\"noopener noreferrer\">Buolamwini & Gebru, Gender Shades (2018)</a></em></p>"
     },
     {
       "type": "mcq",
       "id": "a1e400000000000000000031",
-      "title": "What testing approach would have caught this bias before deployment?",
+      "title": "What testing approach would have caught this bias in the facial analysis systems before deployment?",
       "instruction": "Select one option, then select Submit.",
       "isRadio": true,
       "items": [

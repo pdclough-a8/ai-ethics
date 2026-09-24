@@ -27,7 +27,7 @@
         },
         {
           "title": "Representation bias",
-          "body": "<p>If certain groups are underrepresented in training data, the AI will perform less well for those groups. Facial recognition systems, for example, have been found to have significantly higher error rates for women and people with darker skin tones.</p>"
+          "body": "<p>If certain groups are underrepresented in training data, the AI will perform less well for those groups. Facial recognition systems, for example, have been found to have significantly higher error rates for women and people with darker skin tones - NIST's 2019 Face Recognition Vendor Test found false-positive rates for some algorithms up to 100 times higher for West and East African and East Asian faces than for Eastern European faces.</p><p><em>Source: <a class=\"customlink\" href=\"https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software\" target=\"_blank\" rel=\"noopener noreferrer\">NIST FRVT Part 3: Demographic Effects (2019)</a></em></p>"
         },
         {
           "title": "Measurement bias",
