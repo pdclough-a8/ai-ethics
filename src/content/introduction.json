@@ -46,7 +46,7 @@
     {
       "type": "text",
       "title": "Coming up...",
-      "body": "<p>We'll begin by exploring the <strong>foundations of AI ethics</strong> - the key ethical concerns that AI raises, and the principles that guide responsible approaches. We'll then follow the <strong>AI lifecycle</strong>, examining what responsible AI looks like at each stage.</p>"
+      "body": "<p>We'll begin by exploring the <strong>foundations of AI ethics</strong> - the key ethical concerns that AI raises, and the principles that guide responsible approaches. We'll then follow the <strong>AI lifecycle</strong>, examining what responsible AI looks like at each stage. The stages themselves are adapted from Microsoft's Team Data Science Process (TDSP) - which is also why you'll see the US spelling 'Modeling' later on, in an otherwise UK-English course.</p>"
     }
   ]
 }
