@@ -1,0 +1,35 @@
+{
+  "title": "Responsible AI Checklist",
+  "blocks": [
+    {
+      "type": "text",
+      "title": "One page, every question",
+      "body": "<p>Every 'Ask yourself' list and the vendor-questions list from across this course, collected in one place. Use it as a quick reference, a print-out for a workshop, or a starting point for your own team's checklist. Each section links back to the page it came from, where the full context sits.</p>"
+    },
+    {
+      "type": "text",
+      "title": "Before you build (Business Understanding)",
+      "body": "<ul><li>Is AI actually the right approach here - or would a simpler rule, process or human judgement work with less risk?</li><li>If AI is appropriate, should this particular system, as currently designed, be built?</li><li>Have we articulated who benefits from this system, and how significantly - not just who could be harmed?</li><li>Have we identified who could be harmed by this system?</li><li>Have we defined success in a way that includes fairness, not just accuracy?</li><li>Have we engaged the people who will be affected by this system?</li></ul>"
+    },
+    {
+      "type": "text",
+      "title": "Know your data (Data Acquisition and Understanding)",
+      "body": "<ul><li>Do you know where your training data came from?</li><li>Was it collected on a lawful basis that covers its use in AI training?</li><li>Is your dataset representative of the people your AI will affect?</li><li>Have you checked for known sources of bias?</li><li>Do you know who prepared or labelled this data, and under what conditions?</li><li>If someone withdraws consent, can they be removed not just from the dataset but from any model already trained on it - and if not, do the people affected know that?</li></ul>"
+    },
+    {
+      "type": "text",
+      "title": "Explainability (Modeling)",
+      "body": "<ul><li>Could you explain to someone why your AI made the decision it did about them?</li><li>Are there groups for whom the AI's reasoning is less well understood?</li><li>What would you do if an AI decision appeared wrong or unfair?</li></ul>"
+    },
+    {
+      "type": "text",
+      "title": "Before you rely on Copilot's output (Using Copilot Responsibly)",
+      "body": "<ul><li>Have I checked this output before sending, publishing or acting on it - especially any facts, figures or citations?</li><li>Would I be comfortable if a colleague knew this came from Copilot rather than me?</li><li>Am I putting information into a prompt that I wouldn't otherwise be allowed to share - even though Copilot only shows results to people who could already see the source data?</li><li>If this is an agent or add-on rather than Copilot itself, do I know what it does with the information I give it?</li><li>If Copilot surfaced something I didn't expect to have access to, do I know who to tell?</li></ul>"
+    },
+    {
+      "type": "text",
+      "title": "Questions to ask an AI vendor (Operationalising Responsible AI)",
+      "body": "<p>These belong in the procurement process itself, not as an afterthought once a contract's signed:</p><ul><li>What data was this trained on, and has it been tested for bias - can we see the results, not just a statement that testing happened?</li><li>Is there a model card or equivalent documentation of intended use, known limitations and performance across different groups?</li><li>Is our data used to train your models? Can we opt out, and is that opt-out retroactive?</li><li>Have you adopted a recognised framework - ISO/IEC 42001, NIST's AI RMF - or do you have an internal ethics review process?</li><li>What's the environmental footprint of the model you're asking us to run - can you share compute or energy figures, not just a sustainability statement?</li><li>What explainability support or audit access do you provide if we need to understand a specific decision?</li><li>What happens when something goes wrong - what's your incident response commitment, and how would we find out?</li></ul>"
+    }
+  ]
+}

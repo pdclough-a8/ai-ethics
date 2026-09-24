@@ -9,6 +9,17 @@ import { withBase } from '../scripts/paths';
 <Layout title={content.title} duration={content.duration}>
   {content.blocks.map((block) => <Block block={block} />)}
 
+  <section class="a8-conclusion-bonus">
+    <h2>Want it as a single reference?</h2>
+    <p class="a8-prose">
+      Every "Ask yourself" list and the vendor-questions list from across this course, collected onto one
+      printable page.
+    </p>
+    <p class="a8-prose">
+      <a class="customlink" href={withBase('/checklist/')}>Open the Responsible AI Checklist</a>
+    </p>
+  </section>
+
   {bonusPages.length > 0 && (
     <section class="a8-conclusion-bonus">
       <h2>Now put it into practice</h2>

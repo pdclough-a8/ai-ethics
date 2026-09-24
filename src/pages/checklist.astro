@@ -1,0 +1,44 @@
+---
+// A standalone reference page, not a lifecycle stage - deliberately left
+// out of Layout.astro's `pages` array (same treatment as the two
+// bonusPages.ts pages), so it doesn't appear in the header nav, isn't
+// counted in course progress, and gets no prev/next page-nav footer.
+import Layout from '../layouts/Layout.astro';
+import Block from '../components/Block.astro';
+import content from '../content/checklist.json';
+---
+
+<Layout title={content.title}>
+  <button type="button" class="a8-checklist__print" data-print-checklist>Print this checklist</button>
+  {content.blocks.map((block) => <Block block={block} />)}
+</Layout>
+
+<script>
+  document.querySelector('[data-print-checklist]')?.addEventListener('click', () => window.print());
+</script>
+
+<style>
+  .a8-checklist__print {
+    display: block;
+    margin-bottom: var(--a8-space-md);
+    background: var(--a8-accent);
+    color: var(--a8-accent-text);
+    border: none;
+    border-radius: var(--a8-radius);
+    padding: 0.6rem 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* Printing the page itself (Ctrl/Cmd+P) works without JS too - this
+     button is a convenience, not the only way to print. Strip the parts
+     of the page that don't make sense on paper. */
+  @media print {
+    :global(.a8-header),
+    :global(.a8-page-nav),
+    :global(.a8-footer),
+    .a8-checklist__print {
+      display: none !important;
+    }
+  }
+</style>

@@ -38,6 +38,10 @@ export const GET: APIRoute = () => {
   const precacheUrls = [
     ...CORE_PAGES,
     ...bonusPages.map((p) => p.href),
+    // Not a lifecycle or bonus page (excluded from Layout.astro's nav and
+    // progress count on purpose - see checklist.astro), but still worth
+    // being available offline like everything else here.
+    '/checklist/',
     '/manifest.webmanifest',
     '/icons/icon-192.png',
     '/icons/icon-512.png',
