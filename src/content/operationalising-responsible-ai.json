@@ -72,6 +72,33 @@
       "body": "<p>Most organisations adopt far more AI through procurement than they build in-house. These questions belong in that process, not as an afterthought once a contract's signed:</p><ul><li>What data was this trained on, and has it been tested for bias - can we see the results, not just a statement that testing happened?</li><li>Is there a model card or equivalent documentation of intended use, known limitations and performance across different groups?</li><li>Is our data used to train your models? Can we opt out, and is that opt-out retroactive?</li><li>Have you adopted a recognised framework - ISO 42001, NIST's AI RMF - or do you have an internal ethics review process?</li><li>What's the environmental footprint of the model you're asking us to run - can you share compute or energy figures, not just a sustainability statement?</li><li>What explainability support or audit access do you provide if we need to understand a specific decision?</li><li>What happens when something goes wrong - what's your incident response commitment, and how would we find out?</li></ul>"
     },
     {
+      "type": "group",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Try it yourself: Interrogate a tool you actually use",
+          "body": "<p>Pick a specific AI tool you or your team actually uses - Copilot, an internal tool, something bought from a vendor. From the vendor questions above, choose the three you think matter most for that tool, and try answering them yourself, honestly, from what you currently know.</p>"
+        },
+        {
+          "type": "reveal",
+          "id": "a1e400000000000000000048",
+          "title": "Have a go",
+          "showText": "Reveal an example response",
+          "hideText": "Hide example response",
+          "first": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMTUwIiByPSI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjMyMCIgeTE9IjIwMCIgeDI9IjM4MCIgeTI9IjI2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
+            "alt": "A magnifying glass, representing interrogating a specific AI tool",
+            "body": "<p>Choose three vendor questions and try to answer them for a tool you actually use, before revealing one worked example.</p>"
+          },
+          "second": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjIwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMDAiIHJ4PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cmVjdCB4PSIyNzAiIHk9IjY1IiB3aWR0aD0iNjAiIGhlaWdodD0iMjQiIHJ4PSI2IiBmaWxsPSIjMGQxZjNjIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxwb2x5bGluZSBwb2ludHM9IjI1NSwxOTAgMjg1LDIyMCAzNDUsMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=",
+            "alt": "A clipboard with a checkmark, representing a completed example response",
+            "body": "<p><strong>Example, for Microsoft 365 Copilot:</strong></p><ul><li><strong>Is our data used to train your models?</strong> No - Microsoft states prompts, retrieved data and responses aren't used to train the underlying models.</li><li><strong>What happens when something goes wrong?</strong> Incidents go through Microsoft's standard support and incident-response channels under the existing Microsoft 365 agreement - worth checking your organisation actually knows the escalation path, not just that one exists.</li><li><strong>Have you adopted a recognised framework?</strong> Microsoft states Copilot meets ISO/IEC 42001.</li></ul><p>Notice what this exercise doesn't answer: whether your organisation's own SharePoint and Teams permissions are tidy enough that Copilot surfacing 'everything you can see' isn't itself a problem. Some questions point outward at the vendor; others point back at you.</p>"
+          }
+        }
+      ]
+    },
+    {
       "type": "accordion",
       "title": "What makes governance real",
       "body": "<p>The structures above are what let an organisation adopt AI safely - but having them doesn't guarantee anyone actually behaves differently because of them. These five aren't a further checklist to add to everything already on this page; they're examples of what tends to separate governance that's genuinely lived from governance that exists only on paper. Not all of them will fit every organisation, especially a smaller one without a dedicated governance function - and none of them need to be in place before you start. Treat them as things to keep in mind and grow into, not a bar to clear first.</p>",

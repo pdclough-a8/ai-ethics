@@ -45,6 +45,33 @@
       ]
     },
     {
+      "type": "group",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Try it yourself: Spot the bias type",
+          "body": "<p>Each short scenario below shows one of the bias types covered above. Try to name which one applies before revealing the answer.</p><ol><li><strong>A.</strong> A bank's loan-approval model is trained on ten years of past lending decisions. It learns to approve fewer applications from postcodes that were historically redlined, even though postcode isn't used as an input.</li><li><strong>B.</strong> A voice assistant trained mostly on recordings from young adult native speakers performs noticeably worse at recognising older people's speech.</li><li><strong>C.</strong> A university's dropout-risk model is trained on lecturers' subjective notes on which students seemed 'engaged' in class, recorded differently by different staff.</li></ol>"
+        },
+        {
+          "type": "reveal",
+          "id": "a1e400000000000000000046",
+          "title": "Have a go",
+          "showText": "Reveal example answers",
+          "hideText": "Hide example answers",
+          "first": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMTUwIiByPSI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjMyMCIgeTE9IjIwMCIgeDI9IjM4MCIgeTI9IjI2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
+            "alt": "A magnifying glass, representing identifying a bias type in a scenario",
+            "body": "<p>Work through scenarios A, B and C above and decide which bias type - historical, representation, measurement, label or aggregation - best explains each one. Then select the button below to compare against one set of example answers.</p>"
+          },
+          "second": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjIwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMDAiIHJ4PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cmVjdCB4PSIyNzAiIHk9IjY1IiB3aWR0aD0iNjAiIGhlaWdodD0iMjQiIHJ4PSI2IiBmaWxsPSIjMGQxZjNjIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxwb2x5bGluZSBwb2ludHM9IjI1NSwxOTAgMjg1LDIyMCAzNDUsMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=",
+            "alt": "A clipboard with a checkmark, representing completed example answers",
+            "body": "<p><strong>A - Historical bias.</strong> The model reproduces a pattern from past decisions (redlining) even without being told the sensitive attribute directly - a classic proxy for historical discrimination.</p><p><strong>B - Representation bias.</strong> Older speakers were underrepresented in the training data, so the model performs worse for them specifically.</p><p><strong>C - Label bias.</strong> The 'ground truth' itself - what counts as 'engaged' - reflects each labeller's own subjective judgement, so that inconsistency gets baked into the model.</p><p>Real scenarios often show more than one bias type at once - the point of this exercise is building the habit of asking which one(s) apply, not memorising a single right label.</p>"
+          }
+        }
+      ]
+    },
+    {
       "type": "accordion",
       "title": "Data provenance and consent",
       "items": [

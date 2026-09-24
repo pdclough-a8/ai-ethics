@@ -23,4 +23,17 @@ const { title, body } = Astro.props;
   .a8-prose :global(a.customlink) {
     color: var(--a8-accent);
   }
+  .a8-prose :global(table) {
+    border-collapse: collapse;
+    margin: var(--a8-space-md) 0;
+  }
+  .a8-prose :global(th),
+  .a8-prose :global(td) {
+    border: 1px solid var(--a8-rule);
+    padding: 0.4rem 0.9rem;
+    text-align: left;
+  }
+  .a8-prose :global(th) {
+    background: var(--a8-surface);
+  }
 </style>

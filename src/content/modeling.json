@@ -88,6 +88,33 @@
       ]
     },
     {
+      "type": "group",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Try it yourself: Read a disaggregated accuracy table",
+          "body": "<p>A vendor pitches you a resume-screening model with '91% overall accuracy'. Before agreeing to a pilot, you ask for performance broken down by group, and they send you this:</p><table><thead><tr><th>Group</th><th>Accuracy</th></tr></thead><tbody><tr><td>Overall</td><td>91%</td></tr><tr><td>Group A</td><td>96%</td></tr><tr><td>Group B</td><td>73%</td></tr></tbody></table><p>What does this table tell you, and what would you do next? Then select the button below to compare against one example response.</p>"
+        },
+        {
+          "type": "reveal",
+          "id": "a1e400000000000000000047",
+          "title": "Have a go",
+          "showText": "Reveal an example response",
+          "hideText": "Hide example response",
+          "first": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PGNpcmNsZSBjeD0iMjcwIiBjeT0iMTUwIiByPSI3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIi8+PGxpbmUgeDE9IjMyMCIgeTE9IjIwMCIgeDI9IjM4MCIgeTI9IjI2MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4K",
+            "alt": "A magnifying glass, representing examining a disaggregated accuracy table",
+            "body": "<p>Take a moment to interpret the table above before revealing an example response.</p>"
+          },
+          "second": {
+            "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzM4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMGQxZjNjIi8+PHJlY3QgeD0iMjIwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIyMDAiIHJ4PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjgiLz48cmVjdCB4PSIyNzAiIHk9IjY1IiB3aWR0aD0iNjAiIGhlaWdodD0iMjQiIHJ4PSI2IiBmaWxsPSIjMGQxZjNjIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIvPjxwb2x5bGluZSBwb2ludHM9IjI1NSwxOTAgMjg1LDIyMCAzNDUsMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=",
+            "alt": "A clipboard with a checkmark, representing a completed example response",
+            "body": "<p>The headline '91% overall accuracy' hides a 23-percentage-point gap between groups - Group B is wrong roughly three times as often as Group A. Overall accuracy alone would never have surfaced this; only the disaggregated figures do.</p><p>Before piloting this model, you'd want to know: is a 73% accuracy rate acceptable for this use case at all, for anyone? What does Group B's <em>type</em> of error look like - false positives or false negatives, and which is more costly here? And can the vendor explain <em>why</em> the gap exists, not just confirm that it does?</p><p>This is exactly the kind of question 'has this been tested across groups, can we see the results' (from the vendor questions on Operationalising Responsible AI) is designed to surface before a contract is signed, not after.</p>"
+          }
+        }
+      ]
+    },
+    {
       "type": "text",
       "title": "Case study: Facial analysis and bias",
       "body": "<p>A 2018 study by MIT researcher Joy Buolamwini and Timnit Gebru, <em>Gender Shades</em>, examined commercial facial analysis (gender classification) systems from IBM, Microsoft and Face++ - software that infers a person's gender from their face, not systems that identify who they are. All three systems performed significantly worse on darker-skinned faces - and worst of all on darker-skinned women, with error rates up to 34 percentage points higher than for lighter-skinned men.</p><p>The researchers had no access to the vendors' training data, so they couldn't confirm directly what it contained - but the benchmark datasets they analysed were heavily skewed towards lighter-skinned faces, and the error pattern this produced is consistent with training and benchmark data likely dominated by lighter-skinned faces. The bias was not a programming error - it was a direct consequence of unrepresentative data and a failure to test for differential performance before deployment.</p><p><em>Source: <a class=\"customlink\" href=\"https://proceedings.mlr.press/v81/buolamwini18a.html\" target=\"_blank\" rel=\"noopener noreferrer\">Buolamwini & Gebru, Gender Shades (2018)</a></em></p>"
