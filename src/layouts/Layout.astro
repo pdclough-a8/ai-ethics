@@ -1,6 +1,7 @@
 ---
 import '../styles/theme.css';
 import { withBase } from '../scripts/paths';
+import { bonusPages } from '../scripts/bonusPages';
 
 interface Props {
   title: string;
@@ -78,6 +79,9 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
           </div>
           <p class="a8-progress__label" data-progress-label>0/{pages.length}</p>
         </div>
+        {bonusPages.length > 0 && (
+          <p class="a8-progress__extra" data-extra-progress-label>Extensions: 0/{bonusPages.length}</p>
+        )}
       </div>
     </header>
 
@@ -191,6 +195,13 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
         color: var(--a8-text-muted);
         white-space: nowrap;
       }
+      .a8-progress__extra {
+        margin: 0;
+        font-size: 0.75rem;
+        color: var(--a8-text-muted);
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
       .a8-main {
         padding-top: var(--a8-space-lg);
         padding-bottom: var(--a8-space-lg);
@@ -295,6 +306,7 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
       // its results back out and updates the nav/progress-bar DOM.
       import { recordPageVisit, normalisePath, resetProgress } from '../scripts/tracking';
       import { withBase } from '../scripts/paths';
+      import { bonusPages } from '../scripts/bonusPages';
 
       // Registers src/pages/sw.js.ts - safe to call on every load; the
       // browser no-ops if the registration is unchanged, and re-installs
@@ -387,6 +399,17 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
         if (fill) fill.style.width = `${percent}%`;
         if (label) label.textContent = `${knownVisited}/${total}`;
         if (bar) bar.setAttribute('aria-valuenow', String(percent));
+
+        // Extension pages are deliberately left out of the core count above
+        // (see bonusPages.ts) - shown as a separate tally instead of being
+        // silently uncounted, so visiting them isn't invisible progress.
+        const extraLabel = document.querySelector<HTMLElement>('[data-extra-progress-label]');
+        if (extraLabel && bonusPages.length > 0) {
+          const bonusVisited = bonusPages.filter((p) =>
+            visitedSet.has(normalisePath(new URL(withBase(p.href), window.location.origin).pathname))
+          ).length;
+          extraLabel.textContent = `Extensions: ${bonusVisited}/${bonusPages.length}`;
+        }
       }
 
       updateUI(recordPageVisit(window.location.pathname));
