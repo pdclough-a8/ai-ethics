@@ -26,9 +26,16 @@ const { id, title, body, items } = Astro.props;
   {title && <h2>{title}</h2>}
   {body && <div class="a8-prose" set:html={body} />}
 
-  <div class="a8-narrative__viewport">
+  <div class="a8-narrative__viewport" role="region" aria-roledescription="carousel" aria-label={title ?? 'Carousel'}>
     {items.map((item, i) => (
-      <article class="a8-narrative__slide" data-index={i} hidden={i !== 0}>
+      <article
+        class="a8-narrative__slide"
+        data-index={i}
+        hidden={i !== 0}
+        role="group"
+        aria-roledescription="slide"
+        aria-label={`${i + 1} of ${items.length}: ${item.title}`}
+      >
         {item.graphicSrc && <img src={withBase(item.graphicSrc)} alt={item.graphicAlt ?? ''} />}
         <div class="a8-narrative__slide-text">
           <h3>{item.title}</h3>
@@ -40,7 +47,7 @@ const { id, title, body, items } = Astro.props;
 
   <div class="a8-narrative__controls">
     <button type="button" data-narrative-prev aria-label="Previous item">&larr; Back</button>
-    <span data-narrative-counter>1 of {items.length}</span>
+    <span data-narrative-counter aria-live="polite">1 of {items.length}</span>
     <button type="button" data-narrative-next aria-label="Next item">Next &rarr;</button>
   </div>
 </section>

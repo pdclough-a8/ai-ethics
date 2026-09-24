@@ -37,22 +37,22 @@ const { id, title, body, graphicSrc, graphicAlt, items } = Astro.props;
         style={`left: ${item.left}%; top: ${item.top}%;`}
         data-hotgraphic-pin={i}
         aria-label={`${item.title} - select to find out more`}
+        aria-expanded="false"
+        aria-controls={`hotgraphic-panel-${id}-${i}`}
       >
         {i + 1}
       </button>
     ))}
   </div>
 
-  <div class="a8-hotgraphic__panel" data-hotgraphic-panel hidden>
-    <div data-hotgraphic-panel-body></div>
+  <div class="a8-hotgraphic__panel" data-hotgraphic-panel hidden aria-live="polite">
+    {items.map((item, i) => (
+      <div id={`hotgraphic-panel-${id}-${i}`} data-hotgraphic-panel-item={i} hidden>
+        <h3>{item.title}</h3>
+        <div set:html={item.body} />
+      </div>
+    ))}
   </div>
-
-  {items.map((item, i) => (
-    <template data-hotgraphic-template={i}>
-      <h3>{item.title}</h3>
-      <div set:html={item.body} />
-    </template>
-  ))}
 </section>
 
 <style>
@@ -98,21 +98,23 @@ const { id, title, body, graphicSrc, graphicAlt, items } = Astro.props;
 <script>
   document.querySelectorAll<HTMLElement>('.a8-hotgraphic').forEach((el) => {
     const panel = el.querySelector<HTMLElement>('[data-hotgraphic-panel]');
-    const panelBody = el.querySelector<HTMLElement>('[data-hotgraphic-panel-body]');
+    const panelItems = Array.from(el.querySelectorAll<HTMLElement>('[data-hotgraphic-panel-item]'));
+    const pins = Array.from(el.querySelectorAll<HTMLButtonElement>('[data-hotgraphic-pin]'));
 
-    el.querySelectorAll<HTMLButtonElement>('[data-hotgraphic-pin]').forEach((pin) => {
+    pins.forEach((pin) => {
       pin.addEventListener('click', () => {
         const index = pin.dataset.hotgraphicPin;
-        const template = el.querySelector<HTMLTemplateElement>(
-          `template[data-hotgraphic-template="${index}"]`
-        );
-        if (template && panelBody && panel) {
-          panelBody.innerHTML = '';
-          panelBody.appendChild(template.content.cloneNode(true));
-          panel.hidden = false;
-          el.querySelectorAll('[data-hotgraphic-pin]').forEach((p) => p.classList.remove('is-active'));
-          pin.classList.add('is-active');
-        }
+        if (!panel) return;
+        panel.hidden = false;
+        panelItems.forEach((item) => {
+          item.hidden = item.dataset.hotgraphicPanelItem !== index;
+        });
+        pins.forEach((p) => {
+          p.classList.remove('is-active');
+          p.setAttribute('aria-expanded', 'false');
+        });
+        pin.classList.add('is-active');
+        pin.setAttribute('aria-expanded', 'true');
       });
     });
   });
