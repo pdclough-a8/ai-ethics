@@ -74,6 +74,7 @@
     {
       "type": "accordion",
       "title": "Data provenance and consent",
+      "body": "<p>Where your data came from, whether you had a lawful basis to use it this way, and who did the work of preparing it are all part of the same underlying question: can you actually account for your training data?</p>",
       "items": [
         {
           "title": "Where does your data come from?",

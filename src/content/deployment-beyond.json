@@ -20,6 +20,7 @@
     {
       "type": "accordion",
       "title": "Monitoring and ongoing governance",
+      "body": "<p>Responsible AI doesn't end at launch - these are the ongoing practices that keep a system accountable once it's live.</p>",
       "items": [
         {
           "title": "Fair access and responsible release",

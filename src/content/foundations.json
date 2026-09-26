@@ -50,6 +50,7 @@
     {
       "type": "accordion",
       "title": "Addressing ethical issues",
+      "body": "<p>Responsible AI draws on three complementary approaches - each catches different problems, and none of them is sufficient alone.</p>",
       "items": [
         {
           "title": "Ethical approaches",

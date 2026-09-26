@@ -52,6 +52,7 @@
     {
       "type": "accordion",
       "title": "Model evaluation and documentation",
+      "body": "<p>Building a fair, secure model is only half the job - it also needs to be tested, documented and weighed against its wider costs before anyone can trust it.</p>",
       "items": [
         {
           "title": "Fairness by design",
