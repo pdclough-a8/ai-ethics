@@ -54,6 +54,27 @@ const eyebrow =
   .a8-prose :global(th) {
     background: var(--a8-surface);
   }
+  .a8-prose :global(details) {
+    margin-top: var(--a8-space-sm);
+  }
+  .a8-prose :global(summary) {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--a8-accent);
+    list-style: none;
+  }
+  .a8-prose :global(summary::-webkit-details-marker) {
+    display: none;
+  }
+  .a8-prose :global(summary::before) {
+    content: '+ ';
+  }
+  .a8-prose :global(details[open] summary::before) {
+    content: '\2212 '; /* minus sign */
+  }
+  .a8-prose :global(details > *:not(summary):first-of-type) {
+    margin-top: var(--a8-space-sm);
+  }
 
   .a8-text--framework,
   .a8-text--audience {
