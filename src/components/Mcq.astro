@@ -42,32 +42,38 @@ const {
 } = Astro.props;
 ---
 
-<div class="a8-mcq" data-mcq-id={id} data-mcq-radio={isRadio ? 'true' : 'false'}>
-  <h3>{title}</h3>
-  {instruction && <p class="a8-mcq__instruction">{instruction}</p>}
+<details class="a8-mcq" data-mcq-id={id} data-mcq-radio={isRadio ? 'true' : 'false'}>
+  <summary class="a8-mcq__summary">
+    <span class="a8-mcq__icon" aria-hidden="true">?</span>
+    <span class="a8-mcq__summary-title">{title}</span>
+  </summary>
 
-  <form class="a8-mcq__form" data-mcq-form>
-    <ul class="a8-mcq__options">
-      {items.map((item, i) => (
-        <li>
-          <label>
-            <input
-              type={isRadio ? 'radio' : 'checkbox'}
-              name={`mcq-${id}`}
-              data-correct={item.shouldBeSelected ? 'true' : 'false'}
-              value={i}
-            />
-            <span>{item.text}</span>
-          </label>
-        </li>
-      ))}
-    </ul>
-    <button type="submit" class="a8-mcq__submit" data-mcq-submit>Submit</button>
-  </form>
+  <div class="a8-mcq__body">
+    {instruction && <p class="a8-mcq__instruction">{instruction}</p>}
 
-  <div class="a8-mcq__feedback" data-mcq-feedback hidden>
-    <p class="a8-mcq__result" data-mcq-result></p>
-    <div data-mcq-feedback-body></div>
+    <form class="a8-mcq__form" data-mcq-form>
+      <ul class="a8-mcq__options">
+        {items.map((item, i) => (
+          <li>
+            <label>
+              <input
+                type={isRadio ? 'radio' : 'checkbox'}
+                name={`mcq-${id}`}
+                data-correct={item.shouldBeSelected ? 'true' : 'false'}
+                value={i}
+              />
+              <span>{item.text}</span>
+            </label>
+          </li>
+        ))}
+      </ul>
+      <button type="submit" class="a8-mcq__submit" data-mcq-submit>Submit</button>
+    </form>
+
+    <div class="a8-mcq__feedback" data-mcq-feedback hidden>
+      <p class="a8-mcq__result" data-mcq-result></p>
+      <div data-mcq-feedback-body></div>
+    </div>
   </div>
 
   <template data-feedback="correct" set:html={feedbackCorrect} />
@@ -76,7 +82,7 @@ const {
   {items.map((item, i) => item.feedback && (
     <template data-item-feedback={i} set:html={item.feedback} />
   ))}
-</div>
+</details>
 
 <style>
   .a8-mcq {
@@ -86,8 +92,41 @@ const {
     padding: var(--a8-space-md);
     margin: var(--a8-space-lg) 0;
   }
-  .a8-mcq h3 {
-    margin-top: 0;
+  .a8-mcq__summary {
+    display: flex;
+    align-items: center;
+    gap: var(--a8-space-sm);
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--a8-ink);
+    list-style: none;
+  }
+  .a8-mcq__summary::-webkit-details-marker {
+    display: none;
+  }
+  .a8-mcq__summary::before {
+    content: '+';
+    color: var(--a8-accent);
+    font-weight: 700;
+  }
+  .a8-mcq[open] > .a8-mcq__summary::before {
+    content: '\2212'; /* minus sign */
+  }
+  .a8-mcq__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--a8-accent);
+    color: var(--a8-accent-text);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+  .a8-mcq__body {
+    margin-top: var(--a8-space-md);
   }
   .a8-mcq__instruction {
     color: var(--a8-text-muted);
@@ -231,6 +270,11 @@ const {
       });
       showFeedback(mcqEl, saved.result, singleWrongSelection(saved.selected, correctIndexes));
       if (saved.result === 'correct') disableInputs(mcqEl);
+      // Quizzes are collapsed by default (see the <details> markup above) -
+      // but a returning learner shouldn't have to click into every past
+      // question just to see they've already answered it, or that an
+      // earlier attempt is still waiting to be retried.
+      mcqEl.toggleAttribute('open', true);
     }
 
     form?.addEventListener('submit', (event) => {
