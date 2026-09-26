@@ -1,14 +1,32 @@
 ---
 // Recreates Adapt's "text" component type - a plain narrative text block.
+//
+// `variant` is an optional visual treatment, not a different component -
+// added so a lay reader can tell at a glance which blocks are core
+// narrative versus reference/deeper detail, without having to read into
+// them first to find out:
+//   - 'framework': the "The frameworks suggest..." boxes naming specific
+//     regulations/standards (EU AI Act, ISO/IEC 42001, GDPR articles...) -
+//     useful detail, not required to follow the course's main thread.
+//   - 'audience': the "If you use AI tools rather than build them" panels -
+//     the opposite signal, flagged as *more* relevant, not less, for anyone
+//     who isn't building or governing AI systems themselves.
 interface Props {
   title?: string;
   body: string;
+  variant?: 'default' | 'framework' | 'audience';
 }
 
-const { title, body } = Astro.props;
+const { title, body, variant = 'default' } = Astro.props;
+
+const eyebrow =
+  variant === 'framework' ? 'Frameworks and regulation - background detail' :
+  variant === 'audience' ? "Don't build or govern AI systems yourself? Start here" :
+  null;
 ---
 
-<section class="a8-text">
+<section class={`a8-text ${variant !== 'default' ? `a8-text--${variant}` : ''}`}>
+  {eyebrow && <p class="a8-text__eyebrow">{eyebrow}</p>}
   {title && <h2>{title}</h2>}
   <div class="a8-prose" set:html={body} />
 </section>
@@ -35,5 +53,33 @@ const { title, body } = Astro.props;
   }
   .a8-prose :global(th) {
     background: var(--a8-surface);
+  }
+
+  .a8-text--framework,
+  .a8-text--audience {
+    border-radius: var(--a8-radius);
+    padding: var(--a8-space-md);
+    border-left: 4px solid;
+  }
+  .a8-text--framework {
+    background: var(--a8-surface);
+    border-color: var(--a8-text-muted);
+  }
+  .a8-text--audience {
+    background: var(--a8-accent-tint);
+    border-color: var(--a8-accent);
+  }
+  .a8-text__eyebrow {
+    margin: 0 0 0.35rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+  }
+  .a8-text--framework .a8-text__eyebrow {
+    color: var(--a8-text-muted);
+  }
+  .a8-text--audience .a8-text__eyebrow {
+    color: var(--a8-accent);
   }
 </style>

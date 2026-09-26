@@ -10,11 +10,13 @@
     {
       "type": "text",
       "title": "If you use AI tools rather than build them",
+      "variant": "audience",
       "body": "<p>At the deployment stage, you're often the sensor no automated monitoring system can replace: if an AI tool's output looks off, unexpected, or unfair, you may be the first person to notice. Report it through whatever feedback channel your organisation provides - don't assume someone else will catch it - and don't forward or act on output you haven't verified just because it came from a tool your organisation has already approved. Being the human in the loop is a real responsibility, not a formality.</p>"
     },
     {
       "type": "text",
       "title": "The frameworks suggest...",
+      "variant": "framework",
       "body": "<p>The <strong>EU AI Act</strong> requires providers of high-risk AI systems to implement post-market monitoring plans, collecting and reviewing performance data in real-world conditions and taking corrective action where problems are identified.</p><p>The <strong>ICO's AI and Data Protection Risk Toolkit</strong> provides practical guidance for organisations on auditing AI systems and ensuring compliance with data protection law throughout deployment - including tools for assessing automated decision-making and its impact on individuals.</p>"
     },
     {

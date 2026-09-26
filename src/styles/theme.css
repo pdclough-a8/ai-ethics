@@ -36,6 +36,7 @@
   --a8-surface: #ffffff;   /* cards / content boxes */
   --a8-accent: #c24429;    /* headline emphasis, links, active states, CTAs, menu tiles */
   --a8-accent-text: #ffffff; /* text colour when sitting on top of --a8-accent */
+  --a8-accent-tint: #fbeae6; /* light eyeballed tint of --a8-accent, for callout backgrounds behind normal body text - not a confirmed swatch, same caveat as --a8-accent itself */
   --a8-rule: #1a1a1a;      /* thin hairline under headers */
   --a8-text: #1a1a1a;      /* body copy */
   --a8-text-muted: #5a5a5a;
