@@ -20,6 +20,7 @@
     {
       "type": "accordion",
       "title": "AI Impact Assessment",
+      "body": "<p>An <strong>AI Impact Assessment</strong> is a short, structured exercise carried out before an AI project begins - documenting the problem, who's affected, and what could go right or wrong, so those questions get answered deliberately rather than discovered after the fact.</p>",
       "items": [
         {
           "title": "Clarifying the problem",
