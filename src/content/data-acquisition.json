@@ -20,6 +20,7 @@
     {
       "type": "accordion",
       "title": "Bias in data",
+      "body": "<p>Bias can creep in at several different points before a model is ever trained - not just one. The categories below cover the most common ones.</p>",
       "items": [
         {
           "title": "Historical bias",
