@@ -47,6 +47,7 @@ export const GET: APIRoute = () => {
     '/icons/icon-512.png',
     '/icons/apple-touch-icon.png',
     '/assets/logo-analytics8.png',
+    '/assets/cc-by-nc-nd.svg',
   ].map((p) => withBase(p));
 
   const script = `// Auto-generated at build time by src/pages/sw.js.ts - do not edit dist/sw.js directly.
@@ -54,7 +55,7 @@ export const GET: APIRoute = () => {
 // Bump this on any deploy where already-installed visitors should drop
 // their old cached content immediately rather than waiting for it to
 // expire naturally via the cache-first/network-first logic below.
-const CACHE_VERSION = 'v2';
+const CACHE_VERSION = 'v3';
 const CACHE_NAME = 'a8-ai-ethics-' + CACHE_VERSION;
 const BASE = ${JSON.stringify(withBase('/'))};
 const PRECACHE_URLS = ${JSON.stringify(precacheUrls)};
