@@ -47,7 +47,7 @@ export const GET: APIRoute = () => {
     '/icons/icon-512.png',
     '/icons/apple-touch-icon.png',
     '/assets/logo-analytics8.png',
-    '/assets/cc-by-nc-nd.svg',
+    '/assets/cc-by.svg',
   ].map((p) => withBase(p));
 
   const script = `// Auto-generated at build time by src/pages/sw.js.ts - do not edit dist/sw.js directly.
