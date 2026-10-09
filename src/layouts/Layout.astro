@@ -55,7 +55,7 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
          build the "Add to Home Screen" icon/name/standalone-display, see
          src/pages/manifest.webmanifest.ts. -->
     <link rel="manifest" href={withBase('/manifest.webmanifest')} />
-    <meta name="theme-color" content="#c24429" />
+    <meta name="theme-color" content="#ff5c35" />
     <link rel="icon" type="image/png" sizes="32x32" href={withBase('/icons/favicon-32.png')} />
     <link rel="icon" type="image/png" sizes="16x16" href={withBase('/icons/favicon-16.png')} />
     <!-- iOS ignores <link rel="manifest"> for home-screen icon/standalone
@@ -167,11 +167,15 @@ const nextPage = currentIndex !== -1 && currentIndex < pages.length - 1 ? pages[
       }
       .a8-nav a:hover,
       .a8-nav a:focus {
-        color: var(--a8-accent);
+        color: var(--a8-ink);
+        text-decoration: underline;
+        text-decoration-color: var(--a8-accent);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
       }
       .a8-nav a[data-visited]::after {
         content: ' \2713'; /* checkmark */
-        color: var(--a8-accent);
+        color: var(--a8-ink);
         font-weight: 700;
       }
       .a8-nav a[aria-current='page'] {

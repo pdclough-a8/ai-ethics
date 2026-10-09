@@ -39,7 +39,10 @@ const eyebrow =
     padding-left: 1.25rem;
   }
   .a8-prose :global(a.customlink) {
-    color: var(--a8-accent);
+    text-decoration: underline;
+    text-decoration-color: var(--a8-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
   }
   .a8-prose :global(table) {
     border-collapse: collapse;
@@ -60,7 +63,10 @@ const eyebrow =
   .a8-prose :global(summary) {
     cursor: pointer;
     font-weight: 700;
-    color: var(--a8-accent);
+    text-decoration: underline;
+    text-decoration-color: var(--a8-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
     list-style: none;
   }
   .a8-prose :global(summary::-webkit-details-marker) {
@@ -101,6 +107,10 @@ const eyebrow =
     color: var(--a8-text-muted);
   }
   .a8-text--audience .a8-text__eyebrow {
-    color: var(--a8-accent);
+    color: var(--a8-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--a8-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
   }
 </style>

@@ -106,8 +106,14 @@ const {
   }
   .a8-mcq__summary::before {
     content: '+';
-    color: var(--a8-accent);
+    background: var(--a8-accent);
+    color: var(--a8-accent-text);
     font-weight: 700;
+    display: inline-block;
+    width: 1.3em;
+    margin-right: 0.4em;
+    text-align: center;
+    border-radius: var(--a8-radius);
   }
   .a8-mcq[open] > .a8-mcq__summary::before {
     content: '\2212'; /* minus sign */
@@ -175,7 +181,11 @@ const {
     color: #1a7d3b;
   }
   .a8-mcq[data-result='partlyCorrect'] .a8-mcq__result {
-    color: var(--a8-accent);
+    color: var(--a8-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--a8-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
   }
   .a8-mcq[data-result='incorrect'] .a8-mcq__result {
     color: #c0392b;

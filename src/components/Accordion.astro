@@ -49,9 +49,15 @@ const { title, body, items } = Astro.props;
     display: none;
   }
   .a8-accordion__item summary::before {
-    content: '+ ';
-    color: var(--a8-accent);
+    content: '+';
+    background: var(--a8-accent);
+    color: var(--a8-accent-text);
     font-weight: 700;
+    display: inline-block;
+    width: 1.3em;
+    margin-right: 0.5em;
+    text-align: center;
+    border-radius: var(--a8-radius);
   }
   .a8-accordion__item[open] summary::before {
     content: '\2212 '; /* minus sign */
@@ -60,6 +66,9 @@ const { title, body, items } = Astro.props;
     padding-top: var(--a8-space-sm);
   }
   .a8-accordion__body :global(a.customlink) {
-    color: var(--a8-accent);
+    text-decoration: underline;
+    text-decoration-color: var(--a8-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
   }
 </style>
